@@ -252,6 +252,8 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertEqual(language.id, .plainText)
     }
 
+    // MARK: - Fetch Queries
+
     let bundleURL = Bundle.module.resourceURL
 
     func test_FetchQueryBash() throws {
