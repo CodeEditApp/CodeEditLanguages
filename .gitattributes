@@ -1,0 +1,3 @@
+Sources/CodeEditLanguages/Resources/** linguist-vendored
+.github/** linguist-vendored
+Sources/CodeEditLanguages/Documentation.docc/** linguist-documentation
