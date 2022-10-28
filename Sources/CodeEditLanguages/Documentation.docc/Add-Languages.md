@@ -188,9 +188,9 @@ public func query(for language: TreeSitterLanguage) -> Query? {
 
 ## Test it!
 
-In order to test whether is working or not, add ``CodeEditTextView`` as a local dependency to `CodeEdit`.
+In order to test whether is working or not, add `CodeEditTextView` as a local dependency to `CodeEdit`.
 
-In order to do that close ``CodeEditTextView`` in Xcode and open `CodeEdit`. Then inside `CodeEditModules` replace the `CodeEditTextView` dependency with:
+In order to do that close `CodeEditTextView` in Xcode and open `CodeEdit`. Then inside `CodeEditModules` replace the `CodeEditTextView` dependency with:
 
 ```swift
 .package(name: "CodeEditTextView", path: "/PATH/TO/CodeEditTextView")
@@ -202,7 +202,7 @@ When everything is working correctly push your `tree-sitter-{lang}` changes to `
 
 > Take [this PR description](https://github.com/tree-sitter/tree-sitter-javascript/pull/223) as a template and cross-reference it with your Pull Request.
 
-Now you can remove the local dependencies and replace it with the actual package URLs and submit a Pull Request for ``CodeEditTextView``.
+Now you can remove the local dependencies and replace it with the actual package URLs and submit a Pull Request for `CodeEditTextView`.
 
 ## Documentation
 
