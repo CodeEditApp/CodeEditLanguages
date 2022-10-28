@@ -9,6 +9,7 @@ import XCTest
 @testable import CodeEditLanguages
 import SwiftTreeSitter
 
+// swiftlint:disable all
 final class CodeEditLanguagesTests: XCTestCase {
 
     // MARK: Bash

@@ -199,7 +199,10 @@ public extension CodeLanguage {
     static let json: CodeLanguage = .init(id: .json, tsName: "json", extensions: ["json"])
 
     /// A language structure for `JSX`
-    static let jsx: CodeLanguage = .init(id: .jsx, tsName: "javascript", extensions: ["jsx"], highlights: ["highlights-jsx"])
+    static let jsx: CodeLanguage = .init(id: .jsx,
+                                         tsName: "javascript",
+                                         extensions: ["jsx"],
+                                         highlights: ["highlights-jsx"])
 
     /// A language structure for `PHP`
     static let php: CodeLanguage = .init(id: .php, tsName: "php", extensions: ["php"])
