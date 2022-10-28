@@ -14,6 +14,10 @@ let package = Package(
     ],
     dependencies: [
         .package(
+            url: "https://github.com/apple/swift-docc-plugin.git",
+            from: "1.0.0"
+        ),
+        .package(
             url: "https://github.com/ChimeHQ/SwiftTreeSitter.git",
             exact: "0.7.0"
         ),
