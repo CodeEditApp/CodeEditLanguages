@@ -188,15 +188,7 @@ public func query(for language: TreeSitterLanguage) -> Query? {
 
 ## Test it!
 
-In order to test whether is working or not, add `CodeEditTextView` as a local dependency to `CodeEdit`.
-
-In order to do that close `CodeEditTextView` in Xcode and open `CodeEdit`. Then inside `CodeEditModules` replace the `CodeEditTextView` dependency with:
-
-```swift
-.package(name: "CodeEditTextView", path: "/PATH/TO/CodeEditTextView")
-```
-
-After that, you may need to reset packages caches but then it should compile and run.
+Make sure to test the newly created language in a sample project!
 
 When everything is working correctly push your `tree-sitter-{lang}` changes to `origin` and also create a Pull Request to the official repository.
 
