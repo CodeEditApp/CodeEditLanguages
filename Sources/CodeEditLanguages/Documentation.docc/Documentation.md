@@ -9,5 +9,3 @@ This package includes a binary framework `CodeLanguagesContainer.xcframework` wh
 The languages are then served as a ``CodeLanguage``.
 
 ## Topics
-
-
