@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">CodeEditTextView</h1>
+  <h1 align="center">CodeEditLanguages</h1>
 </p>
 
 <p align="center">
