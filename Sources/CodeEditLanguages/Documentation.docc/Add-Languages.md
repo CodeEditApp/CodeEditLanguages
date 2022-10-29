@@ -97,23 +97,23 @@ extern TSLanguage *tree_sitter_{lang}();
 
 In order to add a language to ``CodeEditLanguages`` you need to open the `.xcodeproj` file located inside `CodeLanguage-Container`.
 
-Add the `tree-sitter` package you created earlier as a dependency like you would in a regular Xcode project.
+1. Add the `tree-sitter` package you created earlier as a dependency like you would in a regular Xcode project.
 
-Then make sure the framework target loads the package module.
+2. Then make sure the framework target loads the package module.
 
-Now open the `CodeLanguages_Container.h` header file and add:
+3. Now open the `CodeLanguages_Container.h` header file and add:
 
-```cpp
-extern TSLanguage *tree_sitter_{lang}();
-```
+    ```cpp
+    extern TSLanguage *tree_sitter_{lang}();
+    ```
 
-> Please keep an alphabetical order
+    > Please keep an alphabetical order
 
-Now create the `xcframework` by running the `build_framework.sh` script from the Package's root directory.
+4. Now create the `xcframework` by running the `build_framework.sh` script from the Package's root directory.
 
-After that also run the `copy_resources.sh` script to copy the `*.scm` files into the Package's Resource folder.
+5. Check the output of the script. It should say `Done!` at the end.
 
-You are now done in the Xcode Project and may close it now. Open the Package and continue.
+6. You are now done in the Xcode Project and may close it now. Open the Package and continue.
 
 ## Add it to CodeLanguage
 
@@ -196,11 +196,34 @@ When everything is working correctly push your `tree-sitter-{lang}` changes to `
 
 Now you can remove the local dependencies and replace it with the actual package URLs and submit a Pull Request for `CodeEditTextView`.
 
-## Documentation
-
-Please make sure to add the newly created properties to the documentation `*.md` files.
-
 ## Unit Tests
 
 Also make sure to add test cases for your new language in `Tests/CodeEditLanguagesTests`.
 
+### Example
+
+```swift
+// MARK: - Swift
+
+    // create as many test cases as there are file extensions
+    func test_CodeLanguageSwift() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.swift")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .swift)
+    }
+
+    func test_FetchQuerySwift() throws {
+        var language = CodeLanguage.swift
+        language.resourceURL = bundleURL
+
+        let data = try Data(contentsOf: language.queryURL!)
+        let query = try? Query(language: language.language!, data: data)
+        XCTAssertNotNil(query)
+        XCTAssertNotEqual(query?.patternCount, 0)
+    }
+```
+
+## Documentation
+
+Please make sure to add the newly created properties to the documentation `*.md` files.
