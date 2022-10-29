@@ -8,7 +8,6 @@
 import Foundation
 import tree_sitter
 import SwiftTreeSitter
-
 import CodeLanguages_Container
 
 /// A structure holding metadata for code languages

@@ -19,6 +19,9 @@ typedef struct TSLanguage TSLanguage;
 extern "C" {
 #endif
 
+// A collection of pointers to supported tree-sitter languages
+// Add new ones below (please keep an alphabetical order)
+
 extern TSLanguage *tree_sitter_bash();
 extern TSLanguage *tree_sitter_c();
 extern TSLanguage *tree_sitter_cpp();
@@ -43,6 +46,3 @@ extern TSLanguage *tree_sitter_zig();
 #ifdef __cplusplus
 }
 #endif
-// In this header, you should import all the public headers of your framework using statements like #import <CodeLanguages_Container/PublicHeader.h>
-
-
