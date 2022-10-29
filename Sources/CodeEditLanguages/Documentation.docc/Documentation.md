@@ -13,3 +13,15 @@ The languages are then served as a ``CodeLanguage``.
 ### Guides
 
 - <doc:Add-Languages>
+
+### Structs
+
+- ``CodeEditLanguages/CodeLanguage``
+
+### Classes
+
+- ``CodeEditLanguages/TreeSitterModel``
+
+### Enums
+
+- ``CodeEditLanguages/TreeSitterLanguage``
