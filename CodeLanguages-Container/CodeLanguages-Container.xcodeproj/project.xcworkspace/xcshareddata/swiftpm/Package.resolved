@@ -21,10 +21,10 @@
     {
       "identity" : "tree-sitter-bash",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/lukepistrol/tree-sitter-bash.git",
+      "location" : "https://github.com/tree-sitter/tree-sitter-bash.git",
       "state" : {
-        "branch" : "feature/spm",
-        "revision" : "13af3b5b2c40d560aefeac28361d64f525d1869f"
+        "branch" : "master",
+        "revision" : "77cf8a7cab8904baf1a721762e012644ac1d4c7b"
       }
     },
     {
