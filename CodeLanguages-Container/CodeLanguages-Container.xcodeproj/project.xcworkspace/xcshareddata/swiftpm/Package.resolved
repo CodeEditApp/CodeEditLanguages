@@ -42,7 +42,7 @@
       "location" : "https://github.com/tree-sitter/tree-sitter-c-sharp.git",
       "state" : {
         "branch" : "master",
-        "revision" : "5b60f99545fea00a33bbfae5be956f684c4c69e2"
+        "revision" : "aa65ad51f04e4c9d41dce117597f2b4d24a16bfb"
       }
     },
     {
@@ -60,7 +60,7 @@
       "location" : "https://github.com/lukepistrol/tree-sitter-css.git",
       "state" : {
         "branch" : "feature/spm",
-        "revision" : "baf1fadcac4f7b7c0f0f273feec4ad68864bc783"
+        "revision" : "459ca2a2630109894a3286b543c3e5fcf1cf9ad6"
       }
     },
     {
@@ -150,7 +150,7 @@
       "location" : "https://github.com/lukepistrol/tree-sitter-python.git",
       "state" : {
         "branch" : "feature/spm",
-        "revision" : "6a74b1a2de12c90218cbace9c6b896d137cd5201"
+        "revision" : "59316301dd0ebaf3771cdd5735cbe92378852680"
       }
     },
     {
@@ -159,7 +159,7 @@
       "location" : "https://github.com/tree-sitter/tree-sitter-ruby.git",
       "state" : {
         "branch" : "master",
-        "revision" : "252ca18be76b0918fb6b34c302292b6931876c25"
+        "revision" : "c91960320d0f337bdd48308a8ad5500bd2616979"
       }
     },
     {
@@ -168,7 +168,7 @@
       "location" : "https://github.com/tree-sitter/tree-sitter-rust.git",
       "state" : {
         "branch" : "master",
-        "revision" : "47b061c1e1ba3a7e9c2f450363a50e87de3f7c61"
+        "revision" : "0431a2c60828731f27491ee9fdefe25e250ce9c9"
       }
     },
     {
@@ -195,7 +195,7 @@
       "location" : "https://github.com/maxxnino/tree-sitter-zig.git",
       "state" : {
         "branch" : "main",
-        "revision" : "b1803f2a665d228f968a831eac4fcc07a377c7bc"
+        "revision" : "d90d38d28ce8cc27bfea8b4e0c75211e9e2398ca"
       }
     }
   ],
