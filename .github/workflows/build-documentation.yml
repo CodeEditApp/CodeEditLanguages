@@ -5,19 +5,23 @@ on:
       - 'main'
     paths:
       - 'Sources/**'
+  workflow_dispatch:
+
 jobs:
   build-docc:
     runs-on: macos-12
     steps:
       - name: Checkout repository
         uses: actions/checkout@v1
-      - uses: fwcd/swift-docc-action@v1.0.2
-        with:
-          target: CodeEditLanguages
-          output: ./docs
-          hosting-base-path: CodeEditLanguages
-          disable-indexing: 'true'
-          transform-for-static-hosting: 'true'
+      - name: Build Documentation
+        run: exec ./.github/scripts/build-docc.sh
+      # - uses: fwcd/swift-docc-action@v1.0.2
+      #   with:
+      #     target: CodeEditLanguages
+      #     output: ./docs
+      #     hosting-base-path: CodeEditLanguages
+      #     disable-indexing: 'true'
+      #     transform-for-static-hosting: 'true'
       - name: Init new repo in dist folder and commit generated files
         run: |
           cd docs
