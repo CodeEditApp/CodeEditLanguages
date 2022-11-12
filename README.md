@@ -1,4 +1,5 @@
 <p align="center">
+  <img src="https://user-images.githubusercontent.com/806104/201497920-d6aace8d-f0dc-49f6-bcd7-6a3b64cc384c.png" height="128" alt="CodeEditLanguages Icon">
   <h1 align="center">CodeEditLanguages</h1>
 </p>
 
