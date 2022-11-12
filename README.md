@@ -25,4 +25,6 @@ This package includes a binary framework `CodeLanguagesContainer.xcframework` wh
 
 The languages are then served as a `CodeLanguage`.
 
-> Documentation is currently not available online. Clone the product and build the documentation locally instead.
+## Documentation
+
+The documentation including a guide on how to add support for new languages can be found **[here](https://codeeditapp.github.io/CodeEditLanguages/documentation/codeeditlanguages)**!
