@@ -24,8 +24,8 @@ body:
       label: I will work on this
       multiple: false
       options:
-        - Yes
-        - No
+        - 'Yes'
+        - 'No'
     validations:
       required: true
   - type: textarea
