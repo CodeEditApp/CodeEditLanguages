@@ -1,6 +1,6 @@
 name: New Language Support
 description: Add support for an additional language
-title: "[language]: "
+title: "❇️ Add {language} support"
 labels: ["language", "enhancement"]
 body:
   - type: input
