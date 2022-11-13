@@ -1,24 +1,6 @@
 {
   "pins" : [
     {
-      "identity" : "swift-docc-plugin",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-docc-plugin.git",
-      "state" : {
-        "revision" : "3303b164430d9a7055ba484c8ead67a52f7b74f6",
-        "version" : "1.0.0"
-      }
-    },
-    {
-      "identity" : "swifttreesitter",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ChimeHQ/SwiftTreeSitter.git",
-      "state" : {
-        "revision" : "3b1599ba9f466d8269cea2474beb5c9f0a3d7a5e",
-        "version" : "0.7.0"
-      }
-    },
-    {
       "identity" : "tree-sitter-bash",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tree-sitter/tree-sitter-bash.git",
@@ -42,7 +24,7 @@
       "location" : "https://github.com/tree-sitter/tree-sitter-c-sharp.git",
       "state" : {
         "branch" : "master",
-        "revision" : "aa65ad51f04e4c9d41dce117597f2b4d24a16bfb"
+        "revision" : "3ef3f7f99e16e528e6689eae44dff35150993307"
       }
     },
     {
@@ -60,7 +42,7 @@
       "location" : "https://github.com/lukepistrol/tree-sitter-css.git",
       "state" : {
         "branch" : "feature/spm",
-        "revision" : "459ca2a2630109894a3286b543c3e5fcf1cf9ad6"
+        "revision" : "10d5f9247b180f0eaf92bbb4300a07d0549718f6"
       }
     },
     {
