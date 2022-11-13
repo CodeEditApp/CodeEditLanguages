@@ -37,6 +37,51 @@ This package heavily depends on [SwiftTreeSitter](https://github.com/ChimeHQ/Swi
 
 The documentation including a guide on how to add support for new languages can be found **[here](https://codeeditapp.github.io/CodeEditLanguages/documentation/codeeditlanguages)**!
 
+## Supported Languages
+
+There are several [language grammars](https://tree-sitter.github.io/tree-sitter/#available-parsers) available for [tree-sitter](https://tree-sitter.github.io/tree-sitter/). Many of them are already supported in `CodeEditLanguages`. In order to use **syntax-highlighting** with those grammars, they need to supply a `highlights.scm` file. Grammars for which this file does not exist yet, are marked with _`not available`_ below. This file has to be added to the grammar's repo directly.
+
+In order to add support for additional languages we have a complete guide on how to implement them in `CodeEditLanguages` available [here](https://codeeditapp.github.io/CodeEditLanguages/documentation/codeeditlanguages/add-languages/).
+
+> If you want to add support for another language, please file an [issue](https://github.com/CodeEditApp/CodeEditLanguages/issues/new/choose) first, so everyone knows that this is in progress.
+
+| Grammar        | Implemented | Syntax Highlighting |
+| -------------- | ----------- | ------------------- |
+| [Agda](https://github.com/tree-sitter/tree-sitter-agda) |  | _not available_ |
+| [Bash](https://github.com/lukepistrol/tree-sitter-bash) | ✅ | ✅ |
+| [C](https://github.com/tree-sitter/tree-sitter-c) | ✅ | ✅ |
+| [C++](https://github.com/tree-sitter/tree-sitter-cpp) | ✅ | ✅ |
+| [C#](https://github.com/tree-sitter/tree-sitter-c-sharp) | ✅ | ✅ |
+| [CSS](https://github.com/lukepistrol/tree-sitter-css) | ✅ | ✅ |
+| [Elixir](https://github.com/elixir-lang/tree-sitter-elixir) | ✅ | ✅ |
+| [ERB, EJS](https://github.com/tree-sitter/tree-sitter-embedded-template) |  |  |
+| [Go](https://github.com/tree-sitter/tree-sitter-go) | ✅ | ✅ |
+| [Haskell](https://github.com/tree-sitter/tree-sitter-haskell) | ✅ | ✅ |
+| [HTML](https://github.com/mattmassicotte/tree-sitter-html) | ✅ | ✅ |
+| [Java](https://github.com/tree-sitter/tree-sitter-java) | ✅ | ✅ |
+| [JavaScript/JSX](https://github.com/tree-sitter/tree-sitter-javascript) | ✅ | ✅ |
+| [JSDoc](https://github.com/tree-sitter/tree-sitter-jsdoc) |  |  |
+| [JSON](https://github.com/mattmassicotte/tree-sitter-json) | ✅ | ✅ |
+| [Julia](https://github.com/tree-sitter/tree-sitter-julia) |  | _not available_ |
+| [Kotlin](https://github.com/fwcd/tree-sitter-kotlin) |  | _not available_ |
+| [Markdown](https://github.com/ikatyang/tree-sitter-markdown) |  | _not available_ |
+| [OCaml](https://github.com/tree-sitter/tree-sitter-ocaml) |  |  |
+| Plain Text | ✅ | _not available_ |
+| [Perl](https://github.com/ganezdragon/tree-sitter-perl) |  | _not available_ |
+| [PHP](https://github.com/tree-sitter/tree-sitter-php) | ✅ | ✅ |
+| [Python](https://github.com/lukepistrol/tree-sitter-python) | ✅ | ✅ |
+| [Regex](https://github.com/tree-sitter/tree-sitter-regex) |  |  |
+| [Ruby](https://github.com/mattmassicotte/tree-sitter-ruby) | ✅ | ✅ |
+| [Rust](https://github.com/tree-sitter/tree-sitter-rust) | ✅ | ✅ |
+| [Scala](https://github.com/tree-sitter/tree-sitter-scala) |  |  |
+| [Sql](https://github.com/m-novikov/tree-sitter-sql) |  |  |
+| [Swift](https://github.com/mattmassicotte/tree-sitter-swift) | ✅ | ✅ |
+| [TOML](https://github.com/ikatyang/tree-sitter-toml) |  |  |
+| [TypeScript/](https://github.com/tree-sitter/tree-sitter-typescript) |  |  |
+| [Verilog](https://github.com/tree-sitter/tree-sitter-verilog) |  | _not available_ |
+| [YAML](https://github.com/mattmassicotte/tree-sitter-yaml) | ✅ | _not available_ |
+| [Zig](https://github.com/maxxnino/tree-sitter-zig) | ✅ | ✅ |
+
 ## Related Repositories
 
 <table>
