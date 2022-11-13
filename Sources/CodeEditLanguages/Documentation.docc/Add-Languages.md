@@ -6,11 +6,13 @@ This article is a writedown on how to add support for more languages to ``CodeLa
 
 First of all have a look at the corresponding [GitHub Issue](https://github.com/CodeEditApp/CodeEditTextView/issues/15) to see which languages still need implementation.
 
+> Note: If you want to update existing languages see <doc:Update-Languages> instead.
+
 ## Add SPM support
 
 If you find one you want to add, fork and clone the linked repo and create a new branch `feature/spm`.
 
-> In the following code samples replace `{LANG}` or `{lang}` with the language you add (e.g.: `Swift` or `CPP` and `swift` or `cpp` respectively)
+> Tip: In the following code samples replace `{LANG}` or `{lang}` with the language you add (e.g.: `Swift` or `CPP` and `swift` or `cpp` respectively)
 
 ### .gitignore
 
@@ -20,7 +22,7 @@ Edit the `.gitignore` file to exclude the `.build/` directory from git.
 
 Create a new file `Package.swift` in the `root` directory of the repository and add the following configuration.
 
-> Make sure to remove the comment in 'sources'.
+> Warning: Make sure to remove the comment in 'sources'.
 
 ```swift
 // swift-tools-version:5.3
@@ -97,6 +99,8 @@ extern TSLanguage *tree_sitter_{lang}();
 
 In order to add a language to ``CodeEditLanguages`` you need to open the `.xcodeproj` file located inside `CodeLanguage-Container`.
 
+![.xcodeproj location](xcodeproj-location)
+
 1. Add the `tree-sitter` package you created earlier as a dependency like you would in a regular Xcode project.
 
 2. Then make sure the framework target loads the package module.
@@ -107,11 +111,19 @@ In order to add a language to ``CodeEditLanguages`` you need to open the `.xcode
     extern TSLanguage *tree_sitter_{lang}();
     ```
 
-    > Please keep an alphabetical order
+    > Important: Please keep an alphabetical order
 
 4. Now create the `xcframework` by running the `build_framework.sh` script from the Package's root directory.
+   ```bash
+   $ ./build_framework.sh
+   ```
 
 5. Check the output of the script. It should say `Done!` at the end.
+   ![build_framework.sh console output](build-output)
+   > Tip: If this does not succeed, try running the script using the `--debug` flag to get verbose output:
+   > ```bash
+   > $ ./build_framework.sh --debug
+   > ```
 
 6. You are now done in the Xcode Project and may close it now. Open the Package and continue.
 
@@ -148,10 +160,14 @@ private var tsLanguage: UnsafeMutablePointer<TSLanguage>? {
 On the bottom of the file add a new `static` constant:
 
 ```swift
-static let {lang}: CodeLanguage = .init(id: .{lang}, tsName: {lang}, extensions: [...])
+static let {lang}: CodeLanguage = .init(
+    id: .{lang}, 
+    tsName: {lang}, 
+    extensions: [...]
+)
 ```
 
-> in 'extensions' add the proper file extensions your language uses.
+> Important: in 'extensions' add the proper file extensions your language uses.
 
 Now find the static constant ``CodeLanguage/allLanguages`` and add your language to it:
 
@@ -192,7 +208,7 @@ Make sure to test the newly created language in a sample project!
 
 When everything is working correctly push your `tree-sitter-{lang}` changes to `origin` and also create a Pull Request to the official repository.
 
-> Take [this PR description](https://github.com/tree-sitter/tree-sitter-javascript/pull/223) as a template and cross-reference it with your Pull Request.
+> Tip: Take [this PR description](https://github.com/tree-sitter/tree-sitter-javascript/pull/223) as a template and cross-reference it with your Pull Request.
 
 Now you can remove the local dependencies and replace it with the actual package URLs and submit a Pull Request for `CodeEditTextView`.
 
@@ -224,6 +240,12 @@ Also make sure to add test cases for your new language in `Tests/CodeEditLanguag
     }
 ```
 
+### Run Tests locally
+
+Once you added your unit test cases run all tests locally on your machine by going to `Product>Test` or pressing `⌘+U` to make sure everything is working as intended.
+![unit test results](tests-results)
+
 ## Documentation
 
-Please make sure to add the newly created properties to the documentation `*.md` files.
+Please make sure to add the newly created properties to the documentation `*.md` files in the `Documentation.docc` catalog.
+![docs location](docs-location)
