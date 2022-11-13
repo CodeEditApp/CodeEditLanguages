@@ -6,9 +6,13 @@ A collection of `tree-sitter` languages for syntax highlighting.
 
 ![logo](codeeditlanguages-logo)
 
-This package includes a binary framework `CodeLanguagesContainer.xcframework` which bundles all languages as a binary.
+This package includes a binary framework `CodeLanguagesContainer.xcframework` which bundles all `tree-sitter` languages in a single binary to greatly reduce SPM package resolution times.
 
 The languages are then served as a ``CodeLanguage``.
+
+## SwiftTreeSitter
+
+This package heavily depends on [SwiftTreeSitter](https://github.com/ChimeHQ/SwiftTreeSitter) by [Matt Massicotte](https://twitter.com/mattie).
 
 ## Topics
 
