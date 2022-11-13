@@ -1,4 +1,4 @@
-# Update-Languages
+# Update Languages
 
 This article covers all the steps needed to update to the latest version of the `tree-sitter` languages.
 
