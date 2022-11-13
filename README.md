@@ -10,6 +10,9 @@
   <a aria-label="Join the community on Discord" href="https://discord.gg/vChUXVf9Em" target="_blank">
     <img alt="" src="https://img.shields.io/badge/Join%20the%20community-black.svg?style=for-the-badge&logo=Discord">
   </a>
+  <a aria-label="Read the Documentation" href="https://codeeditapp.github.io/CodeEditLanguages/documentation/codeeditlanguages" target="_blank">
+    <img alt="" src="https://img.shields.io/badge/Documentation-black.svg?style=for-the-badge&logo=readthedocs&logoColor=blue">
+  </a>
 </p>
 
 A collection of `tree-sitter` languages for syntax highlighting.
@@ -22,9 +25,13 @@ A collection of `tree-sitter` languages for syntax highlighting.
 
 ## Overview
 
-This package includes a binary framework `CodeLanguagesContainer.xcframework` which bundles all languages as a binary.
+This package includes a binary framework `CodeLanguagesContainer.xcframework` which bundles all `tree-sitter` languages in a single binary to greatly reduce SPM package resolution times.
 
 The languages are then served as a `CodeLanguage`.
+
+## SwiftTreeSitter
+
+This package heavily depends on [SwiftTreeSitter](https://github.com/ChimeHQ/SwiftTreeSitter) by [Matt Massicotte](https://twitter.com/mattie).
 
 ## Documentation
 

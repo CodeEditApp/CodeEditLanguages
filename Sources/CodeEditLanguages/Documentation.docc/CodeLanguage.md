@@ -15,7 +15,7 @@ let fileURL = URL(fileURLWithPath: "/path/to/file.swift")
 let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 ```
 
-> In case the language is not supported yet, the resulting ``CodeLanguage`` will be ``default`` (plain text).
+> Important: In case the language is not supported yet, the resulting ``CodeLanguage`` will be ``default`` (plain text).
 
 ### Supported Languages
 

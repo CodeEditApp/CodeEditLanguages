@@ -4,7 +4,7 @@
 
 Since fetching queries *can* be expensive the queries are fetched lazily and kept in memory for the entire session.
 
-> Be aware that running the application in `Debug` configuration will lead to worse performance. Make sure to run it in `Release` configuration.
+> Warning: Be aware that running the application in `Debug` configuration will lead to worse performance. Make sure to run it in `Release` configuration.
 
 ## Usage
 
