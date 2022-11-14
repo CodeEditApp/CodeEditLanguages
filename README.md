@@ -88,19 +88,19 @@ In order to add support for additional languages we have a complete guide on how
   <tr>
     <td align="center">
       <a href="https://github.com/CodeEditApp/CodeEdit">
-        <img src="https://user-images.githubusercontent.com/806104/163099605-4eaedd33-8441-4125-9ca1-a7ccb2f62a74.png" height="128">
+        <img src="https://user-images.githubusercontent.com/806104/163099605-4eaedd33-8441-4125-9ca1-a7ccb2f62a74.png" width="128" height="128">
         <p>CodeEdit</p>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/CodeEditApp/CodeEditTextView">
-        <img src="https://user-images.githubusercontent.com/806104/175655252-d77cef62-31f5-4f40-a2ad-c1406a6dd1b9.png" height="128">
+        <img src="https://user-images.githubusercontent.com/806104/175655252-d77cef62-31f5-4f40-a2ad-c1406a6dd1b9.png" width="128" height="128">
         <p>CodeEditTextView</p>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/CodeEditApp/CodeEditKit">
-        <img src="https://user-images.githubusercontent.com/806104/193877051-c60d255d-0b6a-408c-bb21-6fabc5e0e60c.png" height="128">
+        <img src="https://user-images.githubusercontent.com/806104/193877051-c60d255d-0b6a-408c-bb21-6fabc5e0e60c.png" width="128" height="128">
         <p>CodeEditKit</p>
       </a>
     </td>
