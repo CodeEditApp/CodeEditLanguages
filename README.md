@@ -46,7 +46,7 @@ In order to add support for additional languages we have a complete guide on how
 > If you want to add support for another language, please file an [issue](https://github.com/CodeEditApp/CodeEditLanguages/issues/new/choose) first, so everyone knows that this is in progress.
 
 | Grammar        | Implemented | Syntax Highlighting |
-| -------------- | ----------- | ------------------- |
+| -------------- | :---------: | :-----------------: |
 | [Agda](https://github.com/tree-sitter/tree-sitter-agda) |  | _not available_ |
 | [Bash](https://github.com/lukepistrol/tree-sitter-bash) | ✅ | ✅ |
 | [C](https://github.com/tree-sitter/tree-sitter-c) | ✅ | ✅ |
@@ -77,7 +77,7 @@ In order to add support for additional languages we have a complete guide on how
 | [Sql](https://github.com/m-novikov/tree-sitter-sql) |  |  |
 | [Swift](https://github.com/mattmassicotte/tree-sitter-swift) | ✅ | ✅ |
 | [TOML](https://github.com/ikatyang/tree-sitter-toml) |  |  |
-| [TypeScript/](https://github.com/tree-sitter/tree-sitter-typescript) |  |  |
+| [TypeScript/TSX](https://github.com/tree-sitter/tree-sitter-typescript) |  |  |
 | [Verilog](https://github.com/tree-sitter/tree-sitter-verilog) |  | _not available_ |
 | [YAML](https://github.com/mattmassicotte/tree-sitter-yaml) | ✅ | _not available_ |
 | [Zig](https://github.com/maxxnino/tree-sitter-zig) | ✅ | ✅ |
