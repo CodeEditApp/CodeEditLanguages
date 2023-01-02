@@ -1,12 +1,21 @@
 {
   "pins" : [
     {
+      "identity" : "swifttreesitter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ChimeHQ/SwiftTreeSitter.git",
+      "state" : {
+        "revision" : "df25a52f72ebc5b50ae20d26d1363793408bb28b",
+        "version" : "0.7.1"
+      }
+    },
+    {
       "identity" : "tree-sitter-bash",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tree-sitter/tree-sitter-bash.git",
       "state" : {
         "branch" : "master",
-        "revision" : "77cf8a7cab8904baf1a721762e012644ac1d4c7b"
+        "revision" : "4488aa41406547e478636a4fcfd24f5bbc3f2f74"
       }
     },
     {
@@ -24,7 +33,7 @@
       "location" : "https://github.com/tree-sitter/tree-sitter-c-sharp.git",
       "state" : {
         "branch" : "master",
-        "revision" : "3ef3f7f99e16e528e6689eae44dff35150993307"
+        "revision" : "1bd772f69b0db577122533514a239b184650adf2"
       }
     },
     {
@@ -60,7 +69,7 @@
       "location" : "https://github.com/tree-sitter/tree-sitter-go.git",
       "state" : {
         "branch" : "master",
-        "revision" : "05900faa3cdb5d2d8c8bd5e77ee698487e0a8611"
+        "revision" : "64457ea6b73ef5422ed1687178d4545c3e91334a"
       }
     },
     {
@@ -78,7 +87,7 @@
       "location" : "https://github.com/tree-sitter/tree-sitter-haskell.git",
       "state" : {
         "branch" : "master",
-        "revision" : "bee6b49543e34c2967c6294a4b05e8bd2bf2da59"
+        "revision" : "aee3725d02cf3bca5f307b35dd3a96a97e109b4e"
       }
     },
     {
@@ -105,7 +114,7 @@
       "location" : "https://github.com/tree-sitter/tree-sitter-javascript.git",
       "state" : {
         "branch" : "master",
-        "revision" : "936d976a782e75395d9b1c8c7c7bf4ba6fe0d86b"
+        "revision" : "7a29d06274b7cf87d643212a433d970b73969016"
       }
     },
     {
@@ -123,7 +132,7 @@
       "location" : "https://github.com/tree-sitter/tree-sitter-php.git",
       "state" : {
         "branch" : "master",
-        "revision" : "ab2e72179ceb8bb0b249c8ac9162a148e911b3dc"
+        "revision" : "47dd3532df8204a444dd6eb042135f1e7964f9cb"
       }
     },
     {
@@ -150,7 +159,7 @@
       "location" : "https://github.com/tree-sitter/tree-sitter-rust.git",
       "state" : {
         "branch" : "master",
-        "revision" : "0431a2c60828731f27491ee9fdefe25e250ce9c9"
+        "revision" : "f7fb205c424b0962de59b26b931fe484e1262b35"
       }
     },
     {
