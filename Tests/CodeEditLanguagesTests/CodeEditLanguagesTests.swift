@@ -130,6 +130,25 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotEqual(query?.patternCount, 0)
     }
 
+// MARK: - Dockerfile
+
+    func test_CodeLanguageDockerfile() throws {
+        let url = URL(fileURLWithPath: "~/path/to/Dockerfile")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .dockerfile)
+    }
+
+    func test_FetchQueryDockerfile() throws {
+        var language = CodeLanguage.dockerfile
+        language.resourceURL = bundleURL
+
+        let data = try Data(contentsOf: language.queryURL!)
+        let query = try? Query(language: language.language!, data: data)
+        XCTAssertNotNil(query)
+        XCTAssertNotEqual(query?.patternCount, 0)
+    }
+
 // MARK: - Elixir
 
     func test_CodeLanguageElixir() throws {
