@@ -93,6 +93,7 @@ public class TreeSitterModel {
         return queryFor(.css)
     }()
 
+    /// Query for `Dockerfile` files.
     public private(set) lazy var dockerfileQuery: Query? = {
         return queryFor(.dockerfile)
     }()
