@@ -76,6 +76,8 @@ public struct CodeLanguage {
             return tree_sitter_c_sharp()
         case .css:
             return tree_sitter_css()
+        case .dockerfile:
+            return tree_sitter_dockerfile()
         case .elixir:
             return tree_sitter_elixir()
         case .go:
@@ -123,7 +125,7 @@ public extension CodeLanguage {
     /// - Returns: A language structure
     static func detectLanguageFrom(url: URL) -> CodeLanguage {
         let fileExtension = url.pathExtension.lowercased()
-        let fileName = url.pathComponents.last?.lowercased()
+        let fileName = url.pathComponents.last // should not be lowercase since it has to match e.g. `Dockerfile`
         // This is to handle special file types without an extension (e.g., Makefile, Dockerfile)
         let fileNameOrExtension = fileExtension.isEmpty ? (fileName != nil ? fileName! : "") : fileExtension
         if let lang = allLanguages.first(where: { lang in lang.extensions.contains(fileNameOrExtension)}) {
@@ -140,6 +142,7 @@ public extension CodeLanguage {
         .cpp,
         .cSharp,
         .css,
+        .dockerfile,
         .elixir,
         .go,
         .goMod,
@@ -175,6 +178,9 @@ public extension CodeLanguage {
 
     /// A language structure for `CSS`
     static let css: CodeLanguage = .init(id: .css, tsName: "css", extensions: ["css"])
+
+    /// A language structure for `Dockerfile`
+    static let dockerfile: CodeLanguage = .init(id: .dockerfile, tsName: "dockerfile", extensions: ["Dockerfile"])
 
     /// A language structure for `Elixir`
     static let elixir: CodeLanguage = .init(id: .elixir, tsName: "elixir", extensions: ["ex", "exs"])

@@ -33,7 +33,7 @@
       "location" : "https://github.com/tree-sitter/tree-sitter-c-sharp.git",
       "state" : {
         "branch" : "master",
-        "revision" : "1bd772f69b0db577122533514a239b184650adf2"
+        "revision" : "f076a8efe30a0b8c249eeb61383f6d914376114c"
       }
     },
     {
@@ -42,7 +42,7 @@
       "location" : "https://github.com/tree-sitter/tree-sitter-cpp.git",
       "state" : {
         "branch" : "master",
-        "revision" : "5ead1e26c6ab71919db0f1880c46a278a93bc5ea"
+        "revision" : "5b7e264bc6354bb6f654cd01b24ac0289f889d4a"
       }
     },
     {
@@ -52,6 +52,15 @@
       "state" : {
         "branch" : "feature/spm",
         "revision" : "10d5f9247b180f0eaf92bbb4300a07d0549718f6"
+      }
+    },
+    {
+      "identity" : "tree-sitter-dockerfile",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/camdencheek/tree-sitter-dockerfile.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "09e316dba307b869831e9399b11a83bbf0f2a24b"
       }
     },
     {
