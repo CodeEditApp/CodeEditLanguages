@@ -33,6 +33,9 @@ public struct CodeLanguage {
     public let tsName: String
 
     /// A set of file extensions for the language
+    ///
+    /// In special cases this can also be a file name
+    /// (e.g `Dockerfile`, `Makefile`)
     public let extensions: Set<String>
 
     /// The query URL of a language this language inherits from. (e.g.: C for C++)
