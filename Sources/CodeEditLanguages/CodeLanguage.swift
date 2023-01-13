@@ -168,10 +168,12 @@ public extension CodeLanguage {
     static let c: CodeLanguage = .init(id: .c, tsName: "c", extensions: ["c", "h", "o"])
 
     /// A language structure for `C++`
-    static let cpp: CodeLanguage = .init(id: .cpp,
-                                         tsName: "cpp",
-                                         extensions: ["cpp", "h", "cc"],
-                                         parentURL: CodeLanguage.c.queryURL)
+    static let cpp: CodeLanguage = .init(
+        id: .cpp,
+        tsName: "cpp",
+        extensions: ["cpp", "h", "hpp", "cc"],
+        parentURL: CodeLanguage.c.queryURL
+    )
 
     /// A language structure for `C#`
     static let cSharp: CodeLanguage = .init(id: .cSharp, tsName: "c-sharp", extensions: ["cs"])
@@ -207,10 +209,12 @@ public extension CodeLanguage {
     static let json: CodeLanguage = .init(id: .json, tsName: "json", extensions: ["json"])
 
     /// A language structure for `JSX`
-    static let jsx: CodeLanguage = .init(id: .jsx,
-                                         tsName: "javascript",
-                                         extensions: ["jsx"],
-                                         highlights: ["highlights-jsx"])
+    static let jsx: CodeLanguage = .init(
+        id: .jsx,
+        tsName: "javascript",
+        extensions: ["jsx"],
+        highlights: ["highlights-jsx"]
+    )
 
     /// A language structure for `PHP`
     static let php: CodeLanguage = .init(id: .php, tsName: "php", extensions: ["php"])
