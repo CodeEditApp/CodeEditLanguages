@@ -82,6 +82,13 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertEqual(language.id, .cpp)
     }
 
+    func test_CodeLanguageCPP3() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.hpp")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .cpp)
+    }
+
     func test_FetchQueryCPP() throws {
         var language = CodeLanguage.cpp
         language.resourceURL = bundleURL
@@ -262,6 +269,13 @@ final class CodeEditLanguagesTests: XCTestCase {
 
     func test_CodeLanguageJava() throws {
         let url = URL(fileURLWithPath: "~/path/to/file.java")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .java)
+    }
+
+    func test_CodeLanguageJava2() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.jav")
         let language = CodeLanguage.detectLanguageFrom(url: url)
 
         XCTAssertEqual(language.id, .java)
