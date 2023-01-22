@@ -33,7 +33,7 @@
       "location" : "https://github.com/tree-sitter/tree-sitter-c-sharp.git",
       "state" : {
         "branch" : "master",
-        "revision" : "98a28791018cc2587020a36b2d0cf28ccb29903f"
+        "revision" : "a29bac0681802139710b4d3875540901504d15cb"
       }
     },
     {
@@ -141,7 +141,7 @@
       "location" : "https://github.com/tree-sitter/tree-sitter-php.git",
       "state" : {
         "branch" : "master",
-        "revision" : "47dd3532df8204a444dd6eb042135f1e7964f9cb"
+        "revision" : "973694ffcdeebca245b7ecf0d7c4cadd4f41b3c9"
       }
     },
     {
