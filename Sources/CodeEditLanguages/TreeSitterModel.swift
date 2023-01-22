@@ -179,8 +179,13 @@ public class TreeSitterModel {
     }()
 
     private func queryFor(_ codeLanguage: CodeLanguage) -> Query? {
+        // get the tree-sitter language and query url if available
         guard let language = codeLanguage.language,
               let url = codeLanguage.queryURL else { return nil }
+
+        // 1. if the language depends on another language combine the query files
+        // 2. if the language has additional query files combine them with the main one
+        // 3. otherwise return the query file
         if let parentURL = codeLanguage.parentQueryURL,
            let data = combinedQueryData(for: [url, parentURL]) {
             return try? Query(language: language, data: data)
