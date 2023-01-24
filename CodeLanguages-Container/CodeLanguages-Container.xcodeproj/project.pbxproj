@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		282E5977298051980064B34A /* TreeSitterYAML in Frameworks */ = {isa = PBXBuildFile; productRef = 282E5976298051980064B34A /* TreeSitterYAML */; };
 		2846B262296BA1CF005F60B6 /* TreeSitterDockerfile in Frameworks */ = {isa = PBXBuildFile; productRef = 2846B261296BA1CF005F60B6 /* TreeSitterDockerfile */; };
 		28B3F010290C207D000CD04D /* CodeLanguages_Container.h in Headers */ = {isa = PBXBuildFile; fileRef = 28B3F00F290C207D000CD04D /* CodeLanguages_Container.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28B3F02D290C35D9000CD04D /* TreeSitterC in Frameworks */ = {isa = PBXBuildFile; productRef = 28B3F02C290C35D9000CD04D /* TreeSitterC */; };
@@ -26,7 +27,6 @@
 		28B3F057290C36D5000CD04D /* TreeSitterRuby in Frameworks */ = {isa = PBXBuildFile; productRef = 28B3F056290C36D5000CD04D /* TreeSitterRuby */; };
 		28B3F05A290C36E5000CD04D /* TreeSitterRust in Frameworks */ = {isa = PBXBuildFile; productRef = 28B3F059290C36E5000CD04D /* TreeSitterRust */; };
 		28B3F05D290C3709000CD04D /* TreeSitterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 28B3F05C290C3709000CD04D /* TreeSitterSwift */; };
-		28B3F060290C3720000CD04D /* TreeSitterYAML in Frameworks */ = {isa = PBXBuildFile; productRef = 28B3F05F290C3720000CD04D /* TreeSitterYAML */; };
 		28B3F063290C372D000CD04D /* TreeSitterZig in Frameworks */ = {isa = PBXBuildFile; productRef = 28B3F062290C372D000CD04D /* TreeSitterZig */; };
 		28B9F7AA290DDAC900245748 /* TreeSitterBash in Frameworks */ = {isa = PBXBuildFile; productRef = 28B9F7A9290DDAC900245748 /* TreeSitterBash */; };
 /* End PBXBuildFile section */
@@ -61,7 +61,7 @@
 				28B3F05A290C36E5000CD04D /* TreeSitterRust in Frameworks */,
 				28B3F054290C36C5000CD04D /* TreeSitterPython in Frameworks */,
 				28B3F048290C367C000CD04D /* TreeSitterJava in Frameworks */,
-				28B3F060290C3720000CD04D /* TreeSitterYAML in Frameworks */,
+				282E5977298051980064B34A /* TreeSitterYAML in Frameworks */,
 				28B3F057290C36D5000CD04D /* TreeSitterRuby in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,10 +156,10 @@
 				28B3F056290C36D5000CD04D /* TreeSitterRuby */,
 				28B3F059290C36E5000CD04D /* TreeSitterRust */,
 				28B3F05C290C3709000CD04D /* TreeSitterSwift */,
-				28B3F05F290C3720000CD04D /* TreeSitterYAML */,
 				28B3F062290C372D000CD04D /* TreeSitterZig */,
 				28B9F7A9290DDAC900245748 /* TreeSitterBash */,
 				2846B261296BA1CF005F60B6 /* TreeSitterDockerfile */,
+				282E5976298051980064B34A /* TreeSitterYAML */,
 			);
 			productName = "CodeLanguages-Container";
 			productReference = 28B3F00C290C207D000CD04D /* CodeLanguages_Container.framework */;
@@ -207,10 +207,10 @@
 				28B3F055290C36D5000CD04D /* XCRemoteSwiftPackageReference "tree-sitter-ruby" */,
 				28B3F058290C36E5000CD04D /* XCRemoteSwiftPackageReference "tree-sitter-rust" */,
 				28B3F05B290C3709000CD04D /* XCRemoteSwiftPackageReference "tree-sitter-swift" */,
-				28B3F05E290C3720000CD04D /* XCRemoteSwiftPackageReference "tree-sitter-yaml" */,
 				28B3F061290C372D000CD04D /* XCRemoteSwiftPackageReference "tree-sitter-zig" */,
 				28B9F7A6290DDAB500245748 /* XCRemoteSwiftPackageReference "tree-sitter-bash" */,
 				2846B260296BA1CF005F60B6 /* XCRemoteSwiftPackageReference "tree-sitter-dockerfile" */,
+				282E5975298051980064B34A /* XCRemoteSwiftPackageReference "tree-sitter-yaml" */,
 			);
 			productRefGroup = 28B3F00D290C207D000CD04D /* Products */;
 			projectDirPath = "";
@@ -450,6 +450,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		282E5975298051980064B34A /* XCRemoteSwiftPackageReference "tree-sitter-yaml" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukepistrol/tree-sitter-yaml.git";
+			requirement = {
+				branch = feature/spm;
+				kind = branch;
+			};
+		};
 		2846B260296BA1CF005F60B6 /* XCRemoteSwiftPackageReference "tree-sitter-dockerfile" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/camdencheek/tree-sitter-dockerfile.git";
@@ -594,14 +602,6 @@
 				kind = branch;
 			};
 		};
-		28B3F05E290C3720000CD04D /* XCRemoteSwiftPackageReference "tree-sitter-yaml" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mattmassicotte/tree-sitter-yaml.git";
-			requirement = {
-				branch = feature/spm;
-				kind = branch;
-			};
-		};
 		28B3F061290C372D000CD04D /* XCRemoteSwiftPackageReference "tree-sitter-zig" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/maxxnino/tree-sitter-zig.git";
@@ -621,6 +621,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		282E5976298051980064B34A /* TreeSitterYAML */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 282E5975298051980064B34A /* XCRemoteSwiftPackageReference "tree-sitter-yaml" */;
+			productName = TreeSitterYAML;
+		};
 		2846B261296BA1CF005F60B6 /* TreeSitterDockerfile */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2846B260296BA1CF005F60B6 /* XCRemoteSwiftPackageReference "tree-sitter-dockerfile" */;
@@ -710,11 +715,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 28B3F05B290C3709000CD04D /* XCRemoteSwiftPackageReference "tree-sitter-swift" */;
 			productName = TreeSitterSwift;
-		};
-		28B3F05F290C3720000CD04D /* TreeSitterYAML */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 28B3F05E290C3720000CD04D /* XCRemoteSwiftPackageReference "tree-sitter-yaml" */;
-			productName = TreeSitterYAML;
 		};
 		28B3F062290C372D000CD04D /* TreeSitterZig */ = {
 			isa = XCSwiftPackageProductDependency;
