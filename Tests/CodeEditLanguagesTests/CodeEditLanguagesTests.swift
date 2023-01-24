@@ -469,8 +469,6 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotEqual(query?.patternCount, 0)
     }
 
-    // YAML currently has no query files
-
 // MARK: - Zig
 
     func test_CodeLanguageZig() throws {
