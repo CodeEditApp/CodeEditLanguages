@@ -459,6 +459,16 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertEqual(language.id, .yaml)
     }
 
+    func test_FetchQueryYAML() throws {
+        var language = CodeLanguage.yaml
+        language.resourceURL = bundleURL
+
+        let data = try Data(contentsOf: language.queryURL!)
+        let query = try? Query(language: language.language!, data: data)
+        XCTAssertNotNil(query)
+        XCTAssertNotEqual(query?.patternCount, 0)
+    }
+
     // YAML currently has no query files
 
 // MARK: - Zig
