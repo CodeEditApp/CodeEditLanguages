@@ -80,7 +80,7 @@ In order to add support for additional languages we have a complete guide on how
 | [TOML](https://github.com/ikatyang/tree-sitter-toml) |  |  |
 | [TypeScript/TSX](https://github.com/tree-sitter/tree-sitter-typescript) |  |  |
 | [Verilog](https://github.com/tree-sitter/tree-sitter-verilog) |  | _not available_ |
-| [YAML](https://github.com/mattmassicotte/tree-sitter-yaml) | ✅ | _not available_ |
+| [YAML](https://github.com/lukepistrol/tree-sitter-yaml/tree/feature/spm) | ✅ | ✅ |
 | [Zig](https://github.com/maxxnino/tree-sitter-zig) | ✅ | ✅ |
 
 ## Related Repositories
