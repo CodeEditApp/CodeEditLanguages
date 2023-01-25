@@ -147,7 +147,7 @@
     {
       "identity" : "tree-sitter-objc",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/CodeEditApp/tree-sitter-objc",
+      "location" : "https://github.com/lukepistrol/tree-sitter-objc",
       "state" : {
         "branch" : "feature/spm",
         "revision" : "1b54ef0b5efddddf393b45e173788499cc572048"
