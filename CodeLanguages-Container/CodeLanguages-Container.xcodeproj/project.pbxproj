@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		282E5977298051980064B34A /* TreeSitterYAML in Frameworks */ = {isa = PBXBuildFile; productRef = 282E5976298051980064B34A /* TreeSitterYAML */; };
 		2846B262296BA1CF005F60B6 /* TreeSitterDockerfile in Frameworks */ = {isa = PBXBuildFile; productRef = 2846B261296BA1CF005F60B6 /* TreeSitterDockerfile */; };
+		2886C788298135540023E016 /* TreeSitterKotlin in Frameworks */ = {isa = PBXBuildFile; productRef = 2886C787298135540023E016 /* TreeSitterKotlin */; };
 		28B3F010290C207D000CD04D /* CodeLanguages_Container.h in Headers */ = {isa = PBXBuildFile; fileRef = 28B3F00F290C207D000CD04D /* CodeLanguages_Container.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28B3F02D290C35D9000CD04D /* TreeSitterC in Frameworks */ = {isa = PBXBuildFile; productRef = 28B3F02C290C35D9000CD04D /* TreeSitterC */; };
 		28B3F030290C35F9000CD04D /* TreeSitterCPP in Frameworks */ = {isa = PBXBuildFile; productRef = 28B3F02F290C35F9000CD04D /* TreeSitterCPP */; };
@@ -62,6 +63,7 @@
 				28B3F054290C36C5000CD04D /* TreeSitterPython in Frameworks */,
 				28B3F048290C367C000CD04D /* TreeSitterJava in Frameworks */,
 				282E5977298051980064B34A /* TreeSitterYAML in Frameworks */,
+				2886C788298135540023E016 /* TreeSitterKotlin in Frameworks */,
 				28B3F057290C36D5000CD04D /* TreeSitterRuby in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +162,7 @@
 				28B9F7A9290DDAC900245748 /* TreeSitterBash */,
 				2846B261296BA1CF005F60B6 /* TreeSitterDockerfile */,
 				282E5976298051980064B34A /* TreeSitterYAML */,
+				2886C787298135540023E016 /* TreeSitterKotlin */,
 			);
 			productName = "CodeLanguages-Container";
 			productReference = 28B3F00C290C207D000CD04D /* CodeLanguages_Container.framework */;
@@ -211,6 +214,7 @@
 				28B9F7A6290DDAB500245748 /* XCRemoteSwiftPackageReference "tree-sitter-bash" */,
 				2846B260296BA1CF005F60B6 /* XCRemoteSwiftPackageReference "tree-sitter-dockerfile" */,
 				282E5975298051980064B34A /* XCRemoteSwiftPackageReference "tree-sitter-yaml" */,
+				2886C786298135540023E016 /* XCRemoteSwiftPackageReference "tree-sitter-kotlin" */,
 			);
 			productRefGroup = 28B3F00D290C207D000CD04D /* Products */;
 			projectDirPath = "";
@@ -466,6 +470,14 @@
 				kind = branch;
 			};
 		};
+		2886C786298135540023E016 /* XCRemoteSwiftPackageReference "tree-sitter-kotlin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukepistrol/tree-sitter-kotlin";
+			requirement = {
+				branch = feature/spm;
+				kind = branch;
+			};
+		};
 		28B3F02B290C35D9000CD04D /* XCRemoteSwiftPackageReference "tree-sitter-c" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/tree-sitter/tree-sitter-c.git";
@@ -630,6 +642,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2846B260296BA1CF005F60B6 /* XCRemoteSwiftPackageReference "tree-sitter-dockerfile" */;
 			productName = TreeSitterDockerfile;
+		};
+		2886C787298135540023E016 /* TreeSitterKotlin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2886C786298135540023E016 /* XCRemoteSwiftPackageReference "tree-sitter-kotlin" */;
+			productName = TreeSitterKotlin;
 		};
 		28B3F02C290C35D9000CD04D /* TreeSitterC */ = {
 			isa = XCSwiftPackageProductDependency;
