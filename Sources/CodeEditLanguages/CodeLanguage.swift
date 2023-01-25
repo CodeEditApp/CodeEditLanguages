@@ -98,6 +98,8 @@ public struct CodeLanguage {
             return tree_sitter_javascript()
         case .kotlin:
             return tree_sitter_kotlin()
+        case .objc:
+            return tree_sitter_objc()
         case .php:
             return tree_sitter_php()
         case .python:

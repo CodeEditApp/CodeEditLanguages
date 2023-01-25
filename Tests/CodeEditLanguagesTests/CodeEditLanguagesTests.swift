@@ -374,6 +374,25 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotEqual(query?.patternCount, 0)
     }
 
+// MARK: - Objective C
+
+    func test_CodeLanguageObjC() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.m")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .objc)
+    }
+
+    func test_FetchQueryObjC() throws {
+        var language = CodeLanguage.objc
+        language.resourceURL = bundleURL
+
+        let data = try Data(contentsOf: language.queryURL!)
+        let query = try? Query(language: language.language!, data: data)
+        XCTAssertNotNil(query)
+        XCTAssertNotEqual(query?.patternCount, 0)
+    }
+
 // MARK: - PHP
 
     func test_CodeLanguagePHP() throws {

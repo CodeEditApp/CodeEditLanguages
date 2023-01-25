@@ -51,6 +51,8 @@ public class TreeSitterModel {
             return jsxQuery
         case .kotlin:
             return kotlinQuery
+        case .objc:
+            return objcQuery
         case .php:
             return phpQuery
         case .python:
@@ -148,6 +150,11 @@ public class TreeSitterModel {
     /// Query for `Kotlin` files.
     public private(set) lazy var kotlinQuery: Query? = {
         return queryFor(.kotlin)
+    }()
+
+    /// Query for `Objective C` files.
+    public private(set) lazy var objcQuery: Query? = {
+        return queryFor(.objc)
     }()
 
     /// Query for `PHP` files.

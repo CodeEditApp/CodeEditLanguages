@@ -80,6 +80,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - ``json``
 - ``jsx``
 - ``kotlin``
+- ``objc``
 - ``php``
 - ``python``
 - ``ruby``
