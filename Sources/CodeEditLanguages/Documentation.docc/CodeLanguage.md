@@ -35,6 +35,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - JSON
 - JSX
 - Kotlin
+- Objective C
 - PHP
 - Python
 - Ruby
