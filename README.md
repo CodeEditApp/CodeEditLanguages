@@ -64,7 +64,7 @@ In order to add support for additional languages we have a complete guide on how
 | [JSDoc](https://github.com/tree-sitter/tree-sitter-jsdoc) |  |  |
 | [JSON](https://github.com/mattmassicotte/tree-sitter-json) | ✅ | ✅ |
 | [Julia](https://github.com/tree-sitter/tree-sitter-julia) |  | _not available_ |
-| [Kotlin](https://github.com/fwcd/tree-sitter-kotlin/tree/feature/spm-queries) | ✅ | ✅ |
+| [Kotlin](https://github.com/lukepistrol/tree-sitter-kotlin/tree/feature/spm-queries) | ✅ | ✅ |
 | [Markdown](https://github.com/ikatyang/tree-sitter-markdown) |  | _not available_ |
 | [Objective C](https://github.com/lukepistrol/tree-sitter-objc/tree/feature/spm) | ✅ | ✅ |
 | [OCaml](https://github.com/tree-sitter/tree-sitter-ocaml) |  |  |
