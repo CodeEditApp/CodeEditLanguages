@@ -26,6 +26,8 @@ public extension CodeLanguage {
         .javascript,
         .json,
         .jsx,
+        .kotlin,
+        .objc,
         .php,
         .python,
         .ruby,
@@ -140,6 +142,20 @@ public extension CodeLanguage {
         tsName: "javascript",
         extensions: ["jsx"],
         highlights: ["highlights-jsx"]
+    )
+
+    /// A language structure for `Kotlin`
+    static let kotlin: CodeLanguage = .init(
+        id: .kotlin,
+        tsName: "kotlin",
+        extensions: ["kt", "kts"]
+    )
+
+    /// A language structure for `Objective C`
+    static let objc: CodeLanguage = .init(
+        id: .objc,
+        tsName: "objc",
+        extensions: ["m"]
     )
 
     /// A language structure for `PHP`

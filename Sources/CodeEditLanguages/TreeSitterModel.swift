@@ -17,7 +17,8 @@ public class TreeSitterModel {
     /// Get a query for a specific language
     /// - Parameter language: The language to request the query for.
     /// - Returns: A Query if available. Returns `nil` for not implemented languages
-    public func query(for language: TreeSitterLanguage) -> Query? { // swiftlint:disable:this cyclomatic_complexity
+    public func query(for language: TreeSitterLanguage) -> Query? {
+        // swiftlint:disable:previous cyclomatic_complexity function_body_length
         switch language {
         case .bash:
             return bashQuery
@@ -49,6 +50,10 @@ public class TreeSitterModel {
             return jsonQuery
         case .jsx:
             return jsxQuery
+        case .kotlin:
+            return kotlinQuery
+        case .objc:
+            return objcQuery
         case .php:
             return phpQuery
         case .python:
@@ -141,6 +146,16 @@ public class TreeSitterModel {
     /// Query for `JSON` files.
     public private(set) lazy var jsonQuery: Query? = {
         return queryFor(.json)
+    }()
+
+    /// Query for `Kotlin` files.
+    public private(set) lazy var kotlinQuery: Query? = {
+        return queryFor(.kotlin)
+    }()
+
+    /// Query for `Objective C` files.
+    public private(set) lazy var objcQuery: Query? = {
+        return queryFor(.objc)
     }()
 
     /// Query for `PHP` files.

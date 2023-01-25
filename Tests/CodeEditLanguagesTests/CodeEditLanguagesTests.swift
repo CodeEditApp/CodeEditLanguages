@@ -348,6 +348,51 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotEqual(query?.patternCount, 0)
     }
 
+// MARK: - Kotlin
+
+    func test_CodeLanguageKotlin() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.kt")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .kotlin)
+    }
+
+    func test_CodeLanguageKotlin2() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.kts")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .kotlin)
+    }
+
+    func test_FetchQueryKotlin() throws {
+        var language = CodeLanguage.kotlin
+        language.resourceURL = bundleURL
+
+        let data = try Data(contentsOf: language.queryURL!)
+        let query = try? Query(language: language.language!, data: data)
+        XCTAssertNotNil(query)
+        XCTAssertNotEqual(query?.patternCount, 0)
+    }
+
+// MARK: - Objective C
+
+    func test_CodeLanguageObjC() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.m")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .objc)
+    }
+
+    func test_FetchQueryObjC() throws {
+        var language = CodeLanguage.objc
+        language.resourceURL = bundleURL
+
+        let data = try Data(contentsOf: language.queryURL!)
+        let query = try? Query(language: language.language!, data: data)
+        XCTAssertNotNil(query)
+        XCTAssertNotEqual(query?.patternCount, 0)
+    }
+
 // MARK: - PHP
 
     func test_CodeLanguagePHP() throws {
