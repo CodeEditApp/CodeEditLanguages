@@ -34,6 +34,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - JavaScript
 - JSON
 - JSX
+- Kotlin
 - PHP
 - Python
 - Ruby
@@ -78,6 +79,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - ``javascript``
 - ``json``
 - ``jsx``
+- ``kotlin``
 - ``php``
 - ``python``
 - ``ruby``

@@ -47,6 +47,7 @@ let query = TreeSitterModel.shared.swiftQuery
 - ``javascriptQuery``
 - ``jsonQuery``
 - ``jsxQuery``
+- ``kotlinQuery``
 - ``phpQuery``
 - ``pythonQuery``
 - ``rubyQuery``
