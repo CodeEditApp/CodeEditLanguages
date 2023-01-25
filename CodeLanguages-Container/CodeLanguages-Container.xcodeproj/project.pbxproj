@@ -474,7 +474,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lukepistrol/tree-sitter-kotlin";
 			requirement = {
-				branch = feature/spm;
+				branch = "feature/spm-queries";
 				kind = branch;
 			};
 		};

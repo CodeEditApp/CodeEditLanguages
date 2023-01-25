@@ -364,7 +364,15 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertEqual(language.id, .kotlin)
     }
 
-    // queries yet to be implemented
+    func test_FetchQueryKotlin() throws {
+        var language = CodeLanguage.kotlin
+        language.resourceURL = bundleURL
+
+        let data = try Data(contentsOf: language.queryURL!)
+        let query = try? Query(language: language.language!, data: data)
+        XCTAssertNotNil(query)
+        XCTAssertNotEqual(query?.patternCount, 0)
+    }
 
 // MARK: - PHP
 
