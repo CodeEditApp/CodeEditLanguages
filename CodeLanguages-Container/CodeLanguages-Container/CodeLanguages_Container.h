@@ -38,6 +38,8 @@ extern TSLanguage *tree_sitter_javascript();
 extern TSLanguage *tree_sitter_json();
 extern TSLanguage *tree_sitter_kotlin();
 extern TSLanguage *tree_sitter_objc();
+extern TSLanguage *tree_sitter_ocaml();
+extern TSLanguage *tree_sitter_ocaml_interface();
 extern TSLanguage *tree_sitter_php();
 extern TSLanguage *tree_sitter_python();
 extern TSLanguage *tree_sitter_ruby();
