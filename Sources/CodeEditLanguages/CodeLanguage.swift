@@ -100,6 +100,10 @@ public struct CodeLanguage {
             return tree_sitter_kotlin()
         case .objc:
             return tree_sitter_objc()
+        case .ocaml:
+            return tree_sitter_ocaml()
+        case .ocamlInterface:
+            return tree_sitter_ocaml_interface()
         case .php:
             return tree_sitter_php()
         case .python:

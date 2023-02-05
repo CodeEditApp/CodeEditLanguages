@@ -54,6 +54,10 @@ public class TreeSitterModel {
             return kotlinQuery
         case .objc:
             return objcQuery
+        case .ocaml:
+            return ocamlQuery
+        case .ocamlInterface:
+            return ocamlInterfaceQuery
         case .php:
             return phpQuery
         case .python:
@@ -156,6 +160,16 @@ public class TreeSitterModel {
     /// Query for `Objective C` files.
     public private(set) lazy var objcQuery: Query? = {
         return queryFor(.objc)
+    }()
+    
+    /// Query for `OCaml` files.
+    public private(set) lazy var ocamlQuery: Query? = {
+        return queryFor(.ocaml)
+    }()
+    
+    /// Query for `OCaml Interface` files.
+    public private(set) lazy var ocamlInterfaceQuery: Query? = {
+        return queryFor(.ocamlInterface)
     }()
 
     /// Query for `PHP` files.
