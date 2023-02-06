@@ -26,6 +26,8 @@ public enum TreeSitterLanguage: String {
     case jsx
     case kotlin
     case objc
+    case ocaml
+    case ocamlInterface
     case php
     case python
     case ruby

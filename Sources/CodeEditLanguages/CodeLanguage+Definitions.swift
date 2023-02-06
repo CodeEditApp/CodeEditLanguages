@@ -28,6 +28,8 @@ public extension CodeLanguage {
         .jsx,
         .kotlin,
         .objc,
+        .ocaml,
+        .ocamlInterface,
         .php,
         .python,
         .ruby,
@@ -156,6 +158,20 @@ public extension CodeLanguage {
         id: .objc,
         tsName: "objc",
         extensions: ["m"]
+    )
+
+    /// A language structure for `OCaml`
+    static let ocaml: CodeLanguage = .init(
+        id: .ocaml,
+        tsName: "ocaml",
+        extensions: ["ml"]
+    )
+
+    /// A language structure for `OCaml Interface`
+    static let ocamlInterface: CodeLanguage = .init(
+        id: .ocamlInterface,
+        tsName: "ocaml",
+        extensions: ["mli"]
     )
 
     /// A language structure for `PHP`
