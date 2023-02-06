@@ -159,7 +159,7 @@ public extension CodeLanguage {
         tsName: "objc",
         extensions: ["m"]
     )
-    
+
     /// A language structure for `OCaml`
     static let ocaml: CodeLanguage = .init(
         id: .ocaml,

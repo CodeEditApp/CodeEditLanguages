@@ -161,12 +161,12 @@ public class TreeSitterModel {
     public private(set) lazy var objcQuery: Query? = {
         return queryFor(.objc)
     }()
-    
+
     /// Query for `OCaml` files.
     public private(set) lazy var ocamlQuery: Query? = {
         return queryFor(.ocaml)
     }()
-    
+
     /// Query for `OCaml Interface` files.
     public private(set) lazy var ocamlInterfaceQuery: Query? = {
         return queryFor(.ocamlInterface)
