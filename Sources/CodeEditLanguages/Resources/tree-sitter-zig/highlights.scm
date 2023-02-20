@@ -88,31 +88,40 @@ field_constant: (IDENTIFIER) @constant
 (EscapeSequence) @string.escape
 (FormatSequence) @string.special
 
-[
-  "allowzero"
-  "volatile"
-  "anytype"
-  "anyframe"
-  (BuildinTypeExpr)
-] @type.builtin
-
 (BreakLabel (IDENTIFIER) @label)
 (BlockLabel (IDENTIFIER) @label)
 
 [
-  "true"
-  "false"
-] @boolean
+  "asm"
+  "defer"
+  "errdefer"
+  "nosuspend"
+  "test"
+] @keyword
 
 [
-  "undefined"
-  "unreachable"
-  "null"
-] @constant.builtin
+  "fn"
+] @keyword.function
 
 [
-  "else"
+  "and"
+  "or"
+  "orelse"
+] @keyword.operator
+
+[
+  "return"
+  "break"
+  "continue"
+  "async"
+  "await"
+  "suspend"
+  "resume"
+] @keyword.return
+
+[
   "if"
+  "else"
   "switch"
 ] @conditional
 
@@ -122,73 +131,60 @@ field_constant: (IDENTIFIER) @constant
 ] @repeat
 
 [
-  "or"
-  "and"
-  "orelse"
-] @keyword.operator
-
-[
-  "struct"
-  "enum"
-  "union"
-  "error"
-  "packed"
-  "opaque"
-] @keyword
+  "usingnamespace"
+] @include
 
 [
   "try"
-  "error"
   "catch"
 ] @exception
 
-; VarDecl
+[
+  "anytype"
+  (BuildinTypeExpr)
+] @type.builtin
+
+[
+  "struct"
+  "union"
+  "enum"
+  "opaque"
+  "error"
+] @type.definition
+
 [
   "const"
   "var"
+  "volatile"
+  "allowzero"
+  "noalias"
+] @type.qualifier
+
+[
+  "addrspace"
+  "align"
+  "callconv"
+  "linksection"
+] @storageclass
+
+[
   "comptime"
-  "threadlocal"
-  "fn"
-] @keyword.function
-
-[
-  "test"
-  "pub"
-  "usingnamespace"
-] @keyword
-
-[
-  "return"
-  "break"
-  "continue"
-] @keyword.return
-
-; Macro
-[
-  "defer"
-  "errdefer"
-  "async"
-  "nosuspend"
-  "await"
-  "suspend"
-  "resume"
   "export"
   "extern"
-] @function.macro
-
-; PrecProc
-[
   "inline"
   "noinline"
-  "asm"
-  "callconv"
-  "noalias"
+  "packed"
+  "pub"
+  "threadlocal"
 ] @attribute
 
 [
-  "linksection"
-  "align" 
-] @function.builtin
+  "null"
+  "unreachable"
+  "undefined"
+  "true"
+  "false"
+] @constant.builtin
 
 [
   (CompareOp)
