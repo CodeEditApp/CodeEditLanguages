@@ -9,5 +9,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          lfs: true
+      - name: Checkout LFS files
+        run: git lfs checkout
       - name: Testing Package
         run: exec ./.github/scripts/tests.sh arm
