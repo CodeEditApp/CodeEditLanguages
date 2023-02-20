@@ -1,3 +1,4 @@
 Sources/CodeEditLanguages/Resources/** linguist-vendored
 .github/** linguist-vendored
 Sources/CodeEditLanguages/Documentation.docc/** linguist-documentation
+*.zip filter=lfs diff=lfs merge=lfs -text
