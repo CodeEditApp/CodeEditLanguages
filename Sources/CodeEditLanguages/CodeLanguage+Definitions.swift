@@ -1,6 +1,6 @@
 //
 //  CodeLanguage+Definitions.swift
-//  
+//  CodeEditTextView/CodeLanguage
 //
 //  Created by Lukas Pistrol on 15.01.23.
 //

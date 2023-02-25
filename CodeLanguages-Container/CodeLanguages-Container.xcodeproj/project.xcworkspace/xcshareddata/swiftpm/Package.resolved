@@ -210,7 +210,7 @@
     {
       "identity" : "tree-sitter-toml",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/iggy890/tree-sitter-toml.git",
+      "location" : "https://github.com/iggy890/tree-sitter-toml",
       "state" : {
         "branch" : "feature/spm",
         "revision" : "57362a2136ae42b8aa1d0ebe3a8962186b7208d4"
