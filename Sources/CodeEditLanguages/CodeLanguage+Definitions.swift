@@ -27,6 +27,7 @@ public extension CodeLanguage {
         .json,
         .jsx,
         .kotlin,
+        .lua,
         .objc,
         .ocaml,
         .ocamlInterface,
@@ -152,6 +153,13 @@ public extension CodeLanguage {
         id: .kotlin,
         tsName: "kotlin",
         extensions: ["kt", "kts"]
+    )
+
+    /// A language structure for `Lua`
+    static let lua: CodeLanguage = .init(
+        id: .lua,
+        tsName: "lua",
+        extensions: ["lua"]
     )
 
     /// A language structure for `Objective C`

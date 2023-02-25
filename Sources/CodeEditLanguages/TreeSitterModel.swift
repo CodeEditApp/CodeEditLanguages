@@ -52,6 +52,8 @@ public class TreeSitterModel {
             return jsxQuery
         case .kotlin:
             return kotlinQuery
+        case .lua:
+            return luaQuery
         case .objc:
             return objcQuery
         case .ocaml:
@@ -157,6 +159,11 @@ public class TreeSitterModel {
     /// Query for `Kotlin` files.
     public private(set) lazy var kotlinQuery: Query? = {
         return queryFor(.kotlin)
+    }()
+
+    /// Query for `Lua` files.
+    public private(set) lazy var luaQuery: Query? = {
+        return queryFor(.lua)
     }()
 
     /// Query for `Objective C` files.

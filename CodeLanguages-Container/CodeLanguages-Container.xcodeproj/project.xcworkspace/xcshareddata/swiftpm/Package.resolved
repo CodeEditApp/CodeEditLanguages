@@ -145,6 +145,15 @@
       }
     },
     {
+      "identity" : "tree-sitter-lua",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lukepistrol/tree-sitter-lua.git",
+      "state" : {
+        "branch" : "feature/spm",
+        "revision" : "47d56065016862b85ad327d6976b1e664e1c034b"
+      }
+    },
+    {
       "identity" : "tree-sitter-objc",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/lukepistrol/tree-sitter-objc",

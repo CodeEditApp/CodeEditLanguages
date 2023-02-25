@@ -374,6 +374,25 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotEqual(query?.patternCount, 0)
     }
 
+    // MARK: - Lua
+
+    func test_CodeLanguageLua() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.lua")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .lua)
+    }
+
+    func test_FetchQueryLua() throws {
+        var language = CodeLanguage.lua
+        language.resourceURL = bundleURL
+
+        let data = try Data(contentsOf: language.queryURL!)
+        let query = try? Query(language: language.language!, data: data)
+        XCTAssertNotNil(query)
+        XCTAssertNotEqual(query?.patternCount, 0)
+    }
+
 // MARK: - Objective C
 
     func test_CodeLanguageObjC() throws {

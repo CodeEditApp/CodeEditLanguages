@@ -37,6 +37,7 @@ extern TSLanguage *tree_sitter_java();
 extern TSLanguage *tree_sitter_javascript();
 extern TSLanguage *tree_sitter_json();
 extern TSLanguage *tree_sitter_kotlin();
+extern TSLanguage *tree_sitter_lua();
 extern TSLanguage *tree_sitter_objc();
 extern TSLanguage *tree_sitter_ocaml();
 extern TSLanguage *tree_sitter_ocaml_interface();
