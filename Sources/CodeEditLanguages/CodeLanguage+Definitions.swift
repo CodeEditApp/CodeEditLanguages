@@ -225,6 +225,13 @@ public extension CodeLanguage {
         extensions: ["swift"]
     )
 
+    /// A language structure for `TOML`
+    static let toml: CodeLanguage = .init(
+        id: .toml,
+        tsName: "toml",
+        extensions: ["toml"]
+    )
+
     /// A language structure for `YAML`
     static let yaml: CodeLanguage = .init(
         id: .yaml,

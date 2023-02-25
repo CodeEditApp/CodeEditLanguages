@@ -374,7 +374,7 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotEqual(query?.patternCount, 0)
     }
 
-    // MARK: - Lua
+// MARK: - Lua
 
     func test_CodeLanguageLua() throws {
         let url = URL(fileURLWithPath: "~/path/to/file.lua")
@@ -524,7 +524,7 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotEqual(query?.patternCount, 0)
     }
 
-    // MARK: - SQL
+// MARK: - SQL
 
     func test_CodeLanguageSQL() throws {
         let url = URL(fileURLWithPath: "~/path/to/file.sql")
@@ -554,6 +554,25 @@ final class CodeEditLanguagesTests: XCTestCase {
 
     func test_FetchQuerySwift() throws {
         var language = CodeLanguage.swift
+        language.resourceURL = bundleURL
+
+        let data = try Data(contentsOf: language.queryURL!)
+        let query = try? Query(language: language.language!, data: data)
+        XCTAssertNotNil(query)
+        XCTAssertNotEqual(query?.patternCount, 0)
+    }
+
+// MARK: - TOML
+    
+    func test_CodeLanguageTOML() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.toml")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .toml)
+    }
+
+    func test_FetchQueryTOML() throws {
+        var language = CodeLanguage.toml
         language.resourceURL = bundleURL
 
         let data = try Data(contentsOf: language.queryURL!)

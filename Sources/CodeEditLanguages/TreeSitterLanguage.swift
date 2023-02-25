@@ -35,6 +35,7 @@ public enum TreeSitterLanguage: String {
     case rust
     case sql
     case swift
+    case toml
     case yaml
     case zig
     case plainText
