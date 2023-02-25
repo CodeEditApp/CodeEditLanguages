@@ -205,11 +205,11 @@ public extension CodeLanguage {
     )
 
     /// A language structure for `SQL`
-        static let sql: CodeLanguage = .init(
-            id: .sql,
-            tsName: "sql",
-            extensions: ["sql"]
-        )
+    static let sql: CodeLanguage = .init(
+        id: .sql,
+        tsName: "sql",
+        extensions: ["sql"]
+    )
 
     /// A language structure for `Swift`
     static let swift: CodeLanguage = .init(
