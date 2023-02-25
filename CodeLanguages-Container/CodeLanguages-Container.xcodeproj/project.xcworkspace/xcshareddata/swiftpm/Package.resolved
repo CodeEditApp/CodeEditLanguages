@@ -199,6 +199,15 @@
       }
     },
     {
+      "identity" : "tree-sitter-sql",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lukepistrol/tree-sitter-sql",
+      "state" : {
+        "branch" : "feature/spm",
+        "revision" : "6ad6e8f5297731881281f2309011559feee1ed84"
+      }
+    },
+    {
       "identity" : "tree-sitter-swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/alex-pinkus/tree-sitter-swift.git",
