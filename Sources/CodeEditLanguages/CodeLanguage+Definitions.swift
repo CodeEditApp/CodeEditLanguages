@@ -34,6 +34,7 @@ public extension CodeLanguage {
         .python,
         .ruby,
         .rust,
+        .sql,
         .swift,
         .yaml,
         .zig
@@ -200,6 +201,13 @@ public extension CodeLanguage {
         id: .rust,
         tsName: "rust",
         extensions: ["rs"]
+    )
+
+    /// A language structure for `SQL`
+    static let sql: CodeLanguage = .init(
+        id: .sql,
+        tsName: "sql",
+        extensions: ["sql"]
     )
 
     /// A language structure for `Swift`
