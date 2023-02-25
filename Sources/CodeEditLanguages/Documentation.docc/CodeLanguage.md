@@ -42,6 +42,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - Ruby
 - Rust
 - Swift
+- TOML
 - YAML
 - Zig
 
@@ -88,6 +89,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - ``ruby``
 - ``rust``
 - ``swift``
+- ``toml``
 - ``yaml``
 - ``zig``
 

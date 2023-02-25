@@ -223,6 +223,7 @@
 				2886C786298135540023E016 /* XCRemoteSwiftPackageReference "tree-sitter-kotlin" */,
 				28171CB629814CD800523F1C /* XCRemoteSwiftPackageReference "tree-sitter-objc" */,
 				9D6DA3B6298F1A4500E69066 /* XCRemoteSwiftPackageReference "tree-sitter-ocaml" */,
+				854B3C2129AA539C00567FC0 /* XCRemoteSwiftPackageReference "TreeSitterTOML" */,
 			);
 			productRefGroup = 28B3F00D290C207D000CD04D /* Products */;
 			projectDirPath = "";
@@ -643,6 +644,14 @@
 			repositoryURL = "https://github.com/tree-sitter/tree-sitter-bash.git";
 			requirement = {
 				branch = master;
+				kind = branch;
+			};
+		};
+		854B3C2129AA539C00567FC0 /* XCRemoteSwiftPackageReference "TreeSitterTOML" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iggy890/TreeSitterTOML/";
+			requirement = {
+				branch = feature/spm;
 				kind = branch;
 			};
 		};

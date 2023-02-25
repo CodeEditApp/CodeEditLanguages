@@ -35,6 +35,7 @@ public extension CodeLanguage {
         .ruby,
         .rust,
         .swift,
+        .toml,
         .yaml,
         .zig
     ]
@@ -207,6 +208,13 @@ public extension CodeLanguage {
         id: .swift,
         tsName: "swift",
         extensions: ["swift"]
+    )
+
+    /// A language structure for `TOML`
+    static let toml: CodeLanguage = .init(
+        id: .toml,
+        tsName: "toml",
+        extensions: ["toml"]
     )
 
     /// A language structure for `YAML`

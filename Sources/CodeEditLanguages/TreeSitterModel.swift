@@ -68,6 +68,8 @@ public class TreeSitterModel {
             return rustQuery
         case .swift:
             return swiftQuery
+        case .toml:
+            return tomlQuery
         case .yaml:
             return yamlQuery
         case .zig:
@@ -195,6 +197,11 @@ public class TreeSitterModel {
     /// Query for `Swift` files.
     public private(set) lazy var swiftQuery: Query? = {
         return queryFor(.swift)
+    }()
+
+    /// Query for `TOML` files
+    public private(set) lazy var tomlQuery: Query? = {
+        return queryFor(.toml)
     }()
 
     /// Query for `YAML` files.

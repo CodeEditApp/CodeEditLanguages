@@ -114,6 +114,8 @@ public struct CodeLanguage {
             return tree_sitter_rust()
         case .swift:
             return tree_sitter_swift()
+        case .toml:
+            return tree_sitter_toml()
         case .yaml:
             return tree_sitter_yaml()
         case .zig:

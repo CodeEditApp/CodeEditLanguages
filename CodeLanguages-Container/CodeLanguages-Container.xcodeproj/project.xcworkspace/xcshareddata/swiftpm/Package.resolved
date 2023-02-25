@@ -224,6 +224,15 @@
         "branch" : "main",
         "revision" : "b0693dd473efd91d6085acd8e0ff9c627d37e077"
       }
+    },
+    {
+      "identity" : "treesittertoml",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iggy890/TreeSitterTOML/",
+      "state" : {
+        "branch" : "feature/spm",
+        "revision" : "57362a2136ae42b8aa1d0ebe3a8962186b7208d4"
+      }
     }
   ],
   "version" : 2
