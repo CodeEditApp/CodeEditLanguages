@@ -76,8 +76,8 @@ In order to add support for additional languages we have a complete guide on how
 | [Ruby](https://github.com/mattmassicotte/tree-sitter-ruby) | ✅ | ✅ |
 | [Rust](https://github.com/tree-sitter/tree-sitter-rust) | ✅ | ✅ |
 | [Scala](https://github.com/tree-sitter/tree-sitter-scala) |  |  |
-| [Sql](https://github.com/m-novikov/tree-sitter-sql) |  |  |
-| [Swift](https://github.com/mattmassicotte/tree-sitter-swift) | ✅ | ✅ |
+| [Sql](https://github.com/lukepistrol/tree-sitter-sql/tree/feature/spm) | ✅ | ✅ |
+| [Swift](https://github.com/alex-pinkus/tree-sitter-swift/tree/with-generated-files) | ✅ | ✅ |
 | [TOML](https://github.com/ikatyang/tree-sitter-toml) |  |  |
 | [TypeScript/TSX](https://github.com/tree-sitter/tree-sitter-typescript) |  |  |
 | [Verilog](https://github.com/tree-sitter/tree-sitter-verilog) |  | _not available_ |

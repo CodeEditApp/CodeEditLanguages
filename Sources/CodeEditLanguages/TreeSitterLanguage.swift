@@ -32,6 +32,7 @@ public enum TreeSitterLanguage: String {
     case python
     case ruby
     case rust
+    case sql
     case swift
     case yaml
     case zig
