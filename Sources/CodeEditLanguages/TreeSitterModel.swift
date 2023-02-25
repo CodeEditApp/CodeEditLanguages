@@ -66,10 +66,10 @@ public class TreeSitterModel {
             return rubyQuery
         case .rust:
             return rustQuery
-        case .swift:
-            return swiftQuery
         case .sql:
             return sqlQuery
+        case .swift:
+            return swiftQuery
         case .toml:
             return tomlQuery
         case .yaml:
