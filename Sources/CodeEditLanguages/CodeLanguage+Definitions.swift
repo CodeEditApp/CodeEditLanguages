@@ -37,6 +37,7 @@ public extension CodeLanguage {
         .rust,
         .sql,
         .swift,
+        .toml,
         .yaml,
         .zig
     ]

@@ -33,7 +33,6 @@
 		28B3F05D290C3709000CD04D /* TreeSitterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 28B3F05C290C3709000CD04D /* TreeSitterSwift */; };
 		28B3F063290C372D000CD04D /* TreeSitterZig in Frameworks */ = {isa = PBXBuildFile; productRef = 28B3F062290C372D000CD04D /* TreeSitterZig */; };
 		28B9F7AA290DDAC900245748 /* TreeSitterBash in Frameworks */ = {isa = PBXBuildFile; productRef = 28B9F7A9290DDAC900245748 /* TreeSitterBash */; };
-		85278D0729AABA3B00EC0047 /* TreeSitterTOML in Frameworks */ = {isa = PBXBuildFile; productRef = 85278D0629AABA3B00EC0047 /* TreeSitterTOML */; };
 		9D6DA3B8298F1A4600E69066 /* TreeSitterOCaml in Frameworks */ = {isa = PBXBuildFile; productRef = 9D6DA3B7298F1A4600E69066 /* TreeSitterOCaml */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +62,6 @@
 				28B3F04E290C3698000CD04D /* TreeSitterJSON in Frameworks */,
 				28B3F036290C361D000CD04D /* TreeSitterCSS in Frameworks */,
 				28B3F033290C3608000CD04D /* TreeSitterCSharp in Frameworks */,
-				85278D0729AABA3B00EC0047 /* TreeSitterTOML in Frameworks */,
 				28B3F03F290C364D000CD04D /* TreeSitterGoMod in Frameworks */,
 				9D6DA3B8298F1A4600E69066 /* TreeSitterOCaml in Frameworks */,
 				28B3F063290C372D000CD04D /* TreeSitterZig in Frameworks */,
@@ -177,7 +175,6 @@
 				9D6DA3B7298F1A4600E69066 /* TreeSitterOCaml */,
 				282C119229AA32C8004F1EA6 /* TreeSitterSQL */,
 				285BF67229AAA45B00641989 /* TreeSitterLua */,
-				85278D0629AABA3B00EC0047 /* TreeSitterTOML */,
 			);
 			productName = "CodeLanguages-Container";
 			productReference = 28B3F00C290C207D000CD04D /* CodeLanguages_Container.framework */;
@@ -817,11 +814,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 28B9F7A6290DDAB500245748 /* XCRemoteSwiftPackageReference "tree-sitter-bash" */;
 			productName = TreeSitterBash;
-		};
-		85278D0629AABA3B00EC0047 /* TreeSitterTOML */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 85278D0529AABA3B00EC0047 /* XCRemoteSwiftPackageReference "tree-sitter-toml" */;
-			productName = TreeSitterTOML;
 		};
 		9D6DA3B7298F1A4600E69066 /* TreeSitterOCaml */ = {
 			isa = XCSwiftPackageProductDependency;

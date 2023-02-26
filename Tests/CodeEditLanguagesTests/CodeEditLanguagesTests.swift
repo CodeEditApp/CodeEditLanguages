@@ -561,9 +561,9 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotNil(query)
         XCTAssertNotEqual(query?.patternCount, 0)
     }
-
-// MARK: - TOML
     
+// MARK: - TOML
+
     func test_CodeLanguageTOML() throws {
         let url = URL(fileURLWithPath: "~/path/to/file.toml")
         let language = CodeLanguage.detectLanguageFrom(url: url)
