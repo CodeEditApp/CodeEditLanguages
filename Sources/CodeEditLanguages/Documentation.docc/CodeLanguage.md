@@ -44,6 +44,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - Rust
 - SQL
 - Swift
+- TOML
 - YAML
 - Zig
 

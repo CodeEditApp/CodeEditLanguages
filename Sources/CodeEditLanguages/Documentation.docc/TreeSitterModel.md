@@ -58,5 +58,6 @@ let query = TreeSitterModel.shared.swiftQuery
 - ``rustQuery``
 - ``sqlQuery``
 - ``swiftQuery``
+- ``tomlQuery``
 - ``yamlQuery``
 - ``zigQuery``
