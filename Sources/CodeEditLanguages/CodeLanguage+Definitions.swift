@@ -60,7 +60,8 @@ public extension CodeLanguage {
         id: .cpp,
         tsName: "cpp",
         extensions: ["cpp", "h", "hpp", "cc"],
-        parentURL: CodeLanguage.c.queryURL
+        parentURL: CodeLanguage.c.queryURL,
+        highlights: ["injections"]
     )
 
     /// A language structure for `C#`
@@ -88,7 +89,8 @@ public extension CodeLanguage {
     static let elixir: CodeLanguage = .init(
         id: .elixir,
         tsName: "elixir",
-        extensions: ["ex", "exs"]
+        extensions: ["ex", "exs"],
+        highlights: ["injections"]
     )
 
     /// A language structure for `Go`
@@ -116,7 +118,8 @@ public extension CodeLanguage {
     static let html: CodeLanguage = .init(
         id: .html,
         tsName: "html",
-        extensions: ["html", "htm"]
+        extensions: ["html", "htm"],
+        highlights: ["injections"]
     )
 
     /// A language structure for `Java`
@@ -130,7 +133,8 @@ public extension CodeLanguage {
     static let javascript: CodeLanguage = .init(
         id: .javascript,
         tsName: "javascript",
-        extensions: ["js"]
+        extensions: ["js"],
+        highlights: ["injections"]
     )
 
     /// A language structure for `JSON`
@@ -145,7 +149,7 @@ public extension CodeLanguage {
         id: .jsx,
         tsName: "javascript",
         extensions: ["jsx"],
-        highlights: ["highlights-jsx"]
+        highlights: ["highlights-jsx", "injections"]
     )
 
     /// A language structure for `Kotlin`
@@ -159,7 +163,8 @@ public extension CodeLanguage {
     static let lua: CodeLanguage = .init(
         id: .lua,
         tsName: "lua",
-        extensions: ["lua"]
+        extensions: ["lua"],
+        highlights: ["injections"]
     )
 
     /// A language structure for `Objective C`
@@ -187,7 +192,8 @@ public extension CodeLanguage {
     static let php: CodeLanguage = .init(
         id: .php,
         tsName: "php",
-        extensions: ["php"]
+        extensions: ["php"],
+        highlights: ["injections"]
     )
 
     /// A language structure for `Python`
@@ -208,7 +214,8 @@ public extension CodeLanguage {
     static let rust: CodeLanguage = .init(
         id: .rust,
         tsName: "rust",
-        extensions: ["rs"]
+        extensions: ["rs"],
+        highlights: ["injections"]
     )
 
     /// A language structure for `SQL`
@@ -236,7 +243,8 @@ public extension CodeLanguage {
     static let zig: CodeLanguage = .init(
         id: .zig,
         tsName: "zig",
-        extensions: ["zig"]
+        extensions: ["zig"],
+        highlights: ["injections"]
     )
 
     /// The default language (plain text)
