@@ -195,7 +195,7 @@ public class TreeSitterModel {
 
     /// Query for `Regex` files.
     public private(set) lazy var regexQuery: Query? = {
-        return query(for: .regex)
+        return queryFor(.regex)
     }()
 
     /// Query for `Ruby` files.
