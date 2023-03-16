@@ -73,7 +73,7 @@ In order to add support for additional languages we have a complete guide on how
 | [Perl](https://github.com/ganezdragon/tree-sitter-perl) |  | _not available_ |
 | [PHP](https://github.com/tree-sitter/tree-sitter-php) | ✅ | ✅ |
 | [Python](https://github.com/lukepistrol/tree-sitter-python) | ✅ | ✅ |
-| [Regex](https://github.com/tree-sitter/tree-sitter-regex) |  |  |
+| [Regex](https://github.com/tree-sitter/tree-sitter-regex) | ✅ | ✅ |
 | [Ruby](https://github.com/mattmassicotte/tree-sitter-ruby) | ✅ | ✅ |
 | [Rust](https://github.com/tree-sitter/tree-sitter-rust) | ✅ | ✅ |
 | [Scala](https://github.com/tree-sitter/tree-sitter-scala) |  |  |
