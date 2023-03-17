@@ -33,6 +33,7 @@ public extension CodeLanguage {
         .ocamlInterface,
         .php,
         .python,
+        .regex,
         .ruby,
         .rust,
         .sql,
@@ -201,6 +202,13 @@ public extension CodeLanguage {
         id: .python,
         tsName: "python",
         extensions: ["py"]
+    )
+
+    /// A language structure for `Regex`
+    static let regex: CodeLanguage = .init(
+        id: .regex,
+        tsName: "regex",
+        extensions: []
     )
 
     /// A language structure for `Ruby`

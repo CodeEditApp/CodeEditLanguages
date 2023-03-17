@@ -190,6 +190,15 @@
       }
     },
     {
+      "identity" : "tree-sitter-regex",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thecoolwinter/tree-sitter-regex",
+      "state" : {
+        "branch" : "master",
+        "revision" : "bcdbf846fa8cfce0d28971d43199e52c1e365aa7"
+      }
+    },
+    {
       "identity" : "tree-sitter-ruby",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tree-sitter/tree-sitter-ruby.git",

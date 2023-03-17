@@ -31,6 +31,7 @@ public enum TreeSitterLanguage: String {
     case ocamlInterface
     case php
     case python
+    case regex
     case ruby
     case rust
     case sql
