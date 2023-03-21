@@ -27,6 +27,7 @@ extern TSLanguage *tree_sitter_c();
 extern TSLanguage *tree_sitter_cpp();
 extern TSLanguage *tree_sitter_c_sharp();
 extern TSLanguage *tree_sitter_css();
+extern TSLanguage *tree_sitter_dart();
 extern TSLanguage *tree_sitter_dockerfile();
 extern TSLanguage *tree_sitter_elixir();
 extern TSLanguage *tree_sitter_go();
