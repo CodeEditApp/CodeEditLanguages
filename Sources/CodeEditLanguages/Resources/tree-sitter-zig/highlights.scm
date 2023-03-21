@@ -2,7 +2,7 @@
   (container_doc_comment)
   (doc_comment)
   (line_comment)
-] @comment
+] @comment @spell
 
 [
   variable: (IDENTIFIER)
@@ -80,9 +80,14 @@ field_constant: (IDENTIFIER) @constant
 (FLOAT) @float
 
 [
+  "true"
+  "false"
+] @boolean
+
+[
   (LINESTRING)
   (STRINGLITERALSINGLE)
-] @string
+] @string @spell
 
 (CHAR_LITERAL) @character
 (EscapeSequence) @string.escape
@@ -95,9 +100,21 @@ field_constant: (IDENTIFIER) @constant
   "asm"
   "defer"
   "errdefer"
-  "nosuspend"
   "test"
+  "struct"
+  "union"
+  "enum"
+  "opaque"
+  "error"
 ] @keyword
+
+[
+  "async"
+  "await"
+  "suspend"
+  "nosuspend"
+  "resume"
+] @keyword.coroutine
 
 [
   "fn"
@@ -111,12 +128,6 @@ field_constant: (IDENTIFIER) @constant
 
 [
   "return"
-  "break"
-  "continue"
-  "async"
-  "await"
-  "suspend"
-  "resume"
 ] @keyword.return
 
 [
@@ -128,6 +139,8 @@ field_constant: (IDENTIFIER) @constant
 [
   "for"
   "while"
+  "break"
+  "continue"
 ] @repeat
 
 [
@@ -143,14 +156,6 @@ field_constant: (IDENTIFIER) @constant
   "anytype"
   (BuildinTypeExpr)
 ] @type.builtin
-
-[
-  "struct"
-  "union"
-  "enum"
-  "opaque"
-  "error"
-] @type.definition
 
 [
   "const"
@@ -182,8 +187,6 @@ field_constant: (IDENTIFIER) @constant
   "null"
   "unreachable"
   "undefined"
-  "true"
-  "false"
 ] @constant.builtin
 
 [
