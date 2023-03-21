@@ -76,6 +76,8 @@ public struct CodeLanguage {
             return tree_sitter_c_sharp()
         case .css:
             return tree_sitter_css()
+        case .dart:
+            return tree_sitter_dart()
         case .dockerfile:
             return tree_sitter_dockerfile()
         case .elixir:
