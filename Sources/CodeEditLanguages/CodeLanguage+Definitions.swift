@@ -47,21 +47,21 @@ public extension CodeLanguage {
     static let bash: CodeLanguage = .init(
         id: .bash,
         tsName: "bash",
-        extensions: ["sh"]
+        extensions: ["sh", "bash"]
     )
 
     /// A language structure for `C`
     static let c: CodeLanguage = .init(
         id: .c,
         tsName: "c",
-        extensions: ["c", "h", "o"]
+        extensions: ["c", "h"]
     )
 
     /// A language structure for `C++`
     static let cpp: CodeLanguage = .init(
         id: .cpp,
         tsName: "cpp",
-        extensions: ["cpp", "h", "hpp", "cc"],
+        extensions: ["cc", "cpp", "hpp", "h"],
         parentURL: CodeLanguage.c.queryURL,
         highlights: ["injections"]
     )
@@ -180,7 +180,7 @@ public extension CodeLanguage {
     static let objc: CodeLanguage = .init(
         id: .objc,
         tsName: "objc",
-        extensions: ["m"]
+        extensions: ["m", "h"]
     )
 
     /// A language structure for `OCaml`
