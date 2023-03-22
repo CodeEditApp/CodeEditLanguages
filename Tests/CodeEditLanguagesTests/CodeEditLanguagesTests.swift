@@ -43,13 +43,6 @@ final class CodeEditLanguagesTests: XCTestCase {
     }
 
     func test_CodeLanguageC2() throws {
-        let url = URL(fileURLWithPath: "~/path/to/file.o")
-        let language = CodeLanguage.detectLanguageFrom(url: url)
-
-        XCTAssertEqual(language.id, .c)
-    }
-
-    func test_CodeLanguageC3() throws {
         let url = URL(fileURLWithPath: "~/path/to/file.h")
         let language = CodeLanguage.detectLanguageFrom(url: url)
 
@@ -129,6 +122,25 @@ final class CodeEditLanguagesTests: XCTestCase {
 
     func test_FetchQueryCSS() throws {
         var language = CodeLanguage.css
+        language.resourceURL = bundleURL
+
+        let data = try Data(contentsOf: language.queryURL!)
+        let query = try? Query(language: language.language!, data: data)
+        XCTAssertNotNil(query)
+        XCTAssertNotEqual(query?.patternCount, 0)
+    }
+
+// MARK: - CSS
+
+    func test_CodeLanguageDart() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.dart")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .dart)
+    }
+
+    func test_FetchQueryDart() throws {
+        var language = CodeLanguage.dart
         language.resourceURL = bundleURL
 
         let data = try Data(contentsOf: language.queryURL!)

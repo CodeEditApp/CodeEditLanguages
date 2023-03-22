@@ -14,6 +14,7 @@ public enum TreeSitterLanguage: String {
     case cpp
     case cSharp
     case css
+    case dart
     case dockerfile
     case elixir
     case go

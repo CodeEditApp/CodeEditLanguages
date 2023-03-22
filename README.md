@@ -53,6 +53,7 @@ In order to add support for additional languages we have a complete guide on how
 | [C++](https://github.com/tree-sitter/tree-sitter-cpp) | ✅ | ✅ |
 | [C#](https://github.com/tree-sitter/tree-sitter-c-sharp) | ✅ | ✅ |
 | [CSS](https://github.com/lukepistrol/tree-sitter-css) | ✅ | ✅ |
+| [Dart](https://github.com/lukepistrol/tree-sitter-dart/tree/feature/spm) | ✅ | ✅ |
 | [Dockerfile](https://github.com/camdencheek/tree-sitter-dockerfile) | ✅ | ✅ |
 | [Elixir](https://github.com/elixir-lang/tree-sitter-elixir) | ✅ | ✅ |
 | [ERB, EJS](https://github.com/tree-sitter/tree-sitter-embedded-template) |  |  |

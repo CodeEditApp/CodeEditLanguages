@@ -24,6 +24,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - C++
 - C#
 - CSS
+- Dart
 - Dockerfile
 - Elixir
 - Go
@@ -73,6 +74,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - ``cpp``
 - ``cSharp``
 - ``css``
+- ``dart``
 - ``dockerfile``
 - ``elixir``
 - ``go``
