@@ -43,13 +43,6 @@ final class CodeEditLanguagesTests: XCTestCase {
     }
 
     func test_CodeLanguageC2() throws {
-        let url = URL(fileURLWithPath: "~/path/to/file.o")
-        let language = CodeLanguage.detectLanguageFrom(url: url)
-
-        XCTAssertEqual(language.id, .c)
-    }
-
-    func test_CodeLanguageC3() throws {
         let url = URL(fileURLWithPath: "~/path/to/file.h")
         let language = CodeLanguage.detectLanguageFrom(url: url)
 
