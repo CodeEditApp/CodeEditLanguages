@@ -9,7 +9,6 @@ import XCTest
 @testable import CodeEditLanguages
 import SwiftTreeSitter
 
-// swiftlint:disable all
 final class CodeEditLanguagesTests: XCTestCase {
 
     let bundleURL = Bundle.module.resourceURL
