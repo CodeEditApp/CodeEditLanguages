@@ -89,4 +89,11 @@ for lang in $LIST ; do
 done
 status "Language queries copied to package resources!"
 
+# cleanup derived derived data 
+
+if [ -d "$PWD/DerivedData" ]; then
+    status "Cleaning up DerivedData..."
+    rm -rf "$PWD/DerivedData"
+fi
+
 status "Done!"
