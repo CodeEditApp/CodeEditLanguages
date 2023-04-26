@@ -39,6 +39,8 @@ public extension CodeLanguage {
         .rust,
         .sql,
         .swift,
+        .tsx,
+        .typescript,
         .yaml,
         .zig
     ]
@@ -246,6 +248,22 @@ public extension CodeLanguage {
         id: .swift,
         tsName: "swift",
         extensions: ["swift"]
+    )
+
+    /// A language structure for `TSX`
+    static let tsx: CodeLanguage = .init(
+        id: .tsx,
+        tsName: "typescript",
+        extensions: ["tsx"],
+        parentURL: CodeLanguage.jsx.queryURL
+    )
+
+    /// A language structure for `Typescript`
+    static let typescript: CodeLanguage = .init(
+        id: .typescript,
+        tsName: "typescript",
+        extensions: ["ts"],
+        parentURL: CodeLanguage.javascript.queryURL
     )
 
     /// A language structure for `YAML`

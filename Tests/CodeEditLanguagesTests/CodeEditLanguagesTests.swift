@@ -573,6 +573,44 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotEqual(query?.patternCount, 0)
     }
 
+    // MARK: - TSX
+
+    func test_CodeLanguageTSX() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.tsx")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .tsx)
+    }
+
+    func test_FetchQueryTSX() throws {
+        var language = CodeLanguage.tsx
+        language.resourceURL = bundleURL
+
+        let data = try Data(contentsOf: language.queryURL!)
+        let query = try? Query(language: language.language!, data: data)
+        XCTAssertNotNil(query)
+        XCTAssertNotEqual(query?.patternCount, 0)
+    }
+
+    // MARK: - Typescript
+
+    func test_CodeLanguageTypescript() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.ts")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .typescript)
+    }
+
+    func test_FetchQueryTypescript() throws {
+        var language = CodeLanguage.typescript
+        language.resourceURL = bundleURL
+
+        let data = try Data(contentsOf: language.queryURL!)
+        let query = try? Query(language: language.language!, data: data)
+        XCTAssertNotNil(query)
+        XCTAssertNotEqual(query?.patternCount, 0)
+    }
+
 // MARK: - YAML
 
     func test_CodeLanguageYAML() throws {
