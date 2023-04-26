@@ -49,6 +49,8 @@ extern TSLanguage *tree_sitter_ruby();
 extern TSLanguage *tree_sitter_rust();
 extern TSLanguage *tree_sitter_sql();
 extern TSLanguage *tree_sitter_swift();
+extern TSLanguage *tree_sitter_tsx();
+extern TSLanguage *tree_sitter_typescript();
 extern TSLanguage *tree_sitter_yaml();
 extern TSLanguage *tree_sitter_zig();
 

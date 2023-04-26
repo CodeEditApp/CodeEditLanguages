@@ -34,6 +34,8 @@
 		28B3F05D290C3709000CD04D /* TreeSitterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 28B3F05C290C3709000CD04D /* TreeSitterSwift */; };
 		28B3F063290C372D000CD04D /* TreeSitterZig in Frameworks */ = {isa = PBXBuildFile; productRef = 28B3F062290C372D000CD04D /* TreeSitterZig */; };
 		28B9F7AA290DDAC900245748 /* TreeSitterBash in Frameworks */ = {isa = PBXBuildFile; productRef = 28B9F7A9290DDAC900245748 /* TreeSitterBash */; };
+		6CA62EA929F9D36700785B11 /* TreeSitterTS in Frameworks */ = {isa = PBXBuildFile; productRef = 6CA62EA829F9D36700785B11 /* TreeSitterTS */; };
+		6CA62EAB29F9D36700785B11 /* TreeSitterTSX in Frameworks */ = {isa = PBXBuildFile; productRef = 6CA62EAA29F9D36700785B11 /* TreeSitterTSX */; };
 		6CEC70FE29C3A85000B61C7A /* TreeSitterRegex in Frameworks */ = {isa = PBXBuildFile; productRef = 6CEC70FD29C3A85000B61C7A /* TreeSitterRegex */; };
 		9D6DA3B8298F1A4600E69066 /* TreeSitterOCaml in Frameworks */ = {isa = PBXBuildFile; productRef = 9D6DA3B7298F1A4600E69066 /* TreeSitterOCaml */; };
 /* End PBXBuildFile section */
@@ -52,6 +54,7 @@
 				28B3F051290C36B1000CD04D /* TreeSitterPHP in Frameworks */,
 				28B3F042290C365C000CD04D /* TreeSitterHaskell in Frameworks */,
 				285BF67329AAA45B00641989 /* TreeSitterLua in Frameworks */,
+				6CA62EAB29F9D36700785B11 /* TreeSitterTSX in Frameworks */,
 				2846B262296BA1CF005F60B6 /* TreeSitterDockerfile in Frameworks */,
 				282C119329AA32C8004F1EA6 /* TreeSitterSQL in Frameworks */,
 				28B3F039290C362C000CD04D /* TreeSitterElixir in Frameworks */,
@@ -75,6 +78,7 @@
 				28B3F048290C367C000CD04D /* TreeSitterJava in Frameworks */,
 				6CEC70FE29C3A85000B61C7A /* TreeSitterRegex in Frameworks */,
 				282E5977298051980064B34A /* TreeSitterYAML in Frameworks */,
+				6CA62EA929F9D36700785B11 /* TreeSitterTS in Frameworks */,
 				2886C788298135540023E016 /* TreeSitterKotlin in Frameworks */,
 				28B3F057290C36D5000CD04D /* TreeSitterRuby in Frameworks */,
 			);
@@ -181,6 +185,8 @@
 				285BF67229AAA45B00641989 /* TreeSitterLua */,
 				6CEC70FD29C3A85000B61C7A /* TreeSitterRegex */,
 				28AAB6AD29CA57D40087654B /* TreeSitterDart */,
+				6CA62EA829F9D36700785B11 /* TreeSitterTS */,
+				6CA62EAA29F9D36700785B11 /* TreeSitterTSX */,
 			);
 			productName = "CodeLanguages-Container";
 			productReference = 28B3F00C290C207D000CD04D /* CodeLanguages_Container.framework */;
@@ -239,6 +245,7 @@
 				285BF67129AAA45B00641989 /* XCRemoteSwiftPackageReference "tree-sitter-lua" */,
 				6CEC70FC29C3A85000B61C7A /* XCRemoteSwiftPackageReference "tree-sitter-regex" */,
 				28AAB6AC29CA57D40087654B /* XCRemoteSwiftPackageReference "tree-sitter-dart" */,
+				6CA62EA729F9D36700785B11 /* XCRemoteSwiftPackageReference "tree-sitter-typescript" */,
 			);
 			productRefGroup = 28B3F00D290C207D000CD04D /* Products */;
 			projectDirPath = "";
@@ -696,6 +703,14 @@
 				kind = branch;
 			};
 		};
+		6CA62EA729F9D36700785B11 /* XCRemoteSwiftPackageReference "tree-sitter-typescript" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/thecoolwinter/tree-sitter-typescript";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		6CEC70FC29C3A85000B61C7A /* XCRemoteSwiftPackageReference "tree-sitter-regex" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/thecoolwinter/tree-sitter-regex/";
@@ -844,6 +859,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 28B9F7A6290DDAB500245748 /* XCRemoteSwiftPackageReference "tree-sitter-bash" */;
 			productName = TreeSitterBash;
+		};
+		6CA62EA829F9D36700785B11 /* TreeSitterTS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CA62EA729F9D36700785B11 /* XCRemoteSwiftPackageReference "tree-sitter-typescript" */;
+			productName = TreeSitterTS;
+		};
+		6CA62EAA29F9D36700785B11 /* TreeSitterTSX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CA62EA729F9D36700785B11 /* XCRemoteSwiftPackageReference "tree-sitter-typescript" */;
+			productName = TreeSitterTSX;
 		};
 		6CEC70FD29C3A85000B61C7A /* TreeSitterRegex */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -15,7 +15,7 @@
       "location" : "https://github.com/tree-sitter/tree-sitter-bash.git",
       "state" : {
         "branch" : "master",
-        "revision" : "b338fa9f4807b9e0336cd4dde04948a8c324a4cf"
+        "revision" : "422a07cb221b92c6b117e854efa8945a506b5214"
       }
     },
     {
@@ -241,6 +241,15 @@
       "state" : {
         "branch" : "with-generated-files",
         "revision" : "eda05af7ac41adb4eb19c346883c0fa32fe3bdd8"
+      }
+    },
+    {
+      "identity" : "tree-sitter-typescript",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thecoolwinter/tree-sitter-typescript",
+      "state" : {
+        "branch" : "master",
+        "revision" : "018464ed3f93fe757418316b3cc1c72198fa5b8c"
       }
     },
     {
