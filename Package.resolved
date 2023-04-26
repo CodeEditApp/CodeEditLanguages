@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swifttreesitter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ChimeHQ/SwiftTreeSitter.git",
+      "state" : {
+        "revision" : "df25a52f72ebc5b50ae20d26d1363793408bb28b",
+        "version" : "0.7.1"
+      }
+    }
+  ],
+  "version" : 2
+}

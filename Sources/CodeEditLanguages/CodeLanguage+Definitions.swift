@@ -253,7 +253,7 @@ public extension CodeLanguage {
     /// A language structure for `TSX`
     static let tsx: CodeLanguage = .init(
         id: .tsx,
-        tsName: "tsx",
+        tsName: "typescript",
         extensions: ["tsx"],
         parentURL: CodeLanguage.jsx.queryURL
     )
