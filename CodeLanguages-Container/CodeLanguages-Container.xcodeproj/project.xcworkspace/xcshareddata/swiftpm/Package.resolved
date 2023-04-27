@@ -163,6 +163,15 @@
       }
     },
     {
+      "identity" : "tree-sitter-markdown",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/cengelbart39/tree-sitter-markdown.git",
+      "state" : {
+        "branch" : "feature/spm",
+        "revision" : "4b2f595da752267f8e45ea30cbbad4d4c8ee9061"
+      }
+    },
+    {
       "identity" : "tree-sitter-objc",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/lukepistrol/tree-sitter-objc",

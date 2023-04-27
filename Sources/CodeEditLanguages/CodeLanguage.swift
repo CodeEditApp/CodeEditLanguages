@@ -102,6 +102,8 @@ public struct CodeLanguage {
             return tree_sitter_kotlin()
         case .lua:
             return tree_sitter_lua()
+        case .markdown:
+            return tree_sitter_markdown()
         case .objc:
             return tree_sitter_objc()
         case .ocaml:

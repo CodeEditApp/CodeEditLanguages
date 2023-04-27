@@ -404,6 +404,50 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotEqual(query?.patternCount, 0)
     }
 
+// MARK: - Markdown
+ 
+    func test_CodeLanguageMarkdown() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.md")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .markdown)
+    }
+
+    func test_CodeLanguageMarkdown2() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.mkd")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .markdown)
+    }
+
+    func test_CodeLanguageMarkdown3() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.mkdn")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .markdown)
+    }
+
+    func test_CodeLanguageMarkdown4() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.mdwn")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .markdown)
+    }
+
+    func test_CodeLanguageMarkdown5() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.mdown")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .markdown)
+    }
+
+    func test_CodeLanguageMarkdown6() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.markdown")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .markdown)
+    }
+
 // MARK: - Objective C
 
     func test_CodeLanguageObjC() throws {

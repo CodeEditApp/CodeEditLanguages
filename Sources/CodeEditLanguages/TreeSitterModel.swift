@@ -56,6 +56,8 @@ public class TreeSitterModel {
             return kotlinQuery
         case .lua:
             return luaQuery
+        case .markdown:
+            return nil
         case .objc:
             return objcQuery
         case .ocaml:

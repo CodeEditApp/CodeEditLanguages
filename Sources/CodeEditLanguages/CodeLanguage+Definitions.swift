@@ -29,6 +29,7 @@ public extension CodeLanguage {
         .jsx,
         .kotlin,
         .lua,
+        .markdown,
         .objc,
         .ocaml,
         .ocamlInterface,
@@ -176,6 +177,13 @@ public extension CodeLanguage {
         tsName: "lua",
         extensions: ["lua"],
         highlights: ["injections"]
+    )
+
+    /// A language structure for `Markdown`
+    static let markdown: CodeLanguage = .init(
+        id: .markdown,
+        tsName: "markdown",
+        extensions: ["md", "mkd", "mkdn", "mdwn", "mdown", "markdown"]
     )
 
     /// A language structure for `Objective C`
