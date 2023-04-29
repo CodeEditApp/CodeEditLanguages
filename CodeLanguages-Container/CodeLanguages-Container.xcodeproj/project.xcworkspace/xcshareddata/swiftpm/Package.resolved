@@ -226,6 +226,15 @@
       }
     },
     {
+      "identity" : "tree-sitter-scala",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bishabosha/tree-sitter-scala.git",
+      "state" : {
+        "branch" : "feature/spm",
+        "revision" : "d6e510497d9a16fa8e45f71908c21271566f63df"
+      }
+    },
+    {
       "identity" : "tree-sitter-sql",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/lukepistrol/tree-sitter-sql",

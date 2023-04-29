@@ -47,6 +47,7 @@ extern TSLanguage *tree_sitter_python();
 extern TSLanguage *tree_sitter_regex();
 extern TSLanguage *tree_sitter_ruby();
 extern TSLanguage *tree_sitter_rust();
+extern TSLanguage *tree_sitter_scala();
 extern TSLanguage *tree_sitter_sql();
 extern TSLanguage *tree_sitter_swift();
 extern TSLanguage *tree_sitter_tsx();

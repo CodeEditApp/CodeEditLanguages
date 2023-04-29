@@ -37,6 +37,7 @@ public extension CodeLanguage {
         .regex,
         .ruby,
         .rust,
+        .scala,
         .sql,
         .swift,
         .tsx,
@@ -234,6 +235,13 @@ public extension CodeLanguage {
         tsName: "rust",
         extensions: ["rs"],
         highlights: ["injections"]
+    )
+
+    /// A language structure for `Scala`
+    static let scala: CodeLanguage = .init(
+        id: .scala,
+        tsName: "scala",
+        extensions: ["scala", "sc"]
     )
 
     /// A language structure for `SQL`
