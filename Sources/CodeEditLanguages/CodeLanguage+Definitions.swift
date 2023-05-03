@@ -29,6 +29,8 @@ public extension CodeLanguage {
         .jsx,
         .kotlin,
         .lua,
+        .markdown,
+        .markdownInline,
         .objc,
         .ocaml,
         .ocamlInterface,
@@ -176,6 +178,22 @@ public extension CodeLanguage {
         id: .lua,
         tsName: "lua",
         extensions: ["lua"],
+        highlights: ["injections"]
+    )
+
+    /// A language structure for `Markdown`
+    static let markdown: CodeLanguage = .init(
+        id: .markdown,
+        tsName: "markdown",
+        extensions: ["md", "mkd", "mkdn", "mdwn", "mdown", "markdown"],
+        highlights: ["injections"]
+    )
+
+    /// A language structure for `Markdown Inline`
+    static let markdownInline: CodeLanguage = .init(
+        id: .markdownInline,
+        tsName: "markdown-inline",
+        extensions: [],
         highlights: ["injections"]
     )
 

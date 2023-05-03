@@ -163,6 +163,15 @@
       }
     },
     {
+      "identity" : "tree-sitter-markdown",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MDeiml/tree-sitter-markdown",
+      "state" : {
+        "branch" : "split_parser",
+        "revision" : "fa6bfd51727e4bef99f7eec5f43947f73d64ea7d"
+      }
+    },
+    {
       "identity" : "tree-sitter-objc",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/lukepistrol/tree-sitter-objc",
