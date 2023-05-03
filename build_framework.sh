@@ -13,7 +13,7 @@
 # convenience function to print a status message in green
 status () {
     local GREEN='\033[0;32m'
-    local NC='\033[0m' # No Color 
+    local NC='\033[0m' # No Color
     echo "${GREEN}◆ $1${NC}"
 }
 
@@ -75,21 +75,69 @@ RESOURCES_PATH="$PWD/Sources/CodeEditLanguages/Resources"
 status "Copying language queries to package resources..."
 rm -rf "$RESOURCES_PATH"
 
-# find and copy language queries 
+# find and copy language queries
 LIST=$( echo $CHECKOUTS_PATH/tree-* )
 
+OLD_PWD="$PWD"
+
 for lang in $LIST ; do
-    name=${lang##*/}
-    mkdir -p $RESOURCES_PATH/$name
-    highlights=$( find $lang -type f -name "*.scm" )
-    for highlight in $highlights ; do
-        highlight_name=${highlight##*/}
-        cp $highlight $RESOURCES_PATH/$name/$highlight_name
+    # determine how many targets a given package has
+    cd $lang
+    
+    # get package info as JSON
+    manifest=$(swift package dump-package)
+
+    # use jq to get the target path
+    targets=$(echo $manifest | jq -r '.targets[].path')
+    
+    # use jq to count number of targets
+    count=$(echo $manifest | jq '.targets | length')
+    
+    # Determine if target paths are all '.'
+    same=1
+    for target in $targets; do
+        if [[ $target != "." ]]; then
+            same=0
+            break
+        fi
+    done
+
+    # loop through targets
+    for target in $targets; do
+        name=${lang##*/}
+        
+        # if there is only one target, use name
+        # otherwise use target
+        if [[ $count -eq 1 || ($count -ne 1 && $same -eq 1) ]]; then
+            mkdir -p $RESOURCES_PATH/$name
+        else
+            mkdir -p $RESOURCES_PATH/$target
+        fi
+            
+        highlights=$( find $lang/$target -type f -name "*.scm" )
+        for highlight in $highlights ; do
+            highlight_name=${highlight##*/}
+            
+            # if there is only one target, use name
+            # otherwise use target
+            if [[ $count -eq 1 || ($count -ne 1 && $same -eq 1) ]]; then
+                cp $highlight $RESOURCES_PATH/$name/$highlight_name
+            else
+                cp $highlight $RESOURCES_PATH/$target/$highlight_name
+            fi
+        done
+        
+        # If target paths are all '.', break out of loop
+        if [[ $same -eq 1 || ($count -ne 1 && $same -eq 1) ]]; then
+            break
+        fi
     done
 done
 status "Language queries copied to package resources!"
 
-# cleanup derived derived data 
+# cleanup derived derived data
+
+cd $OLD_PWD
 
 if [ -d "$PWD/DerivedData" ]; then
     status "Cleaning up DerivedData..."

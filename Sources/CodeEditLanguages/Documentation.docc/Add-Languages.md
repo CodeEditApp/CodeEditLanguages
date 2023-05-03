@@ -117,6 +117,10 @@ In order to add a language to ``CodeEditLanguages`` you need to open the `.xcode
    ```bash
    $ ./build_framework.sh
    ```
+    > Note: To run the script, you need to install `jq` by downloading it [here](https://stedolan.github.io/jq/) or with Homebrew using:
+    > ```bash
+    > $ brew install jq
+    > ```
 
 5. Check the output of the script. It should say `Done!` at the end.
    ![build_framework.sh console output](build-output)
