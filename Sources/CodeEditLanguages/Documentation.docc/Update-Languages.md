@@ -32,6 +32,11 @@ From time to time the `tree-sitter` languages need to be updated to their latest
    ```bash
    $ ./build_framework.sh
    ```
+    > Note: To run the script, you need to install `jq` by downloading it [here](https://stedolan.github.io/jq/) or with Homebrew using:
+    > ```bash
+    > $ brew install jq
+    > ```
+
    > Note: This script automatically removes old artifacts and replaces them with the new ones.
 
 3. Check the console output. It should say `Done!` at the end.
