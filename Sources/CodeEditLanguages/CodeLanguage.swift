@@ -118,6 +118,8 @@ public struct CodeLanguage {
             return tree_sitter_ruby()
         case .rust:
             return tree_sitter_rust()
+        case .scala:
+            return tree_sitter_scala()
         case .sql:
             return tree_sitter_sql()
         case .swift:

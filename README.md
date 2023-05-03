@@ -77,7 +77,7 @@ In order to add support for additional languages we have a complete guide on how
 | [Regex](https://github.com/tree-sitter/tree-sitter-regex) | ✅ | ✅ |
 | [Ruby](https://github.com/mattmassicotte/tree-sitter-ruby) | ✅ | ✅ |
 | [Rust](https://github.com/tree-sitter/tree-sitter-rust) | ✅ | ✅ |
-| [Scala](https://github.com/tree-sitter/tree-sitter-scala) |  |  |
+| [Scala](https://github.com/tree-sitter/tree-sitter-scala) | ✅ | ✅ |
 | [Sql](https://github.com/lukepistrol/tree-sitter-sql/tree/feature/spm) | ✅ | ✅ |
 | [Swift](https://github.com/alex-pinkus/tree-sitter-swift/tree/with-generated-files) | ✅ | ✅ |
 | [TOML](https://github.com/ikatyang/tree-sitter-toml) |  |  |
