@@ -37,6 +37,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - JSX
 - Kotlin
 - Lua
+- Markdown
 - Objective C
 - OCaml / OCaml Interface
 - PHP
@@ -88,6 +89,8 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - ``jsx``
 - ``kotlin``
 - ``lua``
+- ``markdown``
+- ``markdownInline``
 - ``objc``
 - ``php``
 - ``python``

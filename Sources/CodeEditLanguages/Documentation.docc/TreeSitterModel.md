@@ -50,6 +50,8 @@ let query = TreeSitterModel.shared.swiftQuery
 - ``jsxQuery``
 - ``kotlinQuery``
 - ``luaQuery``
+- ``markdownQuery``
+- ``markdownInlineQuery``
 - ``objcQuery``
 - ``ocamlQuery``
 - ``ocamlInterfaceQuery``

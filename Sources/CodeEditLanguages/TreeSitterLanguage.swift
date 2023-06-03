@@ -27,6 +27,8 @@ public enum TreeSitterLanguage: String {
     case jsx
     case kotlin
     case lua
+    case markdown
+    case markdownInline
     case objc
     case ocaml
     case ocamlInterface

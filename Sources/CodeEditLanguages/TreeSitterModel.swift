@@ -56,6 +56,10 @@ public class TreeSitterModel {
             return kotlinQuery
         case .lua:
             return luaQuery
+        case .markdown:
+            return markdownQuery
+        case .markdownInline:
+            return markdownInlineQuery
         case .objc:
             return objcQuery
         case .ocaml:
@@ -179,6 +183,16 @@ public class TreeSitterModel {
     /// Query for `Lua` files.
     public private(set) lazy var luaQuery: Query? = {
         return queryFor(.lua)
+    }()
+
+    /// Query for `Markdown` files.
+    public private(set) lazy var markdownQuery: Query? = {
+        return queryFor(.markdown)
+    }()
+
+    /// Query for `Markdown Inline` files.
+    public private(set) lazy var markdownInlineQuery: Query? = {
+        return queryFor(.markdownInline)
     }()
 
     /// Query for `Objective C` files.
