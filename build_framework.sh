@@ -88,10 +88,10 @@ for lang in $LIST ; do
     manifest=$(swift package dump-package)
 
     # use jq to get the target path
-    targets=$(echo $manifest | jq -r '.targets[].path')
+    targets=$(echo $manifest | jq -r '.targets[] | select(.type != "test") | .path')
     
     # use jq to count number of targets
-    count=$(echo $manifest | jq '.targets | length')
+    count=$(echo $manifest | jq '[.targets[] | select(.type != "test")] | length')
     
     # Determine if target paths are all '.'
     same=1

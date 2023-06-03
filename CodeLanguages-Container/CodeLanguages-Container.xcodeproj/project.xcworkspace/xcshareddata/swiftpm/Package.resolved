@@ -183,10 +183,10 @@
     {
       "identity" : "tree-sitter-ocaml",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/cengelbart39/tree-sitter-ocaml.git",
+      "location" : "https://github.com/tree-sitter/tree-sitter-ocaml.git",
       "state" : {
-        "branch" : "feature/spm",
-        "revision" : "506d9a4a7709b3cb629e015476a8a640ac3c06ed"
+        "branch" : "master",
+        "revision" : "2da49308381b91e19e5d270ec5117616d0e4b135"
       }
     },
     {
