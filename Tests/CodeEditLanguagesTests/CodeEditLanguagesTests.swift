@@ -321,6 +321,18 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotEqual(query?.patternCount, 0)
     }
 
+// MARK: - JSDoc
+
+    func test_FetchQueryJSDoc() throws {
+        var language = CodeLanguage.jsdoc
+        language.resourceURL = bundleURL
+
+        let data = try Data(contentsOf: language.queryURL!)
+        let query = try? Query(language: language.language!, data: data)
+        XCTAssertNotNil(query)
+        XCTAssertNotEqual(query?.patternCount, 0)
+    }
+
 // MARK: - JSON
 
     func test_CodeLanguageJSON() throws {
