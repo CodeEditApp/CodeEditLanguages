@@ -148,7 +148,8 @@ public extension CodeLanguage {
         id: .javascript,
         tsName: "javascript",
         extensions: ["js"],
-        highlights: ["injections"]
+        highlights: ["injections"],
+        additionalIdentifiers: ["node", "deno"]
     )
 
     /// A language structure for `JSON`
@@ -230,7 +231,8 @@ public extension CodeLanguage {
     static let python: CodeLanguage = .init(
         id: .python,
         tsName: "python",
-        extensions: ["py"]
+        extensions: ["py"],
+        additionalIdentifiers: ["python2", "python3"]
     )
 
     /// A language structure for `Regex`
