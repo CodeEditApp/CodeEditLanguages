@@ -261,7 +261,7 @@ public class TreeSitterModel {
 
     /// Query for `TOML` files.
     public private(set) lazy var tomlQuery: Query? = {
-        return query(for: .toml)
+        return queryFor(.toml)
     }()
 
     /// Query for `TSX` files.
