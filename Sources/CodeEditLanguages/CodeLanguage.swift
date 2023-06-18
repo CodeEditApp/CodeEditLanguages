@@ -9,6 +9,7 @@ import Foundation
 import tree_sitter
 import SwiftTreeSitter
 import CodeLanguages_Container
+import RegexBuilder
 
 /// A structure holding metadata for code languages
 public struct CodeLanguage {
@@ -17,13 +18,15 @@ public struct CodeLanguage {
         tsName: String,
         extensions: Set<String>,
         parentURL: URL? = nil,
-        highlights: Set<String>? = nil
+        highlights: Set<String>? = nil,
+        additionalIdentifiers: Set<String> = []
     ) {
         self.id = id
         self.tsName = tsName
         self.extensions = extensions
         self.parentQueryURL = parentURL
         self.additionalHighlights = highlights
+        self.additionalIdentifiers = additionalIdentifiers
     }
 
     /// The ID of the language
@@ -51,6 +54,9 @@ public struct CodeLanguage {
 
     /// The bundle's resource URL
     internal var resourceURL: URL? = Bundle.module.resourceURL
+
+    /// A set of aditional identifiers to use for things like shebang matching.
+    public let additionalIdentifiers: Set<String>
 
     /// The tree-sitter language for the language if available
     public var language: Language? {
@@ -144,22 +150,8 @@ public struct CodeLanguage {
     }
 }
 
-public extension CodeLanguage {
-
-    /// Gets the corresponding language for the given file URL
-    ///
-    /// Uses the `pathExtension` URL component to detect the language
-    /// - Parameter url: The URL to get the language for.
-    /// - Returns: A language structure
-    static func detectLanguageFrom(url: URL) -> CodeLanguage {
-        let fileExtension = url.pathExtension.lowercased()
-        let fileName = url.pathComponents.last // should not be lowercase since it has to match e.g. `Dockerfile`
-        // This is to handle special file types without an extension (e.g., Makefile, Dockerfile)
-        let fileNameOrExtension = fileExtension.isEmpty ? (fileName != nil ? fileName! : "") : fileExtension
-        if let lang = allLanguages.first(where: { lang in lang.extensions.contains(fileNameOrExtension)}) {
-            return lang
-        } else {
-            return .default
-        }
+extension CodeLanguage: Hashable {
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
     }
 }
