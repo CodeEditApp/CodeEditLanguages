@@ -56,7 +56,7 @@ public extension CodeLanguage {
     /// - Parameter contents: The contents of the first few lines of the file.
     /// - Returns: The detected code language, if any.
     private static func detectLanguageUsingShebang(contents: String) -> CodeLanguage? {
-        var contents = contents
+        var contents = String(contents.split(separator: "\n").first ?? "")
         // Make sure:
         // - First line is a shebang
         // - There are contents after the shebang
