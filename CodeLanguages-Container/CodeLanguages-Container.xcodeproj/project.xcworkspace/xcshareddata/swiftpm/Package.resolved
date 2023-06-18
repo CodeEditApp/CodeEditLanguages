@@ -271,6 +271,15 @@
       }
     },
     {
+      "identity" : "tree-sitter-toml",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/cengelbart39/tree-sitter-toml.git",
+      "state" : {
+        "branch" : "feature/spm",
+        "revision" : "28db724e8e30920638b46d408c0fbac007ac6a62"
+      }
+    },
+    {
       "identity" : "tree-sitter-typescript",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/thecoolwinter/tree-sitter-typescript",

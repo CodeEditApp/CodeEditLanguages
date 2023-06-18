@@ -84,6 +84,8 @@ public class TreeSitterModel {
             return sqlQuery
         case .swift:
             return swiftQuery
+        case .toml:
+            return tomlQuery
         case .tsx:
             return tsxQuery
         case .typescript:
@@ -255,6 +257,11 @@ public class TreeSitterModel {
     /// Query for `Swift` files.
     public private(set) lazy var swiftQuery: Query? = {
         return queryFor(.swift)
+    }()
+
+    /// Query for `TOML` files.
+    public private(set) lazy var tomlQuery: Query? = {
+        return query(for: .toml)
     }()
 
     /// Query for `TSX` files.

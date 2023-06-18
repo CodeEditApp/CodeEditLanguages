@@ -136,6 +136,8 @@ public struct CodeLanguage {
             return tree_sitter_sql()
         case .swift:
             return tree_sitter_swift()
+        case .toml:
+            return tree_sitter_toml()
         case .tsx:
             return tree_sitter_tsx()
         case .typescript:
