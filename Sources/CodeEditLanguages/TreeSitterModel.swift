@@ -48,6 +48,8 @@ public class TreeSitterModel {
             return javaQuery
         case .javascript:
             return javascriptQuery
+        case .jsdoc:
+            return jsdocQuery
         case .json:
             return jsonQuery
         case .jsx:
@@ -163,6 +165,11 @@ public class TreeSitterModel {
     /// Query for `JavaScript` files.
     public private(set) lazy var javascriptQuery: Query? = {
         return queryFor(.javascript)
+    }()
+
+    /// Query for `JSDoc` files.
+    public private(set) lazy var jsdocQuery: Query? = {
+        return queryFor(.jsdoc)
     }()
 
     /// Query for `JSX` files.

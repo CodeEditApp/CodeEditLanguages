@@ -25,6 +25,7 @@ public extension CodeLanguage {
         .html,
         .java,
         .javascript,
+        .jsdoc,
         .json,
         .jsx,
         .kotlin,
@@ -149,6 +150,13 @@ public extension CodeLanguage {
         tsName: "javascript",
         extensions: ["js"],
         highlights: ["injections"]
+    )
+
+    /// A language structure for `JSDoc`
+    static let jsdoc: CodeLanguage = .init(
+        id: .jsdoc,
+        tsName: "jsdoc",
+        extensions: []
     )
 
     /// A language structure for `JSON`

@@ -94,6 +94,8 @@ public struct CodeLanguage {
             return tree_sitter_java()
         case .javascript:
             return tree_sitter_javascript()
+        case .jsdoc:
+            return tree_sitter_jsdoc()
         case .json:
             return tree_sitter_json()
         case .jsx:

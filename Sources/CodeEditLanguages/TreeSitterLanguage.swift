@@ -23,6 +23,7 @@ public enum TreeSitterLanguage: String {
     case html
     case java
     case javascript
+    case jsdoc
     case json
     case jsx
     case kotlin
