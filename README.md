@@ -48,7 +48,7 @@ In order to add support for additional languages we have a complete guide on how
 | Grammar        | Implemented | Syntax Highlighting |
 | -------------- | :---------: | :-----------------: |
 | [Agda](https://github.com/tree-sitter/tree-sitter-agda) |  | _not available_ |
-| [Bash](https://github.com/lukepistrol/tree-sitter-bash) | ✅ | ✅ |
+| [Bash](https://github.com/tree-sitter/tree-sitter-bash.git) | ✅ | ✅ |
 | [C](https://github.com/tree-sitter/tree-sitter-c) | ✅ | ✅ |
 | [C++](https://github.com/tree-sitter/tree-sitter-cpp) | ✅ | ✅ |
 | [C#](https://github.com/tree-sitter/tree-sitter-c-sharp) | ✅ | ✅ |
@@ -63,7 +63,7 @@ In order to add support for additional languages we have a complete guide on how
 | [Java](https://github.com/tree-sitter/tree-sitter-java) | ✅ | ✅ |
 | [JavaScript/JSX](https://github.com/tree-sitter/tree-sitter-javascript) | ✅ | ✅ |
 | [JSDoc](https://github.com/cengelbart39/tree-sitter-jsdoc/tree/feature/spm) | ✅ | ✅ |
-| [JSON](https://github.com/mattmassicotte/tree-sitter-json) | ✅ | ✅ |
+| [JSON](https://github.com/tree-sitter/tree-sitter-json.git) | ✅ | ✅ |
 | [Julia](https://github.com/tree-sitter/tree-sitter-julia) |  | _not available_ |
 | [Kotlin](https://github.com/lukepistrol/tree-sitter-kotlin/tree/feature/spm-queries) | ✅ | ✅ |
 | [Lua](https://github.com/lukepistrol/tree-sitter-lua/tree/feature/spm) | ✅ | ✅ |
@@ -81,7 +81,7 @@ In order to add support for additional languages we have a complete guide on how
 | [Sql](https://github.com/lukepistrol/tree-sitter-sql/tree/feature/spm) | ✅ | ✅ |
 | [Swift](https://github.com/alex-pinkus/tree-sitter-swift/tree/with-generated-files) | ✅ | ✅ |
 | [TOML](https://github.com/ikatyang/tree-sitter-toml) |  |  |
-| [TypeScript/TSX](https://github.com/tree-sitter/tree-sitter-typescript) | ✅ | ✅ |
+| [TypeScript/TSX](https://github.com/thecoolwinter/tree-sitter-typescript) | ✅ | ✅ |
 | [Verilog](https://github.com/tree-sitter/tree-sitter-verilog) |  | _not available_ |
 | [YAML](https://github.com/lukepistrol/tree-sitter-yaml/tree/feature/spm) | ✅ | ✅ |
 | [Zig](https://github.com/maxxnino/tree-sitter-zig) | ✅ | ✅ |
