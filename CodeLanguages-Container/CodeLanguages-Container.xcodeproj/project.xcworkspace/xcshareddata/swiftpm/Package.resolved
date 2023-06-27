@@ -246,10 +246,10 @@
     {
       "identity" : "tree-sitter-scala",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/bishabosha/tree-sitter-scala.git",
+      "location" : "https://github.com/tree-sitter/tree-sitter-scala.git",
       "state" : {
-        "branch" : "feature/spm",
-        "revision" : "d6e510497d9a16fa8e45f71908c21271566f63df"
+        "branch" : "master",
+        "revision" : "cda0de8a038b0e4ad79a97f7aa281250fcf88560"
       }
     },
     {
