@@ -111,10 +111,10 @@
     {
       "identity" : "tree-sitter-html",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/mattmassicotte/tree-sitter-html.git",
+      "location" : "https://github.com/tree-sitter/tree-sitter-html.git",
       "state" : {
-        "branch" : "feature/spm",
-        "revision" : "68b8bed0c1ebecbaf1919d0a7ae4b27592e6cc45"
+        "branch" : "master",
+        "revision" : "ab91d87963c47ffd08a7967b9aa73eb53293d120"
       }
     },
     {
@@ -255,7 +255,7 @@
     {
       "identity" : "tree-sitter-sql",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/lukepistrol/tree-sitter-sql",
+      "location" : "https://github.com/lukepistrol/tree-sitter-sql.git",
       "state" : {
         "branch" : "feature/spm",
         "revision" : "fb79fdfb7413906a6ca2e0833c57d1cb38cc00f2"

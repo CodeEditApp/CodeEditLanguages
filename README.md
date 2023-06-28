@@ -59,7 +59,7 @@ In order to add support for additional languages we have a complete guide on how
 | [ERB, EJS](https://github.com/tree-sitter/tree-sitter-embedded-template) |  |  |
 | [Go](https://github.com/tree-sitter/tree-sitter-go) | ✅ | ✅ |
 | [Haskell](https://github.com/tree-sitter/tree-sitter-haskell) | ✅ | ✅ |
-| [HTML](https://github.com/mattmassicotte/tree-sitter-html) | ✅ | ✅ |
+| [HTML](https://github.com/tree-sitter/tree-sitter-html) | ✅ | ✅ |
 | [Java](https://github.com/tree-sitter/tree-sitter-java) | ✅ | ✅ |
 | [JavaScript/JSX](https://github.com/tree-sitter/tree-sitter-javascript) | ✅ | ✅ |
 | [JSDoc](https://github.com/cengelbart39/tree-sitter-jsdoc/tree/feature/spm) | ✅ | ✅ |
