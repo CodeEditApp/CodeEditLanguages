@@ -48,7 +48,7 @@ In order to add support for additional languages we have a complete guide on how
 | Grammar        | Implemented | Syntax Highlighting |
 | -------------- | :---------: | :-----------------: |
 | [Agda](https://github.com/tree-sitter/tree-sitter-agda) |  | _not available_ |
-| [Bash](https://github.com/tree-sitter/tree-sitter-bash.git) | ✅ | ✅ |
+| [Bash](https://github.com/tree-sitter/tree-sitter-bash) | ✅ | ✅ |
 | [C](https://github.com/tree-sitter/tree-sitter-c) | ✅ | ✅ |
 | [C++](https://github.com/tree-sitter/tree-sitter-cpp) | ✅ | ✅ |
 | [C#](https://github.com/tree-sitter/tree-sitter-c-sharp) | ✅ | ✅ |
@@ -63,7 +63,7 @@ In order to add support for additional languages we have a complete guide on how
 | [Java](https://github.com/tree-sitter/tree-sitter-java) | ✅ | ✅ |
 | [JavaScript/JSX](https://github.com/tree-sitter/tree-sitter-javascript) | ✅ | ✅ |
 | [JSDoc](https://github.com/cengelbart39/tree-sitter-jsdoc/tree/feature/spm) | ✅ | ✅ |
-| [JSON](https://github.com/tree-sitter/tree-sitter-json.git) | ✅ | ✅ |
+| [JSON](https://github.com/tree-sitter/tree-sitter-json) | ✅ | ✅ |
 | [Julia](https://github.com/tree-sitter/tree-sitter-julia) |  | _not available_ |
 | [Kotlin](https://github.com/lukepistrol/tree-sitter-kotlin/tree/feature/spm-queries) | ✅ | ✅ |
 | [Lua](https://github.com/lukepistrol/tree-sitter-lua/tree/feature/spm) | ✅ | ✅ |
