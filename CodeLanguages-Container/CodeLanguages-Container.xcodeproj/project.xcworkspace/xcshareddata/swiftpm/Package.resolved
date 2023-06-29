@@ -273,10 +273,10 @@
     {
       "identity" : "tree-sitter-typescript",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/thecoolwinter/tree-sitter-typescript",
+      "location" : "https://github.com/tree-sitter/tree-sitter-typescript.git",
       "state" : {
         "branch" : "master",
-        "revision" : "018464ed3f93fe757418316b3cc1c72198fa5b8c"
+        "revision" : "3429d8c77d7a83e80032667f0642e6cb19d0c772"
       }
     },
     {
