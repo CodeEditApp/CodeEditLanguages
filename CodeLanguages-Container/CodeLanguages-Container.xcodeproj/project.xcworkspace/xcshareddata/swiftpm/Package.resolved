@@ -255,10 +255,10 @@
     {
       "identity" : "tree-sitter-sql",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/lukepistrol/tree-sitter-sql.git",
+      "location" : "https://github.com/DerekStride/tree-sitter-sql.git",
       "state" : {
-        "branch" : "feature/spm",
-        "revision" : "fb79fdfb7413906a6ca2e0833c57d1cb38cc00f2"
+        "branch" : "gh-pages",
+        "revision" : "b1086083473cc7a0b0476d853f3152dd3a378aef"
       }
     },
     {
