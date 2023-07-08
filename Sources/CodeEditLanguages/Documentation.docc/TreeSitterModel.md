@@ -63,5 +63,6 @@ let query = TreeSitterModel.shared.swiftQuery
 - ``scalaQuery``
 - ``sqlQuery``
 - ``swiftQuery``
+- ``tomlQuery``
 - ``yamlQuery``
 - ``zigQuery``
