@@ -20,6 +20,8 @@ public class TreeSitterModel {
     public func query(for language: TreeSitterLanguage) -> Query? {
         // swiftlint:disable:previous cyclomatic_complexity function_body_length
         switch language {
+        case .agda:
+            return agdaQuery
         case .bash:
             return bashQuery
         case .c:
@@ -98,6 +100,11 @@ public class TreeSitterModel {
             return nil
         }
     }
+
+    /// Query for `Agda` files.
+    public private(set) lazy var agdaQuery: Query? = {
+        return queryFor(.agda)
+    }()
 
     /// Query for `Bash` files.
     public private(set) lazy var bashQuery: Query? = {

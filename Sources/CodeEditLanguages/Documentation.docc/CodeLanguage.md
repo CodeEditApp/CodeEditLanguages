@@ -19,6 +19,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 
 ### Supported Languages
 
+- Agda
 - Bash
 - C
 - C++

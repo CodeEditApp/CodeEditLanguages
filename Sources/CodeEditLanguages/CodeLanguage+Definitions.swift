@@ -11,6 +11,7 @@ public extension CodeLanguage {
 
     /// An array of all language structures.
     static let allLanguages: [CodeLanguage] = [
+        .agda,
         .bash,
         .c,
         .cpp,
@@ -49,6 +50,13 @@ public extension CodeLanguage {
         .yaml,
         .zig
     ]
+
+    /// A language structure for `Agda`
+    static let agda: CodeLanguage = .init(
+        id: .agda,
+        tsName: "agda",
+        extensions: ["agda"]
+    )
 
     /// A language structure for `Bash`
     static let bash: CodeLanguage = .init(

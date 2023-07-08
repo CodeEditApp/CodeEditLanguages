@@ -22,6 +22,7 @@ extern "C" {
 // A collection of pointers to supported tree-sitter languages
 // Add new ones below (please keep an alphabetical order)
 
+extern TSLanguage *tree_sitter_agda();
 extern TSLanguage *tree_sitter_bash();
 extern TSLanguage *tree_sitter_c();
 extern TSLanguage *tree_sitter_cpp();

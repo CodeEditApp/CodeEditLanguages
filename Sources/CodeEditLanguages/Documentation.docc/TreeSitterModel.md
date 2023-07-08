@@ -32,6 +32,7 @@ let query = TreeSitterModel.shared.swiftQuery
 
 ### Instance Properties
 
+- ``agdaQuery``
 - ``bashQuery``
 - ``cQuery``
 - ``cppQuery``

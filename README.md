@@ -47,7 +47,7 @@ In order to add support for additional languages we have a complete guide on how
 
 | Grammar        | Implemented | Syntax Highlighting |
 | -------------- | :---------: | :-----------------: |
-| [Agda](https://github.com/tree-sitter/tree-sitter-agda) |  | _not available_ |
+| [Agda](https://github.com/cengelbart39/tree-sitter-agda/tree/feat/spm) | ✅ | _not available_ |
 | [Bash](https://github.com/lukepistrol/tree-sitter-bash) | ✅ | ✅ |
 | [C](https://github.com/tree-sitter/tree-sitter-c) | ✅ | ✅ |
 | [C++](https://github.com/tree-sitter/tree-sitter-cpp) | ✅ | ✅ |
