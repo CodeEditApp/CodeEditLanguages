@@ -29,6 +29,7 @@ public extension CodeLanguage {
         .jsdoc,
         .json,
         .jsx,
+        .julia,
         .kotlin,
         .lua,
         .markdown,
@@ -182,6 +183,13 @@ public extension CodeLanguage {
         tsName: "javascript",
         extensions: ["jsx"],
         highlights: ["highlights-jsx", "injections"]
+    )
+
+    /// A language structure for `Julia`
+    static let julia: CodeLanguage = .init(
+        id: .julia,
+        tsName: "julia",
+        extensions: ["jl"]
     )
 
     /// A language structure for `Kotlin`

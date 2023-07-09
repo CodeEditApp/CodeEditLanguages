@@ -108,6 +108,8 @@ public struct CodeLanguage {
             return tree_sitter_json()
         case .jsx:
             return tree_sitter_javascript()
+        case .julia:
+            return tree_sitter_julia()
         case .kotlin:
             return tree_sitter_kotlin()
         case .lua:

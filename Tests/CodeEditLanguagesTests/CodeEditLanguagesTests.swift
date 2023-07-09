@@ -14,21 +14,12 @@ final class CodeEditLanguagesTests: XCTestCase {
     let bundleURL = Bundle.module.resourceURL
 
 // MARK: - Agda
+    
     func test_CodeLanguageAgda() throws {
         let url = URL(fileURLWithPath: "~/path/to/file.agda")
         let language = CodeLanguage.detectLanguageFrom(url: url)
 
         XCTAssertEqual(language.id, .agda)
-    }
-
-    func test_FetchQueryAgda() throws {
-        var language = CodeLanguage.bash
-        language.resourceURL = bundleURL
-        
-        let data = try Data(contentsOf: language.queryURL!)
-        let query = try? Query(language: language.language!, data: data)
-        XCTAssertNotNil(query)
-        XCTAssertNotEqual(query?.patternCount, 0)
     }
     
 // MARK: - Bash
@@ -387,6 +378,15 @@ final class CodeEditLanguagesTests: XCTestCase {
         let query = try? Query(language: language.language!, data: data)
         XCTAssertNotNil(query)
         XCTAssertNotEqual(query?.patternCount, 0)
+    }
+
+// MARK: - Julia
+
+    func test_CodeLanguageJulia() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.jl")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .julia)
     }
 
 // MARK: - Kotlin

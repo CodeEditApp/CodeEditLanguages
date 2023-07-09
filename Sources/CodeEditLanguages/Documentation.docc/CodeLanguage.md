@@ -36,6 +36,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - JavaScript
 - JSON
 - JSX
+- Julia
 - Kotlin
 - Lua
 - Markdown
@@ -73,6 +74,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 
 - ``allLanguages``
 - ``default``
+- ``agda``
 - ``bash``
 - ``c``
 - ``cpp``
@@ -90,6 +92,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - ``jsdoc``
 - ``json``
 - ``jsx``
+- ``julia``
 - ``kotlin``
 - ``lua``
 - ``markdown``
