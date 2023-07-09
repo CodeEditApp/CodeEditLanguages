@@ -71,7 +71,7 @@ In order to add support for additional languages we have a complete guide on how
 | [Objective C](https://github.com/lukepistrol/tree-sitter-objc/tree/feature/spm) | ✅ | ✅ |
 | [OCaml](https://github.com/tree-sitter/tree-sitter-ocaml) | ✅ | ✅ |
 | Plain Text | ✅ | _not available_ |
-| [Perl](https://github.com/ganezdragon/tree-sitter-perl) |  | _not available_ |
+| [Perl](https://github.com/ganezdragon/tree-sitter-perl) | ✅ | _not available_ |
 | [PHP](https://github.com/tree-sitter/tree-sitter-php) | ✅ | ✅ |
 | [Python](https://github.com/lukepistrol/tree-sitter-python) | ✅ | ✅ |
 | [Regex](https://github.com/tree-sitter/tree-sitter-regex) | ✅ | ✅ |
@@ -82,7 +82,7 @@ In order to add support for additional languages we have a complete guide on how
 | [Swift](https://github.com/alex-pinkus/tree-sitter-swift/tree/with-generated-files) | ✅ | ✅ |
 | [TOML](https://github.com/cengelbart39/tree-sitter-toml/tree/feature/spm) | ✅ | ✅ |
 | [TypeScript/TSX](https://github.com/tree-sitter/tree-sitter-typescript) | ✅ | ✅ |
-| [Verilog](https://github.com/tree-sitter/tree-sitter-verilog) |  | _not available_ |
+| [Verilog](https://github.com/tree-sitter/tree-sitter-verilog) | ✅ | _not available_ |
 | [YAML](https://github.com/lukepistrol/tree-sitter-yaml/tree/feature/spm) | ✅ | ✅ |
 | [Zig](https://github.com/maxxnino/tree-sitter-zig) | ✅ | ✅ |
 

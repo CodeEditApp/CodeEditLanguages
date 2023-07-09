@@ -96,6 +96,8 @@ public class TreeSitterModel {
             return tsxQuery
         case .typescript:
             return typescriptQuery
+        case .verilog:
+            return nil
         case .yaml:
             return yamlQuery
         case .zig:

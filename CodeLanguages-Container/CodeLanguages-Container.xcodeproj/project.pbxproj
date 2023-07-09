@@ -43,6 +43,7 @@
 		9D7399242A5A245000CEF6E8 /* TreeSitterAgda in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7399232A5A245000CEF6E8 /* TreeSitterAgda */; };
 		9D7399272A5A2B5300CEF6E8 /* TreeSitterJulia in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7399262A5A2B5300CEF6E8 /* TreeSitterJulia */; };
 		9D73992A2A5A30A400CEF6E8 /* TreeSitterPerl in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7399292A5A30A400CEF6E8 /* TreeSitterPerl */; };
+		9D73992D2A5A34BF00CEF6E8 /* TreeSitterVerilog in Frameworks */ = {isa = PBXBuildFile; productRef = 9D73992C2A5A34BF00CEF6E8 /* TreeSitterVerilog */; };
 		9DB1B4362A2C0DAA0027B04E /* TreeSitterJSDoc in Frameworks */ = {isa = PBXBuildFile; productRef = 9DB1B4352A2C0DAA0027B04E /* TreeSitterJSDoc */; };
 		9DFDC3662A02D9BE0023B3BC /* TreeSitterMarkdown in Frameworks */ = {isa = PBXBuildFile; productRef = 9DFDC3652A02D9BE0023B3BC /* TreeSitterMarkdown */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 				9D73992A2A5A30A400CEF6E8 /* TreeSitterPerl in Frameworks */,
 				9D6E74512A2B9B2A0070701E /* TreeSitterOCaml in Frameworks */,
 				282C119329AA32C8004F1EA6 /* TreeSitterSQL in Frameworks */,
+				9D73992D2A5A34BF00CEF6E8 /* TreeSitterVerilog in Frameworks */,
 				28B3F039290C362C000CD04D /* TreeSitterElixir in Frameworks */,
 				28B3F02D290C35D9000CD04D /* TreeSitterC in Frameworks */,
 				28B3F04B290C368B000CD04D /* TreeSitterJS in Frameworks */,
@@ -208,6 +210,7 @@
 				9D7399232A5A245000CEF6E8 /* TreeSitterAgda */,
 				9D7399262A5A2B5300CEF6E8 /* TreeSitterJulia */,
 				9D7399292A5A30A400CEF6E8 /* TreeSitterPerl */,
+				9D73992C2A5A34BF00CEF6E8 /* TreeSitterVerilog */,
 			);
 			productName = "CodeLanguages-Container";
 			productReference = 28B3F00C290C207D000CD04D /* CodeLanguages_Container.framework */;
@@ -274,6 +277,7 @@
 				9D7399222A5A245000CEF6E8 /* XCRemoteSwiftPackageReference "tree-sitter-agda" */,
 				9D7399252A5A2B5200CEF6E8 /* XCRemoteSwiftPackageReference "tree-sitter-julia" */,
 				9D7399282A5A30A400CEF6E8 /* XCRemoteSwiftPackageReference "tree-sitter-perl" */,
+				9D73992B2A5A34BF00CEF6E8 /* XCRemoteSwiftPackageReference "tree-sitter-verilog" */,
 			);
 			productRefGroup = 28B3F00D290C207D000CD04D /* Products */;
 			projectDirPath = "";
@@ -795,6 +799,14 @@
 				kind = branch;
 			};
 		};
+		9D73992B2A5A34BF00CEF6E8 /* XCRemoteSwiftPackageReference "tree-sitter-verilog" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tree-sitter/tree-sitter-verilog.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		9DB1B4342A2C0DA90027B04E /* XCRemoteSwiftPackageReference "tree-sitter-jsdoc" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/cengelbart39/tree-sitter-jsdoc.git";
@@ -988,6 +1000,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9D7399282A5A30A400CEF6E8 /* XCRemoteSwiftPackageReference "tree-sitter-perl" */;
 			productName = TreeSitterPerl;
+		};
+		9D73992C2A5A34BF00CEF6E8 /* TreeSitterVerilog */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D73992B2A5A34BF00CEF6E8 /* XCRemoteSwiftPackageReference "tree-sitter-verilog" */;
+			productName = TreeSitterVerilog;
 		};
 		9DB1B4352A2C0DAA0027B04E /* TreeSitterJSDoc */ = {
 			isa = XCSwiftPackageProductDependency;

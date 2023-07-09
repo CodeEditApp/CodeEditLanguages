@@ -49,6 +49,7 @@ public extension CodeLanguage {
         .toml,
         .tsx,
         .typescript,
+        .verilog,
         .yaml,
         .zig
     ]
@@ -332,6 +333,13 @@ public extension CodeLanguage {
         tsName: "typescript",
         extensions: ["ts"],
         parentURL: CodeLanguage.javascript.queryURL
+    )
+
+    /// A language structure for `Verilog`
+    static let verilog: CodeLanguage = .init(
+        id: .verilog,
+        tsName: "verilog",
+        extensions: ["v"]
     )
 
     /// A language structure for `YAML`

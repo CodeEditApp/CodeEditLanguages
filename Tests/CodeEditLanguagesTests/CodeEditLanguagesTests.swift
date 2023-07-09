@@ -766,6 +766,15 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotEqual(query?.patternCount, 0)
     }
 
+// MARK: - Verilog
+
+    func test_CodeLanguageVerilog() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.v")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .verilog)
+    }
+
 // MARK: - YAML
 
     func test_CodeLanguageYAML() throws {

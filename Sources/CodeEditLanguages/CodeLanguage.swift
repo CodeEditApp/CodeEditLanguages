@@ -148,6 +148,8 @@ public struct CodeLanguage {
             return tree_sitter_tsx()
         case .typescript:
             return tree_sitter_typescript()
+        case .verilog:
+            return tree_sitter_verilog()
         case .yaml:
             return tree_sitter_yaml()
         case .zig:
