@@ -552,7 +552,22 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotNil(query)
         XCTAssertNotEqual(query?.patternCount, 0)
     }
-    
+
+// MARK: - Perl
+    func test_CodeLanguagePerl() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.pl")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .perl)
+    }
+
+    func test_CodeLanguagePerl2() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.pm")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .perl)
+    }
+
 // MARK: - PHP
 
     func test_CodeLanguagePHP() throws {

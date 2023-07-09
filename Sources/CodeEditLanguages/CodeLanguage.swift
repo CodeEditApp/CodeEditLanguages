@@ -124,6 +124,8 @@ public struct CodeLanguage {
             return tree_sitter_ocaml()
         case .ocamlInterface:
             return tree_sitter_ocaml_interface()
+        case .perl:
+            return tree_sitter_perl()
         case .php:
             return tree_sitter_php()
         case .python:

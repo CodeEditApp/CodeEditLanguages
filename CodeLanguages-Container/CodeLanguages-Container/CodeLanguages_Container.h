@@ -47,6 +47,7 @@ extern TSLanguage *tree_sitter_markdown_inline();
 extern TSLanguage *tree_sitter_objc();
 extern TSLanguage *tree_sitter_ocaml();
 extern TSLanguage *tree_sitter_ocaml_interface();
+extern TSLanguage *tree_sitter_perl();
 extern TSLanguage *tree_sitter_php();
 extern TSLanguage *tree_sitter_python();
 extern TSLanguage *tree_sitter_regex();

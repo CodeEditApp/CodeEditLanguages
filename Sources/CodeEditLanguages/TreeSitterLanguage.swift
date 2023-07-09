@@ -35,6 +35,7 @@ public enum TreeSitterLanguage: String {
     case objc
     case ocaml
     case ocamlInterface
+    case perl
     case php
     case python
     case regex

@@ -72,6 +72,8 @@ public class TreeSitterModel {
             return ocamlQuery
         case .ocamlInterface:
             return ocamlInterfaceQuery
+        case .perl:
+            return nil
         case .php:
             return phpQuery
         case .python:

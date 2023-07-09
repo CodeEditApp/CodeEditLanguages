@@ -37,6 +37,7 @@ public extension CodeLanguage {
         .objc,
         .ocaml,
         .ocamlInterface,
+        .perl,
         .php,
         .python,
         .regex,
@@ -242,6 +243,13 @@ public extension CodeLanguage {
         id: .ocamlInterface,
         tsName: "ocaml",
         extensions: ["mli"]
+    )
+
+    /// A language structure for `Perl`
+    static let perl: CodeLanguage = .init(
+        id: .perl,
+        tsName: "perl",
+        extensions: ["pl", "pm"]
     )
 
     /// A language structure for `PHP`

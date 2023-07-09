@@ -42,6 +42,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - Markdown
 - Objective C
 - OCaml / OCaml Interface
+- Perl
 - PHP
 - Python
 - Ruby
@@ -98,6 +99,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - ``markdown``
 - ``markdownInline``
 - ``objc``
+- ``perl``
 - ``php``
 - ``python``
 - ``ruby``
