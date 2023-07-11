@@ -80,7 +80,7 @@ In order to add support for additional languages we have a complete guide on how
 | [Scala](https://github.com/tree-sitter/tree-sitter-scala) | ✅ | ✅ |
 | [Sql](https://github.com/DerekStride/tree-sitter-sql) | ✅ | ✅ |
 | [Swift](https://github.com/alex-pinkus/tree-sitter-swift/tree/with-generated-files) | ✅ | ✅ |
-| [TOML](https://github.com/ikatyang/tree-sitter-toml) |  |  |
+| [TOML](https://github.com/cengelbart39/tree-sitter-toml/tree/feature/spm) | ✅ | ✅ |
 | [TypeScript/TSX](https://github.com/tree-sitter/tree-sitter-typescript) | ✅ | ✅ |
 | [Verilog](https://github.com/tree-sitter/tree-sitter-verilog) |  | _not available_ |
 | [YAML](https://github.com/lukepistrol/tree-sitter-yaml/tree/feature/spm) | ✅ | ✅ |

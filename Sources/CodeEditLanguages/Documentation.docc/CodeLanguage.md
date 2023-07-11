@@ -47,6 +47,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - Scala
 - SQL
 - Swift
+- TOML
 - YAML
 - Zig
 
@@ -100,6 +101,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - ``scala``
 - ``sql``
 - ``swift``
+- ``toml``
 - ``yaml``
 - ``zig``
 

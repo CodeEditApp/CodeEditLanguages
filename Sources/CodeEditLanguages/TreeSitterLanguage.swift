@@ -41,6 +41,7 @@ public enum TreeSitterLanguage: String {
     case scala
     case sql
     case swift
+    case toml
     case tsx
     case typescript
     case yaml

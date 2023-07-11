@@ -675,6 +675,25 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotNil(query)
         XCTAssertNotEqual(query?.patternCount, 0)
     }
+    
+// MARK: - TOML
+
+    func test_CodeLanguageTOML() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.toml")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .toml)
+    }
+
+    func test_FetchQueryTOML() throws {
+        var language = CodeLanguage.toml
+        language.resourceURL = bundleURL
+
+        let data = try Data(contentsOf: language.queryURL!)
+        let query = try? Query(language: language.language!, data: data)
+        XCTAssertNotNil(query)
+        XCTAssertNotEqual(query?.patternCount, 0)
+    }
 
     // MARK: - TSX
 

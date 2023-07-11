@@ -67,6 +67,7 @@
 				28B3F04B290C368B000CD04D /* TreeSitterJS in Frameworks */,
 				28B3F03C290C363E000CD04D /* TreeSitterGo in Frameworks */,
 				28B3F05D290C3709000CD04D /* TreeSitterSwift in Frameworks */,
+				9D0F66222A3F522700E0F4B7 /* TreeSitterTOML in Frameworks */,
 				28B9F7AA290DDAC900245748 /* TreeSitterBash in Frameworks */,
 				28B3F030290C35F9000CD04D /* TreeSitterCPP in Frameworks */,
 				28B3F04E290C3698000CD04D /* TreeSitterJSON in Frameworks */,
@@ -733,6 +734,14 @@
 			repositoryURL = "https://github.com/DerekStride/tree-sitter-sql.git";
 			requirement = {
 				branch = "gh-pages";
+				kind = branch;
+			};
+		};
+		9D0F66202A3F522700E0F4B7 /* XCRemoteSwiftPackageReference "tree-sitter-toml" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cengelbart39/tree-sitter-toml.git";
+			requirement = {
+				branch = feature/spm;
 				kind = branch;
 			};
 		};
