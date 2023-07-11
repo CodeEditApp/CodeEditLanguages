@@ -210,10 +210,10 @@
     {
       "identity" : "tree-sitter-python",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/lukepistrol/tree-sitter-python.git",
+      "location" : "https://github.com/tree-sitter/tree-sitter-python.git",
       "state" : {
-        "branch" : "feature/spm",
-        "revision" : "59316301dd0ebaf3771cdd5735cbe92378852680"
+        "branch" : "master",
+        "revision" : "db1d218a4f8fb87145aabeb22ca3c35925c411fc"
       }
     },
     {
