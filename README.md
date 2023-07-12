@@ -63,7 +63,7 @@ In order to add support for additional languages we have a complete guide on how
 | [Java](https://github.com/tree-sitter/tree-sitter-java) | ✅ | ✅ |
 | [JavaScript/JSX](https://github.com/tree-sitter/tree-sitter-javascript) | ✅ | ✅ |
 | [JSDoc](https://github.com/cengelbart39/tree-sitter-jsdoc/tree/feature/spm) | ✅ | ✅ |
-| [JSON](https://github.com/mattmassicotte/tree-sitter-json) | ✅ | ✅ |
+| [JSON](https://github.com/tree-sitter/tree-sitter-json) | ✅ | ✅ |
 | [Julia](https://github.com/tree-sitter/tree-sitter-julia) | ✅ | _not available_ |
 | [JSON](https://github.com/tree-sitter/tree-sitter-json) | ✅ | ✅ |
 | [Julia](https://github.com/tree-sitter/tree-sitter-julia) | ✅  | _not available_ |
