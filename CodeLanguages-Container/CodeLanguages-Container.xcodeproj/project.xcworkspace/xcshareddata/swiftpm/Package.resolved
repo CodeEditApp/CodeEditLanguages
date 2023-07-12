@@ -111,10 +111,10 @@
     {
       "identity" : "tree-sitter-html",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/mattmassicotte/tree-sitter-html.git",
+      "location" : "https://github.com/tree-sitter/tree-sitter-html.git",
       "state" : {
-        "branch" : "feature/spm",
-        "revision" : "68b8bed0c1ebecbaf1919d0a7ae4b27592e6cc45"
+        "branch" : "master",
+        "revision" : "ab91d87963c47ffd08a7967b9aa73eb53293d120"
       }
     },
     {
@@ -210,10 +210,10 @@
     {
       "identity" : "tree-sitter-python",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/lukepistrol/tree-sitter-python.git",
+      "location" : "https://github.com/tree-sitter/tree-sitter-python.git",
       "state" : {
-        "branch" : "feature/spm",
-        "revision" : "59316301dd0ebaf3771cdd5735cbe92378852680"
+        "branch" : "master",
+        "revision" : "db1d218a4f8fb87145aabeb22ca3c35925c411fc"
       }
     },
     {
@@ -246,19 +246,19 @@
     {
       "identity" : "tree-sitter-scala",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/bishabosha/tree-sitter-scala.git",
+      "location" : "https://github.com/tree-sitter/tree-sitter-scala.git",
       "state" : {
-        "branch" : "feature/spm",
-        "revision" : "d6e510497d9a16fa8e45f71908c21271566f63df"
+        "branch" : "master",
+        "revision" : "cda0de8a038b0e4ad79a97f7aa281250fcf88560"
       }
     },
     {
       "identity" : "tree-sitter-sql",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/lukepistrol/tree-sitter-sql",
+      "location" : "https://github.com/DerekStride/tree-sitter-sql.git",
       "state" : {
-        "branch" : "feature/spm",
-        "revision" : "fb79fdfb7413906a6ca2e0833c57d1cb38cc00f2"
+        "branch" : "gh-pages",
+        "revision" : "e08036ee4928b32fbebe55ac9336f81b7389e107"
       }
     },
     {
@@ -282,10 +282,10 @@
     {
       "identity" : "tree-sitter-typescript",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/thecoolwinter/tree-sitter-typescript",
+      "location" : "https://github.com/tree-sitter/tree-sitter-typescript.git",
       "state" : {
         "branch" : "master",
-        "revision" : "018464ed3f93fe757418316b3cc1c72198fa5b8c"
+        "revision" : "3429d8c77d7a83e80032667f0642e6cb19d0c772"
       }
     },
     {

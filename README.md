@@ -48,7 +48,7 @@ In order to add support for additional languages we have a complete guide on how
 | Grammar        | Implemented | Syntax Highlighting |
 | -------------- | :---------: | :-----------------: |
 | [Agda](https://github.com/tree-sitter/tree-sitter-agda) |  | _not available_ |
-| [Bash](https://github.com/lukepistrol/tree-sitter-bash) | ✅ | ✅ |
+| [Bash](https://github.com/tree-sitter/tree-sitter-bash) | ✅ | ✅ |
 | [C](https://github.com/tree-sitter/tree-sitter-c) | ✅ | ✅ |
 | [C++](https://github.com/tree-sitter/tree-sitter-cpp) | ✅ | ✅ |
 | [C#](https://github.com/tree-sitter/tree-sitter-c-sharp) | ✅ | ✅ |
@@ -59,11 +59,11 @@ In order to add support for additional languages we have a complete guide on how
 | [ERB, EJS](https://github.com/tree-sitter/tree-sitter-embedded-template) |  |  |
 | [Go](https://github.com/tree-sitter/tree-sitter-go) | ✅ | ✅ |
 | [Haskell](https://github.com/tree-sitter/tree-sitter-haskell) | ✅ | ✅ |
-| [HTML](https://github.com/mattmassicotte/tree-sitter-html) | ✅ | ✅ |
+| [HTML](https://github.com/tree-sitter/tree-sitter-html) | ✅ | ✅ |
 | [Java](https://github.com/tree-sitter/tree-sitter-java) | ✅ | ✅ |
 | [JavaScript/JSX](https://github.com/tree-sitter/tree-sitter-javascript) | ✅ | ✅ |
 | [JSDoc](https://github.com/cengelbart39/tree-sitter-jsdoc/tree/feature/spm) | ✅ | ✅ |
-| [JSON](https://github.com/mattmassicotte/tree-sitter-json) | ✅ | ✅ |
+| [JSON](https://github.com/tree-sitter/tree-sitter-json) | ✅ | ✅ |
 | [Julia](https://github.com/tree-sitter/tree-sitter-julia) |  | _not available_ |
 | [Kotlin](https://github.com/lukepistrol/tree-sitter-kotlin/tree/feature/spm-queries) | ✅ | ✅ |
 | [Lua](https://github.com/lukepistrol/tree-sitter-lua/tree/feature/spm) | ✅ | ✅ |
@@ -73,12 +73,12 @@ In order to add support for additional languages we have a complete guide on how
 | Plain Text | ✅ | _not available_ |
 | [Perl](https://github.com/ganezdragon/tree-sitter-perl) |  | _not available_ |
 | [PHP](https://github.com/tree-sitter/tree-sitter-php) | ✅ | ✅ |
-| [Python](https://github.com/lukepistrol/tree-sitter-python) | ✅ | ✅ |
+| [Python](https://github.com/tree-sitter/tree-sitter-python) | ✅ | ✅ |
 | [Regex](https://github.com/tree-sitter/tree-sitter-regex) | ✅ | ✅ |
 | [Ruby](https://github.com/mattmassicotte/tree-sitter-ruby) | ✅ | ✅ |
 | [Rust](https://github.com/tree-sitter/tree-sitter-rust) | ✅ | ✅ |
 | [Scala](https://github.com/tree-sitter/tree-sitter-scala) | ✅ | ✅ |
-| [Sql](https://github.com/lukepistrol/tree-sitter-sql/tree/feature/spm) | ✅ | ✅ |
+| [Sql](https://github.com/DerekStride/tree-sitter-sql) | ✅ | ✅ |
 | [Swift](https://github.com/alex-pinkus/tree-sitter-swift/tree/with-generated-files) | ✅ | ✅ |
 | [TOML](https://github.com/cengelbart39/tree-sitter-toml/tree/feature/spm) | ✅ | ✅ |
 | [TypeScript/TSX](https://github.com/tree-sitter/tree-sitter-typescript) | ✅ | ✅ |
