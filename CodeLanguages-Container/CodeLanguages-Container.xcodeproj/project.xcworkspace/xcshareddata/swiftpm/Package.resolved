@@ -147,10 +147,10 @@
     {
       "identity" : "tree-sitter-jsdoc",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/cengelbart39/tree-sitter-jsdoc.git",
+      "location" : "https://github.com/tree-sitter/tree-sitter-jsdoc.git",
       "state" : {
-        "branch" : "feature/spm",
-        "revision" : "b25a13f0521a80cbb6157d7466b837d19bdc3549"
+        "branch" : "master",
+        "revision" : "d01984de49927c979b46ea5c01b78c8ddd79baf9"
       }
     },
     {
