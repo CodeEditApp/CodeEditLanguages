@@ -134,7 +134,7 @@ public class TreeSitterModel {
 
     /// Query for `Dart` files.
     public private(set) lazy var dartQuery: Query? = {
-        return query(for: .dart)
+        return queryFor(.dart)
     }()
 
     /// Query for `Dockerfile` files.

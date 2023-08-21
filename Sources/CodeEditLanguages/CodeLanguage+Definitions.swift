@@ -79,7 +79,7 @@ public extension CodeLanguage {
     static let cpp: CodeLanguage = .init(
         id: .cpp,
         tsName: "cpp",
-        extensions: ["cc", "cpp", "hpp", "h"],
+        extensions: ["cc", "cpp", "c++", "hpp", "h"],
         parentURL: CodeLanguage.c.queryURL,
         highlights: ["injections"]
     )
