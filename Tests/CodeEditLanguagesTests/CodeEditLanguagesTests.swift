@@ -13,6 +13,15 @@ final class CodeEditLanguagesTests: XCTestCase {
 
     let bundleURL = Bundle.module.resourceURL
 
+// MARK: - Agda
+    
+    func test_CodeLanguageAgda() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.agda")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .agda)
+    }
+    
 // MARK: - Bash
 
     func test_CodeLanguageBash() throws {
@@ -371,6 +380,15 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotEqual(query?.patternCount, 0)
     }
 
+// MARK: - Julia
+
+    func test_CodeLanguageJulia() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.jl")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .julia)
+    }
+
 // MARK: - Kotlin
 
     func test_CodeLanguageKotlin() throws {
@@ -534,7 +552,22 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotNil(query)
         XCTAssertNotEqual(query?.patternCount, 0)
     }
-    
+
+// MARK: - Perl
+    func test_CodeLanguagePerl() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.pl")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .perl)
+    }
+
+    func test_CodeLanguagePerl2() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.pm")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .perl)
+    }
+
 // MARK: - PHP
 
     func test_CodeLanguagePHP() throws {
@@ -731,6 +764,15 @@ final class CodeEditLanguagesTests: XCTestCase {
         let query = try? Query(language: language.language!, data: data)
         XCTAssertNotNil(query)
         XCTAssertNotEqual(query?.patternCount, 0)
+    }
+
+// MARK: - Verilog
+
+    func test_CodeLanguageVerilog() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.v")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .verilog)
     }
 
 // MARK: - YAML

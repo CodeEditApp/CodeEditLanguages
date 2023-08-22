@@ -20,6 +20,8 @@ public class TreeSitterModel {
     public func query(for language: TreeSitterLanguage) -> Query? {
         // swiftlint:disable:previous cyclomatic_complexity function_body_length
         switch language {
+        case .agda:
+            return nil
         case .bash:
             return bashQuery
         case .c:
@@ -54,6 +56,8 @@ public class TreeSitterModel {
             return jsonQuery
         case .jsx:
             return jsxQuery
+        case .julia:
+            return nil
         case .kotlin:
             return kotlinQuery
         case .lua:
@@ -68,6 +72,8 @@ public class TreeSitterModel {
             return ocamlQuery
         case .ocamlInterface:
             return ocamlInterfaceQuery
+        case .perl:
+            return nil
         case .php:
             return phpQuery
         case .python:
@@ -90,6 +96,8 @@ public class TreeSitterModel {
             return tsxQuery
         case .typescript:
             return typescriptQuery
+        case .verilog:
+            return nil
         case .yaml:
             return yamlQuery
         case .zig:

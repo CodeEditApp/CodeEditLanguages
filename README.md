@@ -47,7 +47,7 @@ In order to add support for additional languages we have a complete guide on how
 
 | Grammar        | Implemented | Syntax Highlighting |
 | -------------- | :---------: | :-----------------: |
-| [Agda](https://github.com/tree-sitter/tree-sitter-agda) |  | _not available_ |
+| [Agda](https://github.com/cengelbart39/tree-sitter-agda/tree/feat/spm) | ✅ | _not available_ |
 | [Bash](https://github.com/tree-sitter/tree-sitter-bash) | ✅ | ✅ |
 | [C](https://github.com/tree-sitter/tree-sitter-c) | ✅ | ✅ |
 | [C++](https://github.com/tree-sitter/tree-sitter-cpp) | ✅ | ✅ |
@@ -64,14 +64,14 @@ In order to add support for additional languages we have a complete guide on how
 | [JavaScript/JSX](https://github.com/tree-sitter/tree-sitter-javascript) | ✅ | ✅ |
 | [JSDoc](https://github.com/cengelbart39/tree-sitter-jsdoc/tree/feature/spm) | ✅ | ✅ |
 | [JSON](https://github.com/tree-sitter/tree-sitter-json) | ✅ | ✅ |
-| [Julia](https://github.com/tree-sitter/tree-sitter-julia) |  | _not available_ |
+| [Julia](https://github.com/tree-sitter/tree-sitter-julia) | ✅ | _not available_ |
 | [Kotlin](https://github.com/lukepistrol/tree-sitter-kotlin/tree/feature/spm-queries) | ✅ | ✅ |
 | [Lua](https://github.com/lukepistrol/tree-sitter-lua/tree/feature/spm) | ✅ | ✅ |
 | [Markdown](https://github.com/MDeiml/tree-sitter-markdown) | ✅ | ✅ |
 | [Objective C](https://github.com/lukepistrol/tree-sitter-objc/tree/feature/spm) | ✅ | ✅ |
 | [OCaml](https://github.com/tree-sitter/tree-sitter-ocaml) | ✅ | ✅ |
 | Plain Text | ✅ | _not available_ |
-| [Perl](https://github.com/ganezdragon/tree-sitter-perl) |  | _not available_ |
+| [Perl](https://github.com/ganezdragon/tree-sitter-perl) | ✅ | _not available_ |
 | [PHP](https://github.com/tree-sitter/tree-sitter-php) | ✅ | ✅ |
 | [Python](https://github.com/tree-sitter/tree-sitter-python) | ✅ | ✅ |
 | [Regex](https://github.com/tree-sitter/tree-sitter-regex) | ✅ | ✅ |
@@ -82,7 +82,7 @@ In order to add support for additional languages we have a complete guide on how
 | [Swift](https://github.com/alex-pinkus/tree-sitter-swift/tree/with-generated-files) | ✅ | ✅ |
 | [TOML](https://github.com/cengelbart39/tree-sitter-toml/tree/feature/spm) | ✅ | ✅ |
 | [TypeScript/TSX](https://github.com/tree-sitter/tree-sitter-typescript) | ✅ | ✅ |
-| [Verilog](https://github.com/tree-sitter/tree-sitter-verilog) |  | _not available_ |
+| [Verilog](https://github.com/tree-sitter/tree-sitter-verilog) | ✅ | _not available_ |
 | [YAML](https://github.com/lukepistrol/tree-sitter-yaml/tree/feature/spm) | ✅ | ✅ |
 | [Zig](https://github.com/maxxnino/tree-sitter-zig) | ✅ | ✅ |
 

@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "tree-sitter-agda",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/cengelbart39/tree-sitter-agda.git",
+      "state" : {
+        "branch" : "feat/spm",
+        "revision" : "076e015d084867a3f367fce3c23dee09fb666eb2"
+      }
+    },
+    {
       "identity" : "tree-sitter-bash",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tree-sitter/tree-sitter-bash.git",
@@ -154,6 +163,15 @@
       }
     },
     {
+      "identity" : "tree-sitter-julia",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tree-sitter/tree-sitter-julia.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "784364cb9185ef8dc245de4b0b51e3a22503419d"
+      }
+    },
+    {
       "identity" : "tree-sitter-kotlin",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/lukepistrol/tree-sitter-kotlin",
@@ -196,6 +214,15 @@
       "state" : {
         "branch" : "master",
         "revision" : "2da49308381b91e19e5d270ec5117616d0e4b135"
+      }
+    },
+    {
+      "identity" : "tree-sitter-perl",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ganezdragon/tree-sitter-perl.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "60aa138f9e1db15becad53070f4d5898b0e8a98c"
       }
     },
     {
@@ -286,6 +313,15 @@
       "state" : {
         "branch" : "master",
         "revision" : "3429d8c77d7a83e80032667f0642e6cb19d0c772"
+      }
+    },
+    {
+      "identity" : "tree-sitter-verilog",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tree-sitter/tree-sitter-verilog.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "22f9b845c77c52b86b21adaebe689864957f4e31"
       }
     },
     {

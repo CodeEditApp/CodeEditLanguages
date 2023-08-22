@@ -19,6 +19,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 
 ### Supported Languages
 
+- Agda
 - Bash
 - C
 - C++
@@ -35,11 +36,13 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - JavaScript
 - JSON
 - JSX
+- Julia
 - Kotlin
 - Lua
 - Markdown
 - Objective C
 - OCaml / OCaml Interface
+- Perl
 - PHP
 - Python
 - Ruby
@@ -48,6 +51,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - SQL
 - Swift
 - TOML
+- Verilog
 - YAML
 - Zig
 
@@ -72,6 +76,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 
 - ``allLanguages``
 - ``default``
+- ``agda``
 - ``bash``
 - ``c``
 - ``cpp``
@@ -89,11 +94,13 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - ``jsdoc``
 - ``json``
 - ``jsx``
+- ``julia``
 - ``kotlin``
 - ``lua``
 - ``markdown``
 - ``markdownInline``
 - ``objc``
+- ``perl``
 - ``php``
 - ``python``
 - ``ruby``
@@ -102,6 +109,7 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - ``sql``
 - ``swift``
 - ``toml``
+- ``verilog``
 - ``yaml``
 - ``zig``
 

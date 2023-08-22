@@ -11,6 +11,7 @@ public extension CodeLanguage {
 
     /// An array of all language structures.
     static let allLanguages: [CodeLanguage] = [
+        .agda,
         .bash,
         .c,
         .cpp,
@@ -28,6 +29,7 @@ public extension CodeLanguage {
         .jsdoc,
         .json,
         .jsx,
+        .julia,
         .kotlin,
         .lua,
         .markdown,
@@ -35,6 +37,7 @@ public extension CodeLanguage {
         .objc,
         .ocaml,
         .ocamlInterface,
+        .perl,
         .php,
         .python,
         .regex,
@@ -46,9 +49,17 @@ public extension CodeLanguage {
         .toml,
         .tsx,
         .typescript,
+        .verilog,
         .yaml,
         .zig
     ]
+
+    /// A language structure for `Agda`
+    static let agda: CodeLanguage = .init(
+        id: .agda,
+        tsName: "agda",
+        extensions: ["agda"]
+    )
 
     /// A language structure for `Bash`
     static let bash: CodeLanguage = .init(
@@ -176,6 +187,13 @@ public extension CodeLanguage {
         highlights: ["highlights-jsx", "injections"]
     )
 
+    /// A language structure for `Julia`
+    static let julia: CodeLanguage = .init(
+        id: .julia,
+        tsName: "julia",
+        extensions: ["jl"]
+    )
+
     /// A language structure for `Kotlin`
     static let kotlin: CodeLanguage = .init(
         id: .kotlin,
@@ -226,6 +244,13 @@ public extension CodeLanguage {
         id: .ocamlInterface,
         tsName: "ocaml",
         extensions: ["mli"]
+    )
+
+    /// A language structure for `Perl`
+    static let perl: CodeLanguage = .init(
+        id: .perl,
+        tsName: "perl",
+        extensions: ["pl", "pm"]
     )
 
     /// A language structure for `PHP`
@@ -308,6 +333,13 @@ public extension CodeLanguage {
         tsName: "typescript",
         extensions: ["ts"],
         parentURL: CodeLanguage.javascript.queryURL
+    )
+
+    /// A language structure for `Verilog`
+    static let verilog: CodeLanguage = .init(
+        id: .verilog,
+        tsName: "verilog",
+        extensions: ["v"]
     )
 
     /// A language structure for `YAML`

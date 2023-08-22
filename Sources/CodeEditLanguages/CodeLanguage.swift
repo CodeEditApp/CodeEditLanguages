@@ -72,6 +72,8 @@ public struct CodeLanguage {
     /// Gets the TSLanguage from `tree-sitter`
     private var tsLanguage: UnsafeMutablePointer<TSLanguage>? {
         switch id {
+        case .agda:
+            return tree_sitter_agda()
         case .bash:
             return tree_sitter_bash()
         case .c:
@@ -106,6 +108,8 @@ public struct CodeLanguage {
             return tree_sitter_json()
         case .jsx:
             return tree_sitter_javascript()
+        case .julia:
+            return tree_sitter_julia()
         case .kotlin:
             return tree_sitter_kotlin()
         case .lua:
@@ -120,6 +124,8 @@ public struct CodeLanguage {
             return tree_sitter_ocaml()
         case .ocamlInterface:
             return tree_sitter_ocaml_interface()
+        case .perl:
+            return tree_sitter_perl()
         case .php:
             return tree_sitter_php()
         case .python:
@@ -142,6 +148,8 @@ public struct CodeLanguage {
             return tree_sitter_tsx()
         case .typescript:
             return tree_sitter_typescript()
+        case .verilog:
+            return tree_sitter_verilog()
         case .yaml:
             return tree_sitter_yaml()
         case .zig:
