@@ -274,6 +274,13 @@ final class CodeEditLanguagesTests: XCTestCase {
 
         XCTAssertEqual(language.id, .html)
     }
+    
+    func test_CodeLanguageHTML3() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.shtml")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .html)
+    }
 
     func test_FetchQueryHTML() throws {
         var language = CodeLanguage.html
