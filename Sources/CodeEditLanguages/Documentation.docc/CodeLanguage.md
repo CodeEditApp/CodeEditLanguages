@@ -27,7 +27,9 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - CSS
 - Dart
 - Dockerfile
+- EJS
 - Elixir
+- ERB
 - Go
 - Go Mod
 - Haskell
@@ -84,7 +86,9 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - ``css``
 - ``dart``
 - ``dockerfile``
+- ``ejs``
 - ``elixir``
+- ``erb``
 - ``go``
 - ``goMod``
 - ``haskell``
@@ -100,15 +104,20 @@ let language = CodeLanguage.detectLanguageFrom(url: fileURL)
 - ``markdown``
 - ``markdownInline``
 - ``objc``
+- ``ocaml``
+- ``ocamlInterface``
 - ``perl``
 - ``php``
 - ``python``
+- ``regex``
 - ``ruby``
 - ``rust``
 - ``scala``
 - ``sql``
 - ``swift``
 - ``toml``
+- ``tsx``
+- ``typescript``
 - ``verilog``
 - ``yaml``
 - ``zig``

@@ -91,6 +91,15 @@
       }
     },
     {
+      "identity" : "tree-sitter-embedded-template",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/cengelbart39/tree-sitter-embedded-template.git",
+      "state" : {
+        "branch" : "feature/spm",
+        "revision" : "b1a6a54585f43d1429d5d178de91f691abda668c"
+      }
+    },
+    {
       "identity" : "tree-sitter-go",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tree-sitter/tree-sitter-go.git",

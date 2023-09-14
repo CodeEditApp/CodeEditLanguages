@@ -19,7 +19,9 @@ public extension CodeLanguage {
         .css,
         .dart,
         .dockerfile,
+        .ejs,
         .elixir,
+        .erb,
         .go,
         .goMod,
         .haskell,
@@ -112,12 +114,28 @@ public extension CodeLanguage {
         extensions: ["Dockerfile"]
     )
 
+    /// A language structure for `EJS`
+    static let ejs: CodeLanguage = .init(
+        id: .ejs,
+        tsName: "embedded-template",
+        extensions: ["ejs"],
+        highlights: ["injections-ejs"]
+    )
+
     /// A language structure for `Elixir`
     static let elixir: CodeLanguage = .init(
         id: .elixir,
         tsName: "elixir",
         extensions: ["ex", "exs"],
         highlights: ["injections"]
+    )
+
+    /// A language structure for `ERB`
+    static let erb: CodeLanguage = .init(
+        id: .erb,
+        tsName: "embedded-template",
+        extensions: ["erb"],
+        highlights: ["injections-erb"]
     )
 
     /// A language structure for `Go`
