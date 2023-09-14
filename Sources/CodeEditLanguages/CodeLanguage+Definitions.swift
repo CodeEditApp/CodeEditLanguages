@@ -145,7 +145,7 @@ public extension CodeLanguage {
     static let html: CodeLanguage = .init(
         id: .html,
         tsName: "html",
-        extensions: ["html", "htm"],
+        extensions: ["html", "htm", "shtml"],
         highlights: ["injections"]
     )
 
