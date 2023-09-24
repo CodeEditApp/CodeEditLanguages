@@ -160,7 +160,7 @@ public extension CodeLanguage {
     static let javascript: CodeLanguage = .init(
         id: .javascript,
         tsName: "javascript",
-        extensions: ["js"],
+        extensions: ["js", "cjs", "mjs"],
         highlights: ["injections"],
         additionalIdentifiers: ["node", "deno"]
     )
