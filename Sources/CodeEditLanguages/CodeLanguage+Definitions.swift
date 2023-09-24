@@ -323,7 +323,7 @@ public extension CodeLanguage {
     static let tsx: CodeLanguage = .init(
         id: .tsx,
         tsName: "typescript",
-        extensions: ["tsx"],
+        extensions: ["ts", "tsx", "cts", "mts"],
         parentURL: CodeLanguage.jsx.queryURL
     )
 
