@@ -289,6 +289,14 @@
       }
     },
     {
+      "identity" : "tree-sitter-svelte",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/EstebanBorai/tree-sitter-svelte.git",
+      "state" : {
+        "revision" : "c50a98f46beb2909db4f66f43570cceff3ef60eb"
+      }
+    },
+    {
       "identity" : "tree-sitter-swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/alex-pinkus/tree-sitter-swift.git",
