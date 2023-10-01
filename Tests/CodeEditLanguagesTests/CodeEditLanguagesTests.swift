@@ -696,6 +696,25 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotNil(query)
         XCTAssertNotEqual(query?.patternCount, 0)
     }
+    
+    // MARK: - Svelte
+
+    func test_CodeLanguageSvelte() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.svelte")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .svelte)
+    }
+
+    func test_FetchQuerySvelte() throws {
+        var language = CodeLanguage.svelte
+        language.resourceURL = bundleURL
+
+        let data = try Data(contentsOf: language.queryURL!)
+        let query = try? Query(language: language.language!, data: data)
+        XCTAssertNotNil(query)
+        XCTAssertNotEqual(query?.patternCount, 0)
+    }
 
 // MARK: - Swift
 

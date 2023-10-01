@@ -45,6 +45,7 @@ public extension CodeLanguage {
         .rust,
         .scala,
         .sql,
+        .svelte,
         .swift,
         .toml,
         .tsx,
@@ -303,6 +304,13 @@ public extension CodeLanguage {
         id: .sql,
         tsName: "sql",
         extensions: ["sql"]
+    )
+
+    /// A language structure for `Svelte`
+    static let svelte: CodeLanguage = .init(
+        id: .svelte,
+        tsName: "svelte",
+        extensions: ["svelte"]
     )
 
     /// A language structure for `Swift`

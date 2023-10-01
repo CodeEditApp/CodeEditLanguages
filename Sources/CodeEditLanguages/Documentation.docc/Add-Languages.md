@@ -161,6 +161,8 @@ private var tsLanguage: UnsafeMutablePointer<TSLanguage>? {
 }
 ```
 
+### CodeLanguage+Definitions.swift
+
 On the bottom of the file add a new `static` constant:
 
 ```swift

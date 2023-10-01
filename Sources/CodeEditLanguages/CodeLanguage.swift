@@ -140,6 +140,8 @@ public struct CodeLanguage {
             return tree_sitter_scala()
         case .sql:
             return tree_sitter_sql()
+        case .svelte:
+            return tree_sitter_svelte()
         case .swift:
             return tree_sitter_swift()
         case .toml:

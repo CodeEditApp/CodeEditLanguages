@@ -43,6 +43,7 @@ public enum TreeSitterLanguage: String {
     case rust
     case scala
     case sql
+    case svelte
     case swift
     case toml
     case tsx

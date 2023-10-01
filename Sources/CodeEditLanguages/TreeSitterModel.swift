@@ -88,6 +88,8 @@ public class TreeSitterModel {
             return scalaQuery
         case .sql:
             return sqlQuery
+        case .svelte:
+            return svelteQuery
         case .swift:
             return swiftQuery
         case .toml:
@@ -260,6 +262,11 @@ public class TreeSitterModel {
     /// Query for `SQL` files.
     public private(set) lazy var sqlQuery: Query? = {
         return queryFor(.sql)
+    }()
+
+    /// Query for `Svelte` files.
+    public private(set) lazy var svelteQuery: Query? = {
+        return queryFor(.svelte)
     }()
 
     /// Query for `Swift` files.
