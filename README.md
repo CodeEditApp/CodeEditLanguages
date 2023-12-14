@@ -92,26 +92,32 @@ In order to add support for additional languages we have a complete guide on how
   <tr>
     <td align="center">
       <a href="https://github.com/CodeEditApp/CodeEdit">
-        <img src="https://github.com/CodeEditApp/CodeEdit/assets/806104/4ad9a29c-d9c6-44b4-88b3-0944b75fc81e" width="128" height="128">
+        <img src="https://github.com/CodeEditApp/CodeEdit/blob/main/.github/CodeEdit-Icon-128@2x.png?raw=true" width="128" height="128">
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CodeEdit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/CodeEditApp/CodeEditTextView">
-        <img src="https://github.com/CodeEditApp/CodeEditLanguages/assets/806104/9c7f4080-cca7-442c-aac6-528ecd310c27" width="128" height="128">
+      <a href="https://github.com/CodeEditApp/CodeEditSourceEditor">
+        <img src="https://github.com/CodeEditApp/CodeEditSourceEditor/blob/main/.github/CodeEditSourceEditor-Icon-128@2x.png?raw=true" width="128" height="128">
+        <p>CodeEditSourceEditor</p>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/CodeEditApp/CodeEditSourceEditor">
+        <img src="https://github.com/CodeEditApp/CodeEditTextView/blob/main/.github/CodeEditTextView-Icon-128@2x.png?raw=true" width="128" height="128">
         <p>CodeEditTextView</p>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/CodeEditApp/CodeEditKit">
-        <img src="https://github.com/CodeEditApp/CodeEditLanguages/assets/806104/23c5bb88-ef71-444b-969a-c605d603b82f" width="128" height="128">
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CodeEditKit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <a href="https://github.com/CodeEditApp/CodeEditCLI">
+        <img src="https://github.com/CodeEditApp/CodeEditCLI/blob/main/.github/CodeEditCLI-Icon-128@2x.png?raw=true" height="128">
+        <p>CodeEditCLI</p>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/CodeEditApp/CodeEditCLI">
-        <img src="https://github.com/CodeEditApp/CodeEditLanguages/assets/806104/0e8526f2-7c2b-4dce-9300-99fe832b5857" height="128">
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;CodeEdit&nbsp;CLI&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <a href="https://github.com/CodeEditApp/CodeEditKit">
+        <img src="https://github.com/CodeEditApp/CodeEditKit/blob/main/.github/CodeEditKit-Icon-128@2x.png?raw=true" width="128" height="128">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CodeEditKit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </a>
     </td>
   </tr>
