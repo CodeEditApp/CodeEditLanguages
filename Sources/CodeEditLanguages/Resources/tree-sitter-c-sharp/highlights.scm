@@ -1,5 +1,6 @@
 ;; Methods
-(method_declaration (identifier) @type (identifier) @function)
+(method_declaration name: (identifier) @function)
+(local_function_statement name: (identifier) @function)
 
 ;; Types
 (interface_declaration name: (identifier) @type)
@@ -8,18 +9,17 @@
 (struct_declaration (identifier) @type)
 (record_declaration (identifier) @type)
 (record_struct_declaration (identifier) @type)
-(namespace_declaration name: (identifier) @type)
+(namespace_declaration name: (identifier) @module)
 
-(constructor_declaration name: (identifier) @type)
-(destructor_declaration name: (identifier) @type)
+(constructor_declaration name: (identifier) @constructor)
+(destructor_declaration name: (identifier) @constructor)
 
 [
   (implicit_type)
-  (nullable_type)
-  (pointer_type)
-  (function_pointer_type)
   (predefined_type)
 ] @type.builtin
+
+(_ type: (identifier) @type)
 
 ;; Enum
 (enum_member_declaration (identifier) @property.definition)
@@ -62,28 +62,41 @@
   "-"
   "-="
   "&"
+  "&="
   "&&"
   "+"
   "++"
   "+="
   "<"
+  "<="
   "<<"
+  "<<="
   "="
   "=="
   "!"
   "!="
   "=>"
   ">"
+  ">="
   ">>"
+  ">>="
+  ">>>"
+  ">>>="
   "|"
+  "|="
   "||"
   "?"
   "??"
+  "??="
   "^"
+  "^="
   "~"
   "*"
+  "*="
   "/"
+  "/="
   "%"
+  "%="
   ":"
 ] @operator
 
@@ -102,6 +115,8 @@
 (escape_sequence) @keyword
 
 [
+  "add"
+  "alias"
   "as"
   "base"
   "break"
@@ -117,9 +132,11 @@
   "enum"
   "event"
   "explicit"
+  "extern"
   "finally"
   "for"
   "foreach"
+  "global"
   "goto"
   "if"
   "implicit"
@@ -127,11 +144,14 @@
   "is"
   "lock"
   "namespace"
+  "notnull"
   "operator"
   "params"
   "return"
+  "remove"
   "sizeof"
   "stackalloc"
+  "static"
   "struct"
   "switch"
   "throw"
@@ -161,8 +181,9 @@
 
 ;; Linq
 (from_clause (identifier) @variable)
-(group_clause)
-(order_by_clause)
+(group_clause (identifier) @variable)
+(order_by_clause (identifier) @variable)
+(join_clause (identifier) @variable)
 (select_clause (identifier) @variable)
 (query_continuation (identifier) @variable) @keyword
 
@@ -179,40 +200,34 @@
 (prefix_unary_expression (identifier) @variable)
 (postfix_unary_expression (identifier)* @variable)
 (assignment_expression (identifier) @variable)
-(cast_expression (identifier) @type (identifier) @variable)
+(cast_expression (_) (identifier) @variable)
 
 ;; Class
-(base_list (identifier) @type)
+(base_list (identifier) @type) ;; applies to record_base too
 (property_declaration (generic_name))
 (property_declaration
-  type: (nullable_type) @type
   name: (identifier) @variable)
 (property_declaration
-  type: (predefined_type) @type
   name: (identifier) @variable)
 (property_declaration
-  type: (identifier) @type
   name: (identifier) @variable)
 
 ;; Lambda
 (lambda_expression) @variable
 
 ;; Attribute
-(attribute) @type
+(attribute) @attribute
 
 ;; Parameter
 (parameter
-  type: (identifier) @type
   name: (identifier) @variable.parameter)
 (parameter (identifier) @variable.parameter)
 (parameter_modifier) @keyword
 
-;; Typeof
-(type_of_expression (identifier) @type)
-
-;; Variable
-(variable_declaration (identifier) @type)
+;; Variable declarations
 (variable_declarator (identifier) @variable)
+(for_each_statement left: (identifier) @variable)
+(catch_declaration (_) (identifier) @variable)
 
 ;; Return
 (return_statement (identifier) @variable)
@@ -222,14 +237,11 @@
 (generic_name (identifier) @type)
 (type_parameter (identifier) @property.definition)
 (type_argument_list (identifier) @type)
+(as_expression right: (identifier) @type)
+(is_expression right: (identifier) @type)
 
 ;; Type constraints
 (type_parameter_constraints_clause (identifier) @property.definition)
-(type_constraint (identifier) @type)
-
-;; Exception
-(catch_declaration (identifier) @type (identifier) @variable)
-(catch_declaration (identifier) @type)
 
 ;; Switch
 (switch_statement (identifier) @variable)
@@ -237,3 +249,6 @@
 
 ;; Lock statement
 (lock_statement (identifier) @variable)
+
+;; Method calls
+(invocation_expression (member_access_expression name: (identifier) @function))

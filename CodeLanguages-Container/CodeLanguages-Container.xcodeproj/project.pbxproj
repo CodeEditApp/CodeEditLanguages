@@ -90,7 +90,6 @@
 				28B3F048290C367C000CD04D /* TreeSitterJava in Frameworks */,
 				6CEC70FE29C3A85000B61C7A /* TreeSitterRegex in Frameworks */,
 				282E5977298051980064B34A /* TreeSitterYAML in Frameworks */,
-				6CA62EA929F9D36700785B11 /* TreeSitterTS in Frameworks */,
 				9D7399242A5A245000CEF6E8 /* TreeSitterAgda in Frameworks */,
 				8E7B8ABD2A5D916F00CFC1A7 /* TreeSitterPython in Frameworks */,
 				2886C788298135540023E016 /* TreeSitterKotlin in Frameworks */,

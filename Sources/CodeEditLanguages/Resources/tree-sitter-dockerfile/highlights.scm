@@ -35,7 +35,11 @@
 	(image_digest
 		"@" @punctuation.special))
 
-(double_quoted_string) @string
+[
+  (double_quoted_string)
+  (single_quoted_string)
+  (json_string)
+] @string
 
 (expansion
   [
