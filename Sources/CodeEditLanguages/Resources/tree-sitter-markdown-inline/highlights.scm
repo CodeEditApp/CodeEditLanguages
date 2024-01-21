@@ -35,4 +35,3 @@
 (image ["!" "[" "]" "("] @punctuation.delimiter)
 (inline_link ["[" "]" "("] @punctuation.delimiter)
 (shortcut_link ["[" "]"] @punctuation.delimiter)
-(wiki_link ["[" "|" "]"] @punctuation.delimiter)

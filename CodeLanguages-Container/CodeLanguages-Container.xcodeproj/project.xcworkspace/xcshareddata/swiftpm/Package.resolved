@@ -57,10 +57,10 @@
     {
       "identity" : "tree-sitter-css",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/lukepistrol/tree-sitter-css.git",
+      "location" : "https://github.com/tree-sitter/tree-sitter-css",
       "state" : {
-        "branch" : "feature/spm",
-        "revision" : "10d5f9247b180f0eaf92bbb4300a07d0549718f6"
+        "branch" : "master",
+        "revision" : "98c7b3dceb24f1ee17f1322f3947e55638251c37"
       }
     },
     {
@@ -194,8 +194,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/MDeiml/tree-sitter-markdown",
       "state" : {
-        "branch" : "split_parser",
-        "revision" : "28aa3baef73bd458d053b613b8bd10fd102b4405"
+        "revision" : "fa6bfd51727e4bef99f7eec5f43947f73d64ea7d",
+        "version" : "0.1.5"
       }
     },
     {
