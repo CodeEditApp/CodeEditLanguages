@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/ChimeHQ/SwiftTreeSitter.git",
-            exact: "0.7.1"
+            exact: "0.8.0"
         ),
     ],
     targets: [
