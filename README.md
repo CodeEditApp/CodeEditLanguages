@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/806104/201497920-d6aace8d-f0dc-49f6-bcd7-6a3b64cc384c.png" height="128" alt="CodeEditLanguages Icon">
+  <img src="https://github.com/CodeEditApp/CodeEditLanguages/assets/806104/a0ba0924-ed56-483d-b29e-a19134738d7e" height="128" alt="CodeEditLanguages Icon">
   <h1 align="center">CodeEditLanguages</h1>
 </p>
 
@@ -92,26 +92,32 @@ In order to add support for additional languages we have a complete guide on how
   <tr>
     <td align="center">
       <a href="https://github.com/CodeEditApp/CodeEdit">
-        <img src="https://user-images.githubusercontent.com/806104/163099605-4eaedd33-8441-4125-9ca1-a7ccb2f62a74.png" width="128" height="128">
+        <img src="https://github.com/CodeEditApp/CodeEdit/blob/main/.github/CodeEdit-Icon-128@2x.png?raw=true" width="128" height="128">
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CodeEdit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/CodeEditApp/CodeEditTextView">
-        <img src="https://user-images.githubusercontent.com/806104/175655252-d77cef62-31f5-4f40-a2ad-c1406a6dd1b9.png" width="128" height="128">
+      <a href="https://github.com/CodeEditApp/CodeEditSourceEditor">
+        <img src="https://github.com/CodeEditApp/CodeEditSourceEditor/blob/main/.github/CodeEditSourceEditor-Icon-128@2x.png?raw=true" width="128" height="128">
+        <p>CodeEditSourceEditor</p>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/CodeEditApp/CodeEditSourceEditor">
+        <img src="https://github.com/CodeEditApp/CodeEditTextView/blob/main/.github/CodeEditTextView-Icon-128@2x.png?raw=true" width="128" height="128">
         <p>CodeEditTextView</p>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/CodeEditApp/CodeEditKit">
-        <img src="https://user-images.githubusercontent.com/806104/193877051-c60d255d-0b6a-408c-bb21-6fabc5e0e60c.png" width="128" height="128">
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CodeEditKit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <a href="https://github.com/CodeEditApp/CodeEditCLI">
+        <img src="https://github.com/CodeEditApp/CodeEditCLI/blob/main/.github/CodeEditCLI-Icon-128@2x.png?raw=true" height="128">
+        <p>CodeEditCLI</p>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/CodeEditApp/CodeEditCLI">
-        <img src="https://user-images.githubusercontent.com/806104/205848006-f2654778-21f1-4f97-b292-32849cc1eff6.png" height="128">
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;CodeEdit&nbsp;CLI&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <a href="https://github.com/CodeEditApp/CodeEditKit">
+        <img src="https://github.com/CodeEditApp/CodeEditKit/blob/main/.github/CodeEditKit-Icon-128@2x.png?raw=true" width="128" height="128">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CodeEditKit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
       </a>
     </td>
   </tr>

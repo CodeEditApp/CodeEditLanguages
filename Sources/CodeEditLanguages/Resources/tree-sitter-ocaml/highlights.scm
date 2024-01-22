@@ -1,7 +1,7 @@
 ; Modules
 ;--------
 
-[(module_name) (module_type_name)] @constructor
+[(module_name) (module_type_name)] @module
 
 ; Types
 ;------
@@ -13,7 +13,7 @@
 
 [(class_name) (class_type_name) (type_constructor)] @type
 
-[(constructor_name) (tag)] @tag
+[(constructor_name) (tag)] @constructor
 
 ; Functions
 ;----------
@@ -143,7 +143,7 @@
 ; Attributes
 ;-----------
 
-(attribute_id) @attribute
+(attribute_id) @tag
 
 ; Comments
 ;---------
