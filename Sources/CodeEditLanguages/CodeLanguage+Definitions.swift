@@ -309,7 +309,10 @@ public extension CodeLanguage {
     static let swift: CodeLanguage = .init(
         id: .swift,
         tsName: "swift",
-        extensions: ["swift"]
+        extensions: ["swift"],
+        lineCommentString: "//",
+        rangeCommentStrings: ("/*", "*/"),
+        documentationCommentStrings: (.single("///"), .pair(("/**", "*/")))
     )
 
     /// A language structure for `TOML`
