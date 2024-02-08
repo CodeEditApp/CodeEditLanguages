@@ -19,7 +19,7 @@ public struct CodeLanguage {
         extensions: Set<String>,
         lineCommentString: String,
         rangeCommentStrings: (String, String),
-        documentationCommentStrings: (DocumentationComments, DocumentationComments),
+        documentationCommentStrings: Set<DocumentationComments>,
         parentURL: URL? = nil,
         highlights: Set<String>? = nil,
         additionalIdentifiers: Set<String> = []
@@ -54,7 +54,7 @@ public struct CodeLanguage {
     public let rangeCommentStrings: (String, String)
     
     /// The leading (and trailing, if there is one) string of a documentation comment
-    public let documentationCommentStrings: (DocumentationComments, DocumentationComments)
+    public let documentationCommentStrings: Set<DocumentationComments>
     
     /// The query URL of a language this language inherits from. (e.g.: C for C++)
     public let parentQueryURL: URL?

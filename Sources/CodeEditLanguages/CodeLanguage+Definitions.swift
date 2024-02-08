@@ -312,7 +312,7 @@ public extension CodeLanguage {
         extensions: ["swift"],
         lineCommentString: "//",
         rangeCommentStrings: ("/*", "*/"),
-        documentationCommentStrings: (.single("///"), .pair(("/**", "*/")))
+        documentationCommentStrings: [.single("///"), .pair(("/**", "*/"))]
     )
 
     /// A language structure for `TOML`
