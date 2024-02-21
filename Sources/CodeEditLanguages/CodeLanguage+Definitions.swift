@@ -58,21 +58,27 @@ public extension CodeLanguage {
     static let agda: CodeLanguage = .init(
         id: .agda,
         tsName: "agda",
-        extensions: ["agda"]
+        extensions: ["agda"],
+        lineCommentString: "--",
+        rangeCommentStrings: ("{-", "-}")
     )
 
     /// A language structure for `Bash`
     static let bash: CodeLanguage = .init(
         id: .bash,
         tsName: "bash",
-        extensions: ["sh", "bash"]
+        extensions: ["sh", "bash"],
+        lineCommentString: "#",
+        rangeCommentStrings: (":'", "'")
     )
 
     /// A language structure for `C`
     static let c: CodeLanguage = .init(
         id: .c,
         tsName: "c",
-        extensions: ["c", "h"]
+        extensions: ["c", "h"],
+        lineCommentString: "//",
+        rangeCommentStrings: ("/*", "*/")
     )
 
     /// A language structure for `C++`
@@ -80,6 +86,9 @@ public extension CodeLanguage {
         id: .cpp,
         tsName: "cpp",
         extensions: ["cc", "cpp", "c++", "hpp", "h"],
+        lineCommentString: CodeLanguage.c.lineCommentString,
+        rangeCommentStrings: CodeLanguage.c.rangeCommentStrings,
+        documentationCommentStrings: [.pair(("/**", "*/"))],
         parentURL: CodeLanguage.c.queryURL,
         highlights: ["injections"]
     )

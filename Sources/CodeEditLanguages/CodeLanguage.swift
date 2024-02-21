@@ -19,7 +19,7 @@ public struct CodeLanguage {
         extensions: Set<String>,
         lineCommentString: String,
         rangeCommentStrings: (String, String),
-        documentationCommentStrings: Set<DocumentationComments>,
+        documentationCommentStrings: Set<DocumentationComments> = [],
         parentURL: URL? = nil,
         highlights: Set<String>? = nil,
         additionalIdentifiers: Set<String> = []
