@@ -59,7 +59,7 @@ xcodebuild \
 
 # zip the xcframework
 status "Zipping CodeLanguagesContainer.xcframework..."
-zip -r -q "$OUTPUT_PATH".zip "$OUTPUT_PATH"
+zip -r -q -y "$OUTPUT_PATH".zip "$OUTPUT_PATH"
 
 # remove the unzipped xcframework
 rm -rf "$OUTPUT_PATH"
