@@ -183,7 +183,8 @@ public extension CodeLanguage {
         tsName: "java",
         extensions: ["java", "jav"],
         lineCommentString: "//",
-        rangeCommentStrings: ("/*", "*/")
+        rangeCommentStrings: ("/*", "*/"),
+        documentationCommentStrings: [.pair(("/**", "*/"))]
     )
 
     /// A language structure for `JavaScript`
