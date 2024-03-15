@@ -34,56 +34,56 @@ public struct CodeLanguage {
         self.additionalHighlights = highlights
         self.additionalIdentifiers = additionalIdentifiers
     }
-    
+
     /// The ID of the language
     public let id: TreeSitterLanguage
-    
+
     /// The display name of the language
     public let tsName: String
-    
+
     /// A set of file extensions for the language
     ///
     /// In special cases this can also be a file name
     /// (e.g `Dockerfile`, `Makefile`)
     public let extensions: Set<String>
-    
+
     /// The leading string of a comment line
     public let lineCommentString: String
-    
+
     /// The leading and trailing string of a multi-line comment
     public let rangeCommentStrings: (String, String)
-    
+
     /// The leading (and trailing, if there is one) string of a documentation comment
     public let documentationCommentStrings: Set<DocumentationComments>
-    
+
     /// The query URL of a language this language inherits from. (e.g.: C for C++)
     public let parentQueryURL: URL?
-    
+
     /// Additional highlight file names (e.g.: JSX for JavaScript)
     public let additionalHighlights: Set<String>?
-    
+
     /// The query URL for the language if available
     public var queryURL: URL? {
         queryURL()
     }
-    
+
     /// The bundle's resource URL
     internal var resourceURL: URL? = Bundle.module.resourceURL
-    
+
     /// A set of aditional identifiers to use for things like shebang matching.
     public let additionalIdentifiers: Set<String>
-    
+
     /// The tree-sitter language for the language if available
     public var language: Language? {
         guard let tsLanguage = tsLanguage else { return nil }
         return Language(language: tsLanguage)
     }
-    
+
     internal func queryURL(for highlights: String = "highlights") -> URL? {
         return resourceURL?
             .appendingPathComponent("Resources/tree-sitter-\(tsName)/\(highlights).scm")
     }
-    
+
     /// Gets the TSLanguage from `tree-sitter`
     private var tsLanguage: UnsafeMutablePointer<TSLanguage>? {
         switch id {
@@ -179,7 +179,7 @@ extension CodeLanguage: Hashable {
     public static func == (lhs: CodeLanguage, rhs: CodeLanguage) -> Bool {
         return lhs.id == rhs.id
     }
-    
+
     public func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
@@ -204,7 +204,7 @@ public enum DocumentationComments: Hashable {
             }
         }
     }
-    
+
     public func hash(into hasher: inout Hasher) {
         switch self {
         case .single(let string):
@@ -214,7 +214,7 @@ public enum DocumentationComments: Hashable {
             hasher.combine(pair.1)
         }
     }
-    
+
     case single(String)
     case pair((String, String))
 }
