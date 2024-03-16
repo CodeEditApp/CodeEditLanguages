@@ -37,6 +37,8 @@ xcodebuild \
     -destination "platform=macOS" \
     -derivedDataPath DerivedData \
     -configuration Release \
+    ARCHS="arm64 x86_64" \
+    ONLY_ACTIVE_ARCH=NO \
     $QUIET_FLAG clean build &> $QUIET_OUTPUT
 status "Build complete!"
 
