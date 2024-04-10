@@ -1,3 +1,5 @@
+// swiftlint:disable file_length
+
 //
 //  CodeLanguage+Definitions.swift
 //  
@@ -462,3 +464,5 @@ public extension CodeLanguage {
         rangeCommentStrings: ("", "")
     )
 }
+
+// swiftlint:enable file_length
