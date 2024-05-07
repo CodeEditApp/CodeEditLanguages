@@ -37,6 +37,8 @@ xcodebuild \
     -destination "platform=macOS" \
     -derivedDataPath DerivedData \
     -configuration Release \
+    ARCHS="arm64 x86_64" \
+    ONLY_ACTIVE_ARCH=NO \
     $QUIET_FLAG clean build &> $QUIET_OUTPUT
 status "Build complete!"
 
@@ -59,7 +61,7 @@ xcodebuild \
 
 # zip the xcframework
 status "Zipping CodeLanguagesContainer.xcframework..."
-zip -r -q "$OUTPUT_PATH".zip "$OUTPUT_PATH"
+zip -r -q -y "$OUTPUT_PATH".zip "$OUTPUT_PATH"
 
 # remove the unzipped xcframework
 rm -rf "$OUTPUT_PATH"
