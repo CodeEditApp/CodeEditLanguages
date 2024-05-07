@@ -138,6 +138,8 @@ public extension CodeLanguage {
         id: .ejs,
         tsName: "embedded-template",
         extensions: ["ejs"],
+        lineCommentString: "",
+        rangeCommentStrings: ("", ""),
         highlights: ["injections-ejs"]
     )
 
@@ -157,6 +159,8 @@ public extension CodeLanguage {
         id: .erb,
         tsName: "embedded-template",
         extensions: ["erb"],
+        lineCommentString: "",
+        rangeCommentStrings: ("", ""),
         highlights: ["injections-erb"]
     )
 

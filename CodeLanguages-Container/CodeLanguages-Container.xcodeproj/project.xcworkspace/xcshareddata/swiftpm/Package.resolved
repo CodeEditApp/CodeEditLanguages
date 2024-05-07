@@ -93,10 +93,10 @@
     {
       "identity" : "tree-sitter-embedded-template",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/cengelbart39/tree-sitter-embedded-template.git",
+      "location" : "https://github.com/tree-sitter/tree-sitter-embedded-template.git",
       "state" : {
-        "branch" : "feature/spm",
-        "revision" : "b1a6a54585f43d1429d5d178de91f691abda668c"
+        "branch" : "master",
+        "revision" : "38d5004a797298dc42c85e7706c5ceac46a3f29f"
       }
     },
     {
