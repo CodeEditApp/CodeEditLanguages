@@ -176,6 +176,25 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotEqual(query?.patternCount, 0)
     }
 
+// MARK: - EJS
+
+    func test_CodeLanguageEJS() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.ejs")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .ejs)
+    }
+
+    func test_FetchQueryEJS() throws {
+        var language = CodeLanguage.ejs
+        language.resourceURL = bundleURL
+
+        let data = try Data(contentsOf: language.queryURL!)
+        let query = try? Query(language: language.language!, data: data)
+        XCTAssertNotNil(query)
+        XCTAssertNotEqual(query?.patternCount, 0)
+    }
+
 // MARK: - Elixir
 
     func test_CodeLanguageElixir() throws {
@@ -194,6 +213,25 @@ final class CodeEditLanguagesTests: XCTestCase {
 
     func test_FetchQueryElixir() throws {
         var language = CodeLanguage.elixir
+        language.resourceURL = bundleURL
+
+        let data = try Data(contentsOf: language.queryURL!)
+        let query = try? Query(language: language.language!, data: data)
+        XCTAssertNotNil(query)
+        XCTAssertNotEqual(query?.patternCount, 0)
+    }
+
+// MARK: - ERB
+
+    func test_CodeLanguageERB() throws {
+        let url = URL(fileURLWithPath: "~/path/to/file.erb")
+        let language = CodeLanguage.detectLanguageFrom(url: url)
+
+        XCTAssertEqual(language.id, .erb)
+    }
+
+    func test_FetchQueryERB() throws {
+        var language = CodeLanguage.erb
         language.resourceURL = bundleURL
 
         let data = try Data(contentsOf: language.queryURL!)
