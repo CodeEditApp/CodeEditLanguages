@@ -39,7 +39,9 @@ let query = TreeSitterModel.shared.swiftQuery
 - ``cssQuery``
 - ``dartQuery``
 - ``dockerfileQuery``
+- ``ejsQuery``
 - ``elixirQuery``
+- ``erbQuery``
 - ``goQuery``
 - ``goModQuery``
 - ``haskellQuery``
@@ -58,11 +60,14 @@ let query = TreeSitterModel.shared.swiftQuery
 - ``ocamlInterfaceQuery``
 - ``phpQuery``
 - ``pythonQuery``
+- ``regexQuery``
 - ``rubyQuery``
 - ``rustQuery``
 - ``scalaQuery``
 - ``sqlQuery``
 - ``swiftQuery``
 - ``tomlQuery``
+- ``tsxQuery``
+- ``typescriptQuery``
 - ``yamlQuery``
 - ``zigQuery``

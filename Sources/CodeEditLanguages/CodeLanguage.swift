@@ -103,8 +103,12 @@ public struct CodeLanguage {
             return tree_sitter_dart()
         case .dockerfile:
             return tree_sitter_dockerfile()
+        case .ejs:
+            return tree_sitter_embedded_template()
         case .elixir:
             return tree_sitter_elixir()
+        case .erb:
+            return tree_sitter_embedded_template()
         case .go:
             return tree_sitter_go()
         case .goMod:

@@ -91,6 +91,15 @@
       }
     },
     {
+      "identity" : "tree-sitter-embedded-template",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tree-sitter/tree-sitter-embedded-template.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "ffbf64942c334933ee7982e144557b6efb76d0b9"
+      }
+    },
+    {
       "identity" : "tree-sitter-go",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tree-sitter/tree-sitter-go.git",
