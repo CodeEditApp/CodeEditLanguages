@@ -1,17 +1,86 @@
-(dotted_identifier_list) @string
+; Variable
+(identifier) @variable
+
+; Keywords
+; --------------------
+[
+    (assert_builtin)
+    (break_builtin)
+    (const_builtin)
+    (part_of_builtin)
+    (rethrow_builtin)
+    (void_type)
+    "abstract"
+    "as"
+    "async"
+    "async*"
+    "await"
+    "base"
+    "case"
+    "catch"
+    "class"
+    "continue"
+    "covariant"
+    "default"
+    "deferred"
+    "do"
+    "dynamic"
+    "else"
+    "enum"
+    "export"
+    "extends"
+    "extension"
+    "external"
+    "factory"
+    "final"
+    "finally"
+    "for"
+    "Function"
+    "get"
+    "hide"
+    "if"
+    "implements"
+    "import"
+    "in"
+    "interface"
+    "is"
+    "late"
+    "library"
+    "mixin"
+    "new"
+    "on"
+    "operator"
+    "part"
+    "required"
+    "return"
+    "sealed"
+    "set"
+    "show"
+    "static"
+    "super"
+    "switch"
+    "sync*"
+    "throw"
+    "try"
+    "typedef"
+    "var"
+    "when"
+    "while"
+    "with"
+    "yield"
+] @keyword
 
 ; Methods
 ; --------------------
-;; TODO: does not work
-;(function_type
-  ;name: (identifier) @method)
-(super) @function
+
+; NOTE: This query is a bit of a work around for the fact that the dart grammar doesn't
+; specifically identify a node as a function call
+(((identifier) @function (#match? @function "^_?[a-z]"))
+ . (selector . (argument_part))) @function
 
 ; Annotations
 ; --------------------
 (annotation
-  name: (identifier) @attribute)
-(marker_annotation
   name: (identifier) @attribute)
 
 ; Operators and Tokens
@@ -45,12 +114,21 @@
  ">="
  "<="
  "||"
+ "~/"
  (increment_operator)
  (is_operator)
  (prefix_operator)
  (equality_operator)
  (additive_operator)
 ] @operator
+
+(type_arguments
+  "<" @punctuation.bracket
+  ">" @punctuation.bracket)
+
+(type_parameters
+  "<" @punctuation.bracket
+  ">" @punctuation.bracket)
 
 [
   "("
@@ -71,53 +149,67 @@
 
 ; Types
 ; --------------------
+(type_identifier) @type
+((type_identifier) @type.builtin
+  (#match? @type.builtin "^(int|double|String|bool|List|Set|Map|Runes|Symbol)$"))
 (class_definition
   name: (identifier) @type)
 (constructor_signature
   name: (identifier) @type)
-;; TODO: does not work
-;(type_identifier
-  ;(identifier) @type)
 (scoped_identifier
   scope: (identifier) @type)
 (function_signature
-  name: (identifier) @method)
+  name: (identifier) @function)
 (getter_signature
-  (identifier) @method)
+  (identifier) @function)
 (setter_signature
-  name: (identifier) @method)
-(enum_declaration
-  name: (identifier) @type)
-(enum_constant
-  name: (identifier) @type)
-(type_identifier) @type
-(void_type) @type
+  name: (identifier) @function)
 
 ((scoped_identifier
   scope: (identifier) @type
   name: (identifier) @type)
  (#match? @type "^[a-zA-Z]"))
 
-(type_identifier) @type
+; Enums
+; -------------------
+(enum_declaration
+  name: (identifier) @type)
+(enum_constant
+  name: (identifier) @identifier.constant)
 
 ; Variables
 ; --------------------
 ; var keyword
 (inferred_type) @keyword
 
-(const_builtin) @constant.builtin
-(final_builtin) @constant.builtin
-
 ((identifier) @type
- (#match? @type "^_?[A-Z]"))
+ (#match? @type "^_?[A-Z].*[a-z]"))
 
 ("Function" @type)
 
+(this) @variable.builtin
+
 ; properties
-; TODO: add method/call_expression to grammar and
-; distinguish method call from variable access
+
 (unconditional_assignable_selector
   (identifier) @property)
+
+(conditional_assignable_selector
+  (identifier) @property)
+
+(cascade_section
+  (cascade_selector
+    (identifier) @property))
+
+((selector
+  (unconditional_assignable_selector (identifier) @function))
+  (selector (argument_part (arguments)))
+)
+
+(cascade_section
+  (cascade_selector (identifier) @function)
+  (argument_part (arguments))
+)
 
 ; assignments
 (assignment_expression
@@ -128,10 +220,10 @@
 ; Parameters
 ; --------------------
 (formal_parameter
-    name: (identifier) @parameter)
+    name: (identifier) @identifier.parameter)
 
 (named_argument
-  (label (identifier) @parameter))
+  (label (identifier) @identifier.parameter))
 
 ; Literals
 ; --------------------
@@ -144,81 +236,11 @@
     ; (hex_floating_point_literal)
 ] @number
 
-(symbol_literal) @symbol
 (string_literal) @string
+(symbol_literal (identifier) @constant) @constant
 (true) @boolean
 (false) @boolean
-(null_literal) @constant.builtin
+(null_literal) @constant.null
 
 (documentation_comment) @comment
 (comment) @comment
-
-; Keywords
-; --------------------
-["import" "library" "export"] @include
-
-; Reserved words (cannot be used as identifiers)
-; TODO: "rethrow" @keyword
-[
-    ; "assert"
-    (case_builtin)
-    "extension"
-    "on"
-    "class"
-    "enum"
-    "extends"
-    "in"
-    "is"
-    "new"
-    "return"
-    "super"
-    "with"
-] @keyword
-
-
-; Built in identifiers:
-; alone these are marked as keywords
-[
-    "abstract"
-    "as"
-    "async"
-    "async*"
-    "yield"
-    "sync*"
-    "await"
-    "covariant"
-    "deferred"
-    "dynamic"
-    "external"
-    "factory"
-    "get"
-    "implements"
-    "interface"
-    "library"
-    "operator"
-    "mixin"
-    "part"
-    "set"
-    "show"
-    "static"
-    "typedef"
-] @keyword
-
-; when used as an identifier:
-((identifier) @variable.builtin
- (#vim-match? @variable.builtin "^(abstract|as|covariant|deferred|dynamic|export|external|factory|Function|get|implements|import|interface|library|operator|mixin|part|set|static|typedef)$"))
-
-["if" "else" "switch" "default"] @conditional
-
-[
-  "try"
-  "throw"
-  "catch"
-  "finally"
-  (break_statement)
-] @exception
-
-["do" "while" "continue" "for"] @repeat
-
-; Error
-(ERROR) @error

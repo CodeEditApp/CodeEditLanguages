@@ -1,21 +1,13 @@
 {
+  "originHash" : "c940c7467f54711e27ceb0cef308954e1fdbcc20f3dd59d96d6efbe29d7a04ba",
   "pins" : [
-    {
-      "identity" : "swifttreesitter",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ChimeHQ/SwiftTreeSitter.git",
-      "state" : {
-        "revision" : "2599e95310b3159641469d8a21baf2d3d200e61f",
-        "version" : "0.8.0"
-      }
-    },
     {
       "identity" : "tree-sitter-agda",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/cengelbart39/tree-sitter-agda.git",
+      "location" : "https://github.com/tree-sitter/tree-sitter-agda.git",
       "state" : {
-        "branch" : "feat/spm",
-        "revision" : "076e015d084867a3f367fce3c23dee09fb666eb2"
+        "branch" : "master",
+        "revision" : "b9b32fa042c2952a7bfca86847ea325e44ccc897"
       }
     },
     {
@@ -24,7 +16,7 @@
       "location" : "https://github.com/tree-sitter/tree-sitter-bash.git",
       "state" : {
         "branch" : "master",
-        "revision" : "f7239f638d3dc16762563a9027faeee518ce1bd9"
+        "revision" : "49c31006d8307dcb12bc5770f35b6d5b9e2be68e"
       }
     },
     {
@@ -57,7 +49,7 @@
     {
       "identity" : "tree-sitter-css",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/tree-sitter/tree-sitter-css",
+      "location" : "https://github.com/tree-sitter/tree-sitter-css.git",
       "state" : {
         "branch" : "master",
         "revision" : "98c7b3dceb24f1ee17f1322f3947e55638251c37"
@@ -66,10 +58,10 @@
     {
       "identity" : "tree-sitter-dart",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/lukepistrol/tree-sitter-dart.git",
+      "location" : "https://github.com/UserNobody14/tree-sitter-dart.git",
       "state" : {
-        "branch" : "feature/spm",
-        "revision" : "38d41b085dfbea84e940ef756a69485c71e403d0"
+        "branch" : "master",
+        "revision" : "e81af6ab94a728ed99c30083be72d88e6d56cf9e"
       }
     },
     {
@@ -174,37 +166,37 @@
     {
       "identity" : "tree-sitter-kotlin",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/lukepistrol/tree-sitter-kotlin",
+      "location" : "https://github.com/fwcd/tree-sitter-kotlin",
       "state" : {
-        "branch" : "feature/spm-queries",
-        "revision" : "e32e32678449efaeccd908e41ed6b27ec8c9d2cf"
+        "branch" : "main",
+        "revision" : "76f53c48d29e8588934fb55b0240d7bdfe00bfe5"
       }
     },
     {
       "identity" : "tree-sitter-lua",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/lukepistrol/tree-sitter-lua.git",
+      "location" : "https://github.com/tree-sitter-grammars/tree-sitter-lua",
       "state" : {
-        "branch" : "feature/spm",
-        "revision" : "47d56065016862b85ad327d6976b1e664e1c034b"
+        "branch" : "main",
+        "revision" : "34e60e7f45fc313463c68090d88d742a55d1bd7a"
       }
     },
     {
       "identity" : "tree-sitter-markdown",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/MDeiml/tree-sitter-markdown",
+      "location" : "https://github.com/tree-sitter-grammars/tree-sitter-markdown",
       "state" : {
-        "revision" : "fa6bfd51727e4bef99f7eec5f43947f73d64ea7d",
-        "version" : "0.1.5"
+        "branch" : "split_parser",
+        "revision" : "5cdc549ab8f461aff876c5be9741027189299cec"
       }
     },
     {
       "identity" : "tree-sitter-objc",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/lukepistrol/tree-sitter-objc",
+      "location" : "https://github.com/tree-sitter-grammars/tree-sitter-objc",
       "state" : {
-        "branch" : "feature/spm",
-        "revision" : "1b54ef0b5efddddf393b45e173788499cc572048"
+        "branch" : "master",
+        "revision" : "62e61b6f5c0289c376d61a8c91faf6435cde9012"
       }
     },
     {
@@ -246,10 +238,10 @@
     {
       "identity" : "tree-sitter-regex",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/thecoolwinter/tree-sitter-regex/",
+      "location" : "https://github.com/tree-sitter/tree-sitter-regex.git",
       "state" : {
-        "branch" : "feature/spm",
-        "revision" : "bcdbf846fa8cfce0d28971d43199e52c1e365aa7"
+        "branch" : "master",
+        "revision" : "4470c59041416e8a2a9fa343595ca28ed91f38b8"
       }
     },
     {
@@ -327,21 +319,21 @@
     {
       "identity" : "tree-sitter-yaml",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/lukepistrol/tree-sitter-yaml.git",
+      "location" : "https://github.com/tree-sitter-grammars/tree-sitter-yaml.git",
       "state" : {
-        "branch" : "feature/spm",
-        "revision" : "1e4bf920c1f43cea89c8858ed5e0c10b098bb2b0"
+        "branch" : "master",
+        "revision" : "7b03feefd36b5f155465ca736c6304aca983b267"
       }
     },
     {
       "identity" : "tree-sitter-zig",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/maxxnino/tree-sitter-zig.git",
+      "location" : "https://github.com/tree-sitter-grammars/tree-sitter-zig.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "0d08703e4c3f426ec61695d7617415fff97029bd"
+        "branch" : "master",
+        "revision" : "eb7d58c2dc4fbeea4745019dee8df013034ae66b"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
