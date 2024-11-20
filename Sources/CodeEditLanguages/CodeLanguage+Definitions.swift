@@ -283,7 +283,9 @@ public extension CodeLanguage {
         tsName: "objc",
         extensions: ["m", "h"],
         lineCommentString: "//",
-        rangeCommentStrings: ("/*", "*/")
+        rangeCommentStrings: ("/*", "*/"),
+        parentURL: CodeLanguage.c.queryURL,
+        highlights: ["injections"]
     )
 
     /// A language structure for `OCaml`

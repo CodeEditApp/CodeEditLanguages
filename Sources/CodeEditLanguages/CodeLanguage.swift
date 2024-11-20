@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import tree_sitter
+import TreeSitter
 import SwiftTreeSitter
 import CodeLanguages_Container
 import RegexBuilder
@@ -85,7 +85,7 @@ public struct CodeLanguage {
     }
 
     /// Gets the TSLanguage from `tree-sitter`
-    private var tsLanguage: UnsafeMutablePointer<TSLanguage>? {
+    private var tsLanguage: OpaquePointer? {
         switch id {
         case .agda:
             return tree_sitter_agda()

@@ -132,14 +132,15 @@
  (#eq? @variable.builtin "self"))
 
 (variable_list
-   attribute: (attribute
-     (["<" ">"] @punctuation.bracket
-      (identifier) @attribute)))
+  (attribute
+    "<" @punctuation.bracket
+    (identifier) @attribute
+    ">" @punctuation.bracket))
 
 ;; Constants
 
 ((identifier) @constant
- (#lua-match? @constant "^[A-Z][A-Z_0-9]*$"))
+ (#match? @constant "^[A-Z][A-Z_0-9]*$"))
 
 (vararg_expression) @constant
 
@@ -166,13 +167,40 @@
 
 (parameters (identifier) @parameter)
 
-(function_call name: (identifier) @function.call)
-(function_declaration name: (identifier) @function)
+(function_declaration
+  name: [
+    (identifier) @function
+    (dot_index_expression
+      field: (identifier) @function)
+  ])
 
-(function_call name: (dot_index_expression field: (identifier) @function.call))
-(function_declaration name: (dot_index_expression field: (identifier) @function))
+(function_declaration
+  name: (method_index_expression
+    method: (identifier) @method))
 
-(method_index_expression method: (identifier) @method)
+(assignment_statement
+  (variable_list .
+    name: [
+      (identifier) @function
+      (dot_index_expression
+        field: (identifier) @function)
+    ])
+  (expression_list .
+    value: (function_definition)))
+
+(table_constructor
+  (field
+    name: (identifier) @function
+    value: (function_definition)))
+
+(function_call
+  name: [
+    (identifier) @function.call
+    (dot_index_expression
+      field: (identifier) @function.call)
+    (method_index_expression
+      method: (identifier) @method.call)
+  ])
 
 (function_call
   (identifier) @function.builtin
@@ -192,3 +220,5 @@
 (number) @number
 
 (string) @string
+
+(escape_sequence) @string.escape

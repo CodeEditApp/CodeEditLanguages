@@ -1,29 +1,79 @@
-;; keys
-(block_mapping_pair
- key: (flow_node [(double_quote_scalar) (single_quote_scalar)] @variable))
-(block_mapping_pair
- key: (flow_node (plain_scalar (string_scalar) @variable)))
+(boolean_scalar) @boolean
 
-;; keys within inline {} blocks
-(flow_mapping
- (_ key: (flow_node [(double_quote_scalar) (single_quote_scalar)] @variable)))
-(flow_mapping
- (_ key: (flow_node (plain_scalar (string_scalar) @variable))))
+(null_scalar) @constant.builtin
 
-["[" "]" "{" "}"] @punctuation.bracket
-["," "-" ":" "?" ">" "|"] @punctuation.delimiter
-["*" "&" "---" "..."] @punctuation.special
+[
+  (double_quote_scalar)
+  (single_quote_scalar)
+  (block_scalar)
+  (string_scalar)
+] @string
 
-[(null_scalar) (boolean_scalar)] @constant.builtin
-[(integer_scalar) (float_scalar)] @number
-[(double_quote_scalar) (single_quote_scalar) (block_scalar)] @string
-(escape_sequence) @escape
+[
+  (integer_scalar)
+  (float_scalar)
+] @number
 
 (comment) @comment
-[(anchor_name) (alias_name)] @function
-(yaml_directive) @type
+
+[
+  (anchor_name)
+  (alias_name)
+] @label
 
 (tag) @type
-(tag_handle) @type
-(tag_prefix) @string
-(tag_directive) @property
+
+[
+  (yaml_directive)
+  (tag_directive)
+  (reserved_directive)
+] @attribute
+
+(block_mapping_pair
+  key: (flow_node
+    [
+      (double_quote_scalar)
+      (single_quote_scalar)
+    ] @property))
+
+(block_mapping_pair
+  key: (flow_node
+    (plain_scalar
+      (string_scalar) @property)))
+
+(flow_mapping
+  (_
+    key: (flow_node
+      [
+        (double_quote_scalar)
+        (single_quote_scalar)
+      ] @property)))
+
+(flow_mapping
+  (_
+    key: (flow_node
+      (plain_scalar
+        (string_scalar) @property))))
+
+[
+  ","
+  "-"
+  ":"
+  ">"
+  "?"
+  "|"
+] @punctuation.delimiter
+
+[
+  "["
+  "]"
+  "{"
+  "}"
+] @punctuation.bracket
+
+[
+  "*"
+  "&"
+  "---"
+  "..."
+] @punctuation.special

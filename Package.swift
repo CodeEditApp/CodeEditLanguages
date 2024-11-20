@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/ChimeHQ/SwiftTreeSitter.git",
-            exact: "0.8.0"
+            from: "0.9.0"
         ),
     ],
     targets: [
@@ -27,6 +27,7 @@ let package = Package(
             ],
             linkerSettings: [.linkedLibrary("c++")]
         ),
+
         .binaryTarget(
             name: "CodeLanguagesContainer",
             path: "CodeLanguagesContainer.xcframework.zip"

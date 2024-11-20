@@ -1,3 +1,9 @@
+;; Based on the nvim-treesitter highlighting, which is under the Apache license.
+;; See https://github.com/nvim-treesitter/nvim-treesitter/blob/f8ab59861eed4a1c168505e3433462ed800f2bae/queries/kotlin/highlights.scm
+;;
+;; The only difference in this file is that queries using #lua-match?
+;; have been removed.
+
 ;;; Identifiers
 
 (simple_identifier) @variable
@@ -33,22 +39,10 @@
 	(navigation_suffix
 		(simple_identifier) @property))
 
-; SCREAMING CASE identifiers are assumed to be constants
-((simple_identifier) @constant
-(#match? @constant "^[A-Z][A-Z0-9_]*$"))
-
-(_
-	(navigation_suffix
-		(simple_identifier) @constant
-		(#match? @constant "^[A-Z][A-Z0-9_]*$")))
-
 (enum_entry
 	(simple_identifier) @constant)
 
 (type_identifier) @type
-
-(type_alias
-	(type_identifier) @type.definition)
 
 ((type_identifier) @type.builtin
 	(#any-of? @type.builtin
@@ -89,27 +83,12 @@
 		"MutableList"
 ))
 
-(package_header "package" @keyword
-	. (identifier (simple_identifier) @namespace))
+(package_header
+	. (identifier)) @namespace
 
 (import_header
 	"import" @include)
 
-; The last `simple_identifier` in a `import_header` will always either be a function
-; or a type. Classes can appear anywhere in the import path, unlike functions
-(import_header
-	(identifier
-		(simple_identifier) @type @_import)
-	(import_alias
-		(type_identifier) @type.definition)?
-		(#match? @_import "^[A-Z]"))
-
-(import_header
-	(identifier
-		(simple_identifier) @function @_import .)
-	(import_alias
-		(type_identifier) @function)?
-		(#match? @_import "^[a-z]"))
 
 ; TODO: Seperate labeled returns/breaks/continue/super/this
 ;       Must be implemented in the parser first
@@ -152,13 +131,13 @@
 
 ; function()
 (call_expression
-	. (simple_identifier) @function.call)
+	. (simple_identifier) @function)
 
 ; object.function() or object.property.function()
 (call_expression
 	(navigation_expression
 		(navigation_suffix
-			(simple_identifier) @function.call) . ))
+			(simple_identifier) @function) . ))
 
 (call_expression
 	. (simple_identifier) @function.builtin
@@ -210,11 +189,11 @@
 
 ;;; Literals
 
-(comment) @comment
-
-(shebang_line) @preproc
-
-(comment) @spell
+[
+	(line_comment)
+	(multiline_comment)
+	(shebang_line)
+] @comment
 
 (real_literal) @float
 [
@@ -226,25 +205,21 @@
 ] @number
 
 [
-	"null" ; should be highlighted the same as booleans
+	(null_literal) ; should be highlighted the same as booleans
 	(boolean_literal)
 ] @boolean
 
 (character_literal) @character
 
-[
-	(line_string_literal)
-	(multi_line_string_literal)
-] @string
+(string_literal) @string
 
-; NOTE: Escapes not allowed in multi-line strings
-(line_string_literal (character_escape_seq) @string.escape)
+(character_escape_seq) @string.escape
 
 ; There are 3 ways to define a regex
 ;    - "[abc]?".toRegex()
 (call_expression
 	(navigation_expression
-		([(line_string_literal) (multi_line_string_literal)] @string.regex)
+		((string_literal) @string.regex)
 		(navigation_suffix
 			((simple_identifier) @_function
 			(#eq? @_function "toRegex")))))
@@ -256,9 +231,9 @@
 	(call_suffix
 		(value_arguments
 			(value_argument
-				[ (line_string_literal) (multi_line_string_literal) ] @string.regex))))
+				(string_literal) @string.regex))))
 
-;    - Regex.fromLiteral("[abc]?")
+;   - Regex.fromLiteral("[abc]?")
 (call_expression
 	(navigation_expression
 		((simple_identifier) @_class
@@ -269,14 +244,11 @@
 	(call_suffix
 		(value_arguments
 			(value_argument
-				[ (line_string_literal) (multi_line_string_literal) ] @string.regex))))
+				(string_literal) @string.regex))))
 
 ;;; Keywords
 
 (type_alias "typealias" @keyword)
-
-(companion_object "companion" @keyword)
-
 [
 	(class_modifier)
 	(member_modifier)
@@ -288,7 +260,7 @@
 	(visibility_modifier)
 	(reification_modifier)
 	(inheritance_modifier)
-] @type.qualifier
+]@keyword
 
 [
 	"val"
@@ -399,18 +371,10 @@
 ] @punctuation.delimiter
 
 ; NOTE: `interpolated_identifier`s can be highlighted in any way
-(line_string_literal
+(string_literal
 	"$" @punctuation.special
 	(interpolated_identifier) @none)
-(line_string_literal
-	"${" @punctuation.special
-	(interpolated_expression) @none
-	"}" @punctuation.special)
-
-(multi_line_string_literal
-    "$" @punctuation.special
-    (interpolated_identifier) @none)
-(multi_line_string_literal
+(string_literal
 	"${" @punctuation.special
 	(interpolated_expression) @none
 	"}" @punctuation.special)

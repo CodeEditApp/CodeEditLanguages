@@ -4,11 +4,15 @@
   "(?"
   "(?:"
   "(?<"
+  "(?P<"
+  "(?P="
   ">"
   "["
   "]"
   "{"
   "}"
+  "[:"
+  ":]"
 ] @punctuation.bracket
 
 (group_name) @property
@@ -30,9 +34,7 @@
   "?"
   "|"
   "="
-  "<="
   "!"
-  "<!"
 ] @operator
 
 (count_quantifier
@@ -41,12 +43,21 @@
     "," @punctuation.delimiter
   ])
 
+(inline_flags_group
+  "-"? @operator
+  ":"? @punctuation.delimiter)
+
+(flags) @character.special
+
 (character_class
   [
     "^" @operator
     (class_range "-" @operator)
   ])
 
-(class_character) @constant.character
+[
+  (class_character)
+  (posix_class_name)
+] @constant.character
 
 (pattern_character) @string
