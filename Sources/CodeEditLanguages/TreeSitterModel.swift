@@ -38,6 +38,8 @@ public class TreeSitterModel {
             return dockerfileQuery
         case .elixir:
             return elixirQuery
+				case .glsl:
+						return glslQuery
         case .go:
             return goQuery
         case .goMod:
@@ -146,6 +148,11 @@ public class TreeSitterModel {
     public private(set) lazy var elixirQuery: Query? = {
         return queryFor(.elixir)
     }()
+	
+		/// Query for `GLSL` files
+		public private(set) lazy var glslQuery: Query? = {
+				return queryFor(.glsl)
+		}()
 
     /// Query for `Go` files.
     public private(set) lazy var goQuery: Query? = {

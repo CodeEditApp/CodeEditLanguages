@@ -40,6 +40,7 @@ let query = TreeSitterModel.shared.swiftQuery
 - ``dartQuery``
 - ``dockerfileQuery``
 - ``elixirQuery``
+- ``glslQuery``
 - ``goQuery``
 - ``goModQuery``
 - ``haskellQuery``
