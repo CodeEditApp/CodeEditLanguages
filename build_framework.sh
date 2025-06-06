@@ -123,9 +123,9 @@ for lang in $LIST ; do
             # if there is only one target, use name
             # otherwise use target
             if [[ $count -eq 1 || ($count -ne 1 && $same -eq 1) ]]; then
-                cp $highlight $RESOURCES_PATH/$name/$highlight_name
+                cp -f $highlight $RESOURCES_PATH/$name/$highlight_name
             else
-                cp $highlight $RESOURCES_PATH/$target/$highlight_name
+                cp -f $highlight $RESOURCES_PATH/$target/$highlight_name
             fi
         done
         
@@ -135,7 +135,73 @@ for lang in $LIST ; do
         fi
     done
 done
+
 status "Language queries copied to package resources!"
+
+# Clone the neovim-treesitter repository, which has more language query files than
+# the language repos contain by default and use query files.
+#
+# We also copy a license notice into the top of each file to make sure contributors
+# and forks are directed to the correct place.
+
+status "Downloading missing queries from neovim-treesitter"
+
+CLONE_DIR="$PWD/DerivedData/Clones"
+
+rm -rf $CLONE_DIR
+mkdir -p $CLONE_DIR
+
+MISSING_QUERIES_URL="https://github.com/nvim-treesitter/nvim-treesitter"
+MISSING_QUERIES_ROOT="queries"
+LICENSE_NOTICE='; Copyright 2025 nvim-treesitter
+;
+; Licensed under the Apache License, Version 2.0 (the "License");
+; you may not use this file except in compliance with the License.
+; You may obtain a copy of the License at
+;
+;     http://www.apache.org/licenses/LICENSE-2.0
+;
+; Unless required by applicable law or agreed to in writing, software
+; distributed under the License is distributed on an "AS IS" BASIS,
+; WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+; See the License for the specific language governing permissions and
+; limitations under the License.
+
+'
+
+git clone $MISSING_QUERIES_URL $CLONE_DIR &> $QUIET_OUTPUT
+
+cd $CLONE_DIR
+cd $MISSING_QUERIES_ROOT
+
+for lang in $LIST ; do
+    # remove prefix and convert to snake_case (replace - with _)
+    lang_trim=${lang##*/}
+    lang_trim="${lang_trim#tree-sitter-}"
+    lang_trim=$(printf '%s' "$lang_trim" | tr '-' '_')
+
+    TARGET_DIR="$RESOURCES_PATH/${lang##*/}"
+
+    SRC_DIR="$PWD/$lang_trim"
+    if [ ! -d "$SRC_DIR" ]; then
+        continue
+    fi
+
+    # Find all scm query files and copy them into our resources folder where they don't already exist.
+    find $SRC_DIR -type f -name "*.scm" | while IFS= read -r src_file; do
+        filename=$(basename "$src_file")
+        dest_file="$TARGET_DIR/$filename"
+
+        if [ ! -e "$dest_file" ]; then
+            echo "  Copying $dest_file" &> $QUIET_OUTPUT
+            # copy the license notice into a header in the file
+            echo "$LICENSE_NOTICE" > $dest_file
+            cat $src_file >> $dest_file
+        fi
+    done
+done
+
+status "Missing queries successfully added!"
 
 # cleanup derived derived data
 
