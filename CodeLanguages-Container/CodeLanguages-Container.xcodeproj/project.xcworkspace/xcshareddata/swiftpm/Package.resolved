@@ -1,5 +1,5 @@
 {
-  "originHash" : "c940c7467f54711e27ceb0cef308954e1fdbcc20f3dd59d96d6efbe29d7a04ba",
+  "originHash" : "c5a4c9df9e12427c65490647773b74b0dd4a4f88a96c00b82b50037d32e8376f",
   "pins" : [
     {
       "identity" : "tree-sitter-agda",
@@ -80,6 +80,15 @@
       "state" : {
         "branch" : "main",
         "revision" : "11426c5fd20eef360d5ecaf10729191f6bc5d715"
+      }
+    },
+    {
+      "identity" : "tree-sitter-glsl",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tree-sitter-grammars/tree-sitter-glsl/",
+      "state" : {
+        "revision" : "57b2fc3f8484900306cc0fed32a15d7b2a710193",
+        "version" : "0.1.9"
       }
     },
     {

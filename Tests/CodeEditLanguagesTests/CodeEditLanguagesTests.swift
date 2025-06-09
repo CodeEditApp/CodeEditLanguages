@@ -201,6 +201,81 @@ final class CodeEditLanguagesTests: XCTestCase {
         XCTAssertNotNil(query)
         XCTAssertNotEqual(query?.patternCount, 0)
     }
+	
+// MARK: - GLSL
+	
+		func test_CodeLanguageGLSL() throws {
+				let url = URL(fileURLWithPath: "~/path/to/file.vsh")
+				let language = CodeLanguage.detectLanguageFrom(url: url)
+				
+				XCTAssertEqual(language.id, .glsl)
+		}
+
+		func test_CodeLanguageGLSL2() throws {
+				let url = URL(fileURLWithPath: "~/path/to/file.fsh")
+				let language = CodeLanguage.detectLanguageFrom(url: url)
+				
+				XCTAssertEqual(language.id, .glsl)
+		}
+
+		func test_CodeLanguageGLSL3() throws {
+				let url = URL(fileURLWithPath: "~/path/to/file.glsl")
+				let language = CodeLanguage.detectLanguageFrom(url: url)
+				
+				XCTAssertEqual(language.id, .glsl)
+		}
+
+		func test_CodeLanguageGLSL4() throws {
+				let url = URL(fileURLWithPath: "~/path/to/file.vert")
+				let language = CodeLanguage.detectLanguageFrom(url: url)
+				
+				XCTAssertEqual(language.id, .glsl)
+		}
+
+		func test_CodeLanguageGLSL5() throws {
+				let url = URL(fileURLWithPath: "~/path/to/file.frag")
+				let language = CodeLanguage.detectLanguageFrom(url: url)
+				
+				XCTAssertEqual(language.id, .glsl)
+		}
+
+		func test_CodeLanguageGLSL6() throws {
+				let url = URL(fileURLWithPath: "~/path/to/file.tesc")
+				let language = CodeLanguage.detectLanguageFrom(url: url)
+				
+				XCTAssertEqual(language.id, .glsl)
+		}
+
+		func test_CodeLanguageGLSL7() throws {
+				let url = URL(fileURLWithPath: "~/path/to/file.tese")
+				let language = CodeLanguage.detectLanguageFrom(url: url)
+				
+				XCTAssertEqual(language.id, .glsl)
+		}
+
+		func test_CodeLanguageGLSL8() throws {
+				let url = URL(fileURLWithPath: "~/path/to/file.geom")
+				let language = CodeLanguage.detectLanguageFrom(url: url)
+				
+				XCTAssertEqual(language.id, .glsl)
+		}
+
+		func test_CodeLanguageGLSL9() throws {
+				let url = URL(fileURLWithPath: "~/path/to/file.comp")
+				let language = CodeLanguage.detectLanguageFrom(url: url)
+				
+				XCTAssertEqual(language.id, .glsl)
+		}
+	
+		func test_FetchQueryGLSL() throws {
+				var language = CodeLanguage.glsl
+				language.resourceURL = bundleURL
+				
+				let data = try Data(contentsOf: language.queryURL!)
+				let query = try? Query(language: language.language!, data: data)
+				XCTAssertNotNil(query)
+				XCTAssertNotEqual(query?.patternCount, 0)
+		}
 
 // MARK: - Go
 

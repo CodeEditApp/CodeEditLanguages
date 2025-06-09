@@ -22,6 +22,7 @@ public extension CodeLanguage {
         .dart,
         .dockerfile,
         .elixir,
+				.glsl,
         .go,
         .goMod,
         .haskell,
@@ -141,6 +142,15 @@ public extension CodeLanguage {
         documentationCommentStrings: [.pair(("\"\"\"", "\"\"\""))],
         highlights: ["injections"]
     )
+	
+		/// A language structure for `GLSL`
+		static let glsl: CodeLanguage = .init(
+			id: .glsl,
+			tsName: "glsl",
+			extensions: ["vsh", "fsh", "glsl", "vert", "frag", "tesc", "tese", "geom", "comp"],
+			lineCommentString: "//",
+			rangeCommentStrings: ("/*", "*/")
+		)
 
     /// A language structure for `Go`
     static let go: CodeLanguage = .init(
