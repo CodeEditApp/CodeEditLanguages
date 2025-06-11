@@ -17,8 +17,7 @@
 
 A collection of `tree-sitter` languages for syntax highlighting.
 
-![Github Tests](https://img.shields.io/github/actions/workflow/status/CodeEditApp/CodeEditLanguages/tests.yml?branch=main&label=tests&style=flat-square)
-![Documentation](https://img.shields.io/github/actions/workflow/status/CodeEditApp/CodeEditLanguages/build-documentation.yml?branch=main&label=docs&style=flat-square)
+![Github Tests](https://img.shields.io/github/actions/workflow/status/CodeEditApp/CodeEditLanguages/CI-push.yml?branch=main&label=tests&style=flat-square)
 ![GitHub Repo stars](https://img.shields.io/github/stars/CodeEditApp/CodeEditLanguages?style=flat-square)
 ![GitHub forks](https://img.shields.io/github/forks/CodeEditApp/CodeEditLanguages?style=flat-square)
 [![Discord Badge](https://img.shields.io/discord/951544472238444645?color=5865F2&label=Discord&logo=discord&logoColor=white&style=flat-square)](https://discord.gg/vChUXVf9Em)
