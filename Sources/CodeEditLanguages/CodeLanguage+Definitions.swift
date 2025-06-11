@@ -62,7 +62,8 @@ public extension CodeLanguage {
         tsName: "agda",
         extensions: ["agda"],
         lineCommentString: "--",
-        rangeCommentStrings: ("{-", "-}")
+        rangeCommentStrings: ("{-", "-}"),
+        highlights: ["folds", "injections"]
     )
 
     /// A language structure for `Bash`
@@ -71,7 +72,8 @@ public extension CodeLanguage {
         tsName: "bash",
         extensions: ["sh", "bash"],
         lineCommentString: "#",
-        rangeCommentStrings: (":'", "'")
+        rangeCommentStrings: (":'", "'"),
+        highlights: ["folds", "injections", "locals"]
     )
 
     /// A language structure for `C`
@@ -80,7 +82,8 @@ public extension CodeLanguage {
         tsName: "c",
         extensions: ["c", "h"],
         lineCommentString: "//",
-        rangeCommentStrings: ("/*", "*/")
+        rangeCommentStrings: ("/*", "*/"),
+        highlights: ["folds", "indents", "injections", "locals", "tags"]
     )
 
     /// A language structure for `C++`
@@ -92,7 +95,7 @@ public extension CodeLanguage {
         rangeCommentStrings: CodeLanguage.c.rangeCommentStrings,
         documentationCommentStrings: [.pair(("/**", "*/"))],
         parentURL: CodeLanguage.c.queryURL,
-        highlights: ["injections"]
+        highlights: ["folds", "indents", "injections", "locals", "tags"]
     )
 
     /// A language structure for `C#`
@@ -101,7 +104,8 @@ public extension CodeLanguage {
         tsName: "c-sharp",
         extensions: ["cs"],
         lineCommentString: "//",
-        rangeCommentStrings: ("/*", "*/")
+        rangeCommentStrings: ("/*", "*/"),
+        highlights: ["folds", "injections", "locals", "tags"]
     )
 
     /// A language structure for `CSS`
@@ -110,7 +114,8 @@ public extension CodeLanguage {
         tsName: "css",
         extensions: ["css"],
         lineCommentString: "",
-        rangeCommentStrings: ("/*", "*/")
+        rangeCommentStrings: ("/*", "*/"),
+        highlights: ["folds", "indents", "injections"]
     )
 
     /// A language structure for `Dart`
@@ -119,7 +124,8 @@ public extension CodeLanguage {
         tsName: "dart",
         extensions: ["dart"],
         lineCommentString: "//",
-        rangeCommentStrings: ("/*", "*/")
+        rangeCommentStrings: ("/*", "*/"),
+        highlights: ["folds", "indents", "injections", "locals", "tags"]
     )
 
     /// A language structure for `Dockerfile`
@@ -128,7 +134,8 @@ public extension CodeLanguage {
         tsName: "dockerfile",
         extensions: ["Dockerfile"],
         lineCommentString: "#",
-        rangeCommentStrings: ("", "")
+        rangeCommentStrings: ("", ""),
+        highlights: ["injections"]
     )
 
     /// A language structure for `Elixir`
@@ -139,7 +146,7 @@ public extension CodeLanguage {
         lineCommentString: "#",
         rangeCommentStrings: ("", ""),
         documentationCommentStrings: [.pair(("\"\"\"", "\"\"\""))],
-        highlights: ["injections"]
+        highlights: ["folds", "indents", "injections", "locals", "tags"]
     )
 
     /// A language structure for `Go`
@@ -148,7 +155,8 @@ public extension CodeLanguage {
         tsName: "go",
         extensions: ["go"],
         lineCommentString: "//",
-        rangeCommentStrings: ("/*", "*/")
+        rangeCommentStrings: ("/*", "*/"),
+        highlights: ["folds", "indents", "injections", "locals", "tags"]
     )
 
     /// A language structure for `GoMod`
@@ -166,7 +174,8 @@ public extension CodeLanguage {
         tsName: "haskell",
         extensions: ["hs"],
         lineCommentString: "--",
-        rangeCommentStrings: ("{-", "-}")
+        rangeCommentStrings: ("{-", "-}"),
+        highlights: ["folds", "injections", "locals"]
     )
 
     /// A language structure for `HTML`
@@ -176,7 +185,7 @@ public extension CodeLanguage {
         extensions: ["html", "htm", "shtml"],
         lineCommentString: "",
         rangeCommentStrings: ("<!--", "-->"),
-        highlights: ["injections"]
+        highlights: ["folds", "indents", "injections", "locals"]
     )
 
     /// A language structure for `Java`
@@ -186,7 +195,8 @@ public extension CodeLanguage {
         extensions: ["java", "jav"],
         lineCommentString: "//",
         rangeCommentStrings: ("/*", "*/"),
-        documentationCommentStrings: [.pair(("/**", "*/"))]
+        documentationCommentStrings: [.pair(("/**", "*/"))],
+        highlights: ["folds", "indents", "injections", "locals", "tags"]
     )
 
     /// A language structure for `JavaScript`
@@ -197,7 +207,7 @@ public extension CodeLanguage {
         lineCommentString: "//",
         rangeCommentStrings: ("/*", "*/"),
         documentationCommentStrings: [.pair(("/**", "*/"))],
-        highlights: ["injections"],
+        highlights: ["folds", "indents", "injections", "locals", "tags"],
         additionalIdentifiers: ["node", "deno"]
     )
 
@@ -216,7 +226,8 @@ public extension CodeLanguage {
         tsName: "json",
         extensions: ["json"],
         lineCommentString: "//",
-        rangeCommentStrings: ("/*", "*/")
+        rangeCommentStrings: ("/*", "*/"),
+        highlights: ["folds", "indents", "locals"]
     )
 
     /// A language structure for `JSX`
@@ -226,7 +237,7 @@ public extension CodeLanguage {
         extensions: ["jsx"],
         lineCommentString: "//",
         rangeCommentStrings: ("/*", "*/"),
-        highlights: ["highlights-jsx", "injections"]
+        highlights: ["folds", "highlights-jsx", "indents", "injections", "locals", "tags"]
     )
 
     /// A language structure for `Julia`
@@ -235,7 +246,8 @@ public extension CodeLanguage {
         tsName: "julia",
         extensions: ["jl"],
         lineCommentString: "#",
-        rangeCommentStrings: ("#=", "=#")
+        rangeCommentStrings: ("#=", "=#"),
+        highlights: ["folds", "indents", "injections", "locals"]
     )
 
     /// A language structure for `Kotlin`
@@ -244,7 +256,8 @@ public extension CodeLanguage {
         tsName: "kotlin",
         extensions: ["kt", "kts"],
         lineCommentString: "//",
-        rangeCommentStrings: ("/*", "*/")
+        rangeCommentStrings: ("/*", "*/"),
+        highlights: ["folds", "injections", "locals"]
     )
 
     /// A language structure for `Lua`
@@ -254,7 +267,7 @@ public extension CodeLanguage {
         extensions: ["lua"],
         lineCommentString: "--",
         rangeCommentStrings: ("-[[", "]]--"),
-        highlights: ["injections"]
+        highlights: ["folds", "indents", "injections", "locals", "tags"]
     )
 
     /// A language structure for `Markdown`
@@ -264,7 +277,7 @@ public extension CodeLanguage {
         extensions: ["md", "mkd", "mkdn", "mdwn", "mdown", "markdown"],
         lineCommentString: "[comment]: #",
         rangeCommentStrings: ("", ""),
-        highlights: ["injections"]
+        highlights: ["folds", "indents", "injections"]
     )
 
     /// A language structure for `Markdown Inline`
@@ -285,7 +298,7 @@ public extension CodeLanguage {
         lineCommentString: "//",
         rangeCommentStrings: ("/*", "*/"),
         parentURL: CodeLanguage.c.queryURL,
-        highlights: ["injections"]
+        highlights: ["folds", "indents", "injections", "locals"]
     )
 
     /// A language structure for `OCaml`
@@ -295,7 +308,8 @@ public extension CodeLanguage {
         extensions: ["ml"],
         lineCommentString: "",
         rangeCommentStrings: ("(*", "*)"),
-        documentationCommentStrings: [.pair(("(**", "*)"))]
+        documentationCommentStrings: [.pair(("(**", "*)"))],
+        highlights: ["folds", "indents", "injections", "locals", "tags"]
     )
 
     /// A language structure for `OCaml Interface`
@@ -304,7 +318,8 @@ public extension CodeLanguage {
         tsName: "ocaml",
         extensions: ["mli"],
         lineCommentString: "",
-        rangeCommentStrings: ("", "")
+        rangeCommentStrings: ("", ""),
+        highlights: ["folds", "indents", "injections", "locals", "tags"]
     )
 
     /// A language structure for `Perl`
@@ -313,7 +328,8 @@ public extension CodeLanguage {
         tsName: "perl",
         extensions: ["pl", "pm"],
         lineCommentString: "#",
-        rangeCommentStrings: ("=pod", "=cut")
+        rangeCommentStrings: ("=pod", "=cut"),
+        highlights: ["folds", "injections"]
     )
 
     /// A language structure for `PHP`
@@ -323,7 +339,7 @@ public extension CodeLanguage {
         extensions: ["php"],
         lineCommentString: "//",
         rangeCommentStrings: ("/*", "*/"),
-        highlights: ["injections"]
+        highlights: ["folds", "indents", "injections", "locals", "tags"]
     )
 
     /// A language structure for `Python`
@@ -334,6 +350,7 @@ public extension CodeLanguage {
         lineCommentString: "#",
         rangeCommentStrings: ("", ""),
         documentationCommentStrings: [.pair(("\"\"\"", "\"\"\""))],
+        highlights: ["folds", "indents", "injections", "locals", "tags"],
         additionalIdentifiers: ["python2", "python3"]
     )
 
@@ -352,7 +369,8 @@ public extension CodeLanguage {
         tsName: "ruby",
         extensions: ["rb"],
         lineCommentString: "#",
-        rangeCommentStrings: ("=begin", "=end")
+        rangeCommentStrings: ("=begin", "=end"),
+        highlights: ["folds", "indents", "injections", "locals", "tags"]
     )
 
     /// A language structure for `Rust`
@@ -368,7 +386,7 @@ public extension CodeLanguage {
             .pair(("/**", "*/")),
             .pair(("/*!", "*/"))
         ],
-        highlights: ["injections"]
+        highlights: ["folds", "indents", "injections", "locals", "tags"]
     )
 
     /// A language structure for `Scala`
@@ -377,7 +395,8 @@ public extension CodeLanguage {
         tsName: "scala",
         extensions: ["scala", "sc"],
         lineCommentString: "//",
-        rangeCommentStrings: ("/*", "*/")
+        rangeCommentStrings: ("/*", "*/"),
+        highlights: ["folds", "injections", "locals"]
     )
 
     /// A language structure for `SQL`
@@ -386,7 +405,8 @@ public extension CodeLanguage {
         tsName: "sql",
         extensions: ["sql"],
         lineCommentString: "--",
-        rangeCommentStrings: ("/*", "*/")
+        rangeCommentStrings: ("/*", "*/"),
+        highlights: ["folds", "indents", "injections"]
     )
 
     /// A language structure for `Swift`
@@ -396,7 +416,8 @@ public extension CodeLanguage {
         extensions: ["swift"],
         lineCommentString: "//",
         rangeCommentStrings: ("/*", "*/"),
-        documentationCommentStrings: [.single("///"), .pair(("/**", "*/"))]
+        documentationCommentStrings: [.single("///"), .pair(("/**", "*/"))],
+        highlights: ["folds", "indents", "injections", "locals", "tags"]
     )
 
     /// A language structure for `TOML`
@@ -405,7 +426,8 @@ public extension CodeLanguage {
         tsName: "toml",
         extensions: ["toml"],
         lineCommentString: "#",
-        rangeCommentStrings: ("", "")
+        rangeCommentStrings: ("", ""),
+        highlights: ["folds", "indents", "injections", "locals"]
     )
 
     /// A language structure for `TSX`
@@ -415,7 +437,8 @@ public extension CodeLanguage {
         extensions: ["tsx"],
         lineCommentString: "//",
         rangeCommentStrings: ("/*", "*/"),
-        parentURL: CodeLanguage.jsx.queryURL
+        parentURL: CodeLanguage.jsx.queryURL,
+        highlights: ["folds", "indents", "injections", "locals", "tags"]
     )
 
     /// A language structure for `Typescript`
@@ -425,7 +448,8 @@ public extension CodeLanguage {
         extensions: ["ts", "cts", "mts"],
         lineCommentString: "//",
         rangeCommentStrings: ("/*", "*/"),
-        parentURL: CodeLanguage.javascript.queryURL
+        parentURL: CodeLanguage.javascript.queryURL,
+        highlights: ["folds", "indents", "injections", "locals", "tags"]
     )
 
     /// A language structure for `Verilog`
@@ -434,7 +458,8 @@ public extension CodeLanguage {
         tsName: "verilog",
         extensions: ["v"],
         lineCommentString: "//",
-        rangeCommentStrings: ("/*", "*/")
+        rangeCommentStrings: ("/*", "*/"),
+        highlights: ["folds", "injections"]
     )
 
     /// A language structure for `YAML`
@@ -443,7 +468,8 @@ public extension CodeLanguage {
         tsName: "yaml",
         extensions: ["yml", "yaml"],
         lineCommentString: "#",
-        rangeCommentStrings: ("", "")
+        rangeCommentStrings: ("", ""),
+        highlights: ["folds", "indents", "injections", "locals"]
     )
 
     /// A language structure for `Zig`
@@ -454,7 +480,7 @@ public extension CodeLanguage {
         lineCommentString: "//",
         rangeCommentStrings: ("", ""),
         documentationCommentStrings: [.single("///"), .single("//!")],
-        highlights: ["injections"]
+        highlights: ["folds", "indents", "injections", "locals"]
     )
 
     /// The default language (plain text)
